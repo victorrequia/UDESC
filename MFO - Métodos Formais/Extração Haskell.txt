@@ -1,0 +1,43 @@
+Require Coq.extraction.Extraction.
+Extraction Language Haskell.
+
+From Coq Require Import Arith.Arith.
+From Coq Require Import Init.Nat.
+From Coq Require Import Arith.EqNat.
+From LF Require Import Poly.
+
+Definition negacao (b:bool) : bool :=
+  match b with
+  | true => false
+  | false => true
+  end.
+
+Extraction "exemplo1.hs" negacao.
+
+Extract Inductive bool => "Prelude.Bool" [ "Prelude.True" "Prelude.False" ].
+
+Extraction "exemplo1.hs" negacao.
+
+Extraction "map1.hs" map.
+
+Extract Inductive list => "[]" [ "[]" "(:)" ].
+
+Extraction "map2.hs" map.
+
+Extraction "repeat1.hs" repeat.
+
+
+Extract Inductive nat => "Prelude.Integer"
+  [ "0" "(\ x -> x + 1)" ]
+  "(\fzero fs n ->
+      if n Prelude.== 0 then fzero () else fs (n Prelude.- 1))".
+
+Extraction "repeat2.hs" repeat.
+
+Definition quadrado (a:nat) : nat := a * a.
+
+Extraction "quadrado1.hs" quadrado.
+
+Extract Constant mul => "(Prelude.*)".
+
+Extraction "quadrado2.hs" quadrado.

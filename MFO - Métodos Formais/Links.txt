@@ -1,0 +1,43 @@
+Conceitos básicos (linguagens funcionais).
+https://softwarefoundations.cis.upenn.edu/lf-current/Basics.html
+
+Indução
+https://softwarefoundations.cis.upenn.edu/lf-current/Induction.html
+
+Software Foundations in Coq by Benjamin Pierce
+https://www.youtube.com/watch?time_continue=1&v=KKrD4JcfW90&feature=emb_logo&ab_channel=Math%C3%A9matiquesetprogrammation
+
+Biblioteca Padrão: Coq.Init.Nat
+https://coq.inria.fr/library/Coq.Init.Nat.html
+
+Listas
+https://softwarefoundations.cis.upenn.edu/lf-current/Lists.html
+
+Polimorfismo
+https://softwarefoundations.cis.upenn.edu/lf-current/Poly.html
+
+Táticas
+https://softwarefoundations.cis.upenn.edu/lf-current/Tactics.html
+
+Software Foundations in Coq by Benjamin Pierce (2)
+https://www.youtube.com/watch?v=ZVP3_7x3JY4&ab_channel=Math%C3%A9matiquesetprogrammation
+
+Cálculo Lambda
+https://www.youtube.com/watch?v=jvAkNij65W4&t=767s&ab_channel=CristianoVasconcellos
+
+Proposition as Types by Philip Wadler (SBLP)
+https://www.youtube.com/watch?v=DU846DP7K68&ab_channel=SociedadeBrasileiradeComputa%C3%A7%C3%A3o
+
+Lógica
+https://softwarefoundations.cis.upenn.edu/lf-current/Logic.html
+
+Proposições Definidas Indutivamente
+https://softwarefoundations.cis.upenn.edu/lf-current/IndProp.html
+
+CompCert
+http://compcert.inria.fr/
+
+DeepSpec
+https://deepspec.org/
+
+
