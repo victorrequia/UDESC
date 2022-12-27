@@ -1,5 +1,5 @@
 ### Fase
-9° fase
+6° fase
 
 ### Ementa
 Introdução à Pesquisa Operacional. Modelagem de problemas. Programação linear; solução gráfica e por SIMPLEX.
