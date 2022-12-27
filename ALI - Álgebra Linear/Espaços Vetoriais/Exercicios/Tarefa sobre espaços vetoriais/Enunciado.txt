@@ -1,0 +1,2 @@
+1. Mostre que o conjunto solução do sistema da questão 3 da Tarefa 1, dado por S={(z,-2z,z); z∈reto números reais} é 
+um espaço vetorial, considerando as operações usuais de soma e de multiplicação por escalar em reto números reais ao cubo.

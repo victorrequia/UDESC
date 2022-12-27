@@ -1,0 +1,5 @@
+Em cada caso, verifique se W é um subespaço vetorial do espaço vetorial V:
+
+a)  V=M(2,2)  e W ={A∈M(2,2); tr(A)=0}, onde tr(A)  é o traço da matriz A. Definimos por traço de uma matriz, 
+a soma dos elementos da diagonal principal.
+b)  V=P2  e W={p(x)=ax2+bx+c ; b=a2 }
