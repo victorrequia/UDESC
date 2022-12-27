@@ -1,18 +1,18 @@
 ### Fase
-9° fase
+6° fase
 
 ### Ementa
-Fundamentos da ética; O profissional de computação; A abrangência da ética em computação; A importância do raciocínio
-na tomada de decisões éticas; Problemas e pontos a ponderar; Códigos de ética profissionais; Ética profissional; Ética e
-regulamentação da profissão; Códigos de ética profissionais na área de computação.
+Introdução à Pesquisa Operacional. Modelagem de problemas. Programação linear; solução gráfica e por SIMPLEX.
+Programação inteira. Métodos de Transporte e designação. Outros métodos de PO. Uso do computador para solução de
+problemas de pesquisa operacional.
 
 ### Objetivo Geral
-Discutir com os estudantes as questões filosóficas em torno da ética levando-os a refletirem sobre as noções e princípios
-que fundamentam a vida moral e sua conduta profissional respeitando os princípios éticos em todas as esferas da vida em
-sociedade, em especial, aqueles relacionados á Computação e Informática.
+CAPACITAR o aluno na formulação e resolução de problemas clássicos de pesquisa operacional
 
 ### Objetivo Específico
-- Compreender o que é a ética e moral e sua construção histórica
-- Reconhecer o papel da ética para a vida em sociedade
-- Entender a importância da ética e da computação para as empresas, organizações e profissionais
-- Analisar os problemas éticos relacionados às Computação e Informática
+- CONCEITUAR pesquisa operacional
+- CAPACITAR o aluno na solução de problemas de transporte e atribuição (manual e com computador)
+- CAPACITAR o aluno na formulação e e solução de problemas de programação inteira (manual e com computador)
+- CAPACITAR o aluno na solução de problemas de transporte e atribuição (manual e com computador)
+- CONCEITUAR outras técnicas de Pesquisa operacional
+- CAPACITAR o aluno na solução de problemas de filas, simulação e programação de projetos)
