@@ -1,20 +1,18 @@
 ### Fase
-5° fase
+3° fase
 
 ### Ementa
-Conceitos básicos e organização de sistemas operacionais. Gerenciamento de processador: processos, threads,
-escalonamento. Comunicação entre processos. Gerenciamento de memória: alocação contígua, memória virtual, paginação,
-segmentação. Sistemas de arquivos. Gerenciamento de dispositivos de entrada e saída. Deadlocks.
+Conceitos de orientação a objetos. Decomposição de programas. Generalização e especialização. Agregação e composição.
+Herança e polimorfismo. Projeto orientado a objetos. Estudo de uma linguagem.
 
 ### Objetivo Geral
-Capacitar o aluno a compreender os princípios de projeto e implementação de Sistemas Operacionais.
+Apresentar ao aluno os principais conceitos da orientação a objetos usando uma linguagem de modelagem, assim como
+aplicá-los através de uma linguagem de programação orientada a objetos, estimulando o desenvolvimento baseado em
+padrões de projeto.
 
 ### Objetivo Específico
-- Conceituar sistemas operacionais;
-- Compreender os princípios de multiprogramação;
-- Compreender o gerenciamento de processador (processos e threads) de um SO;
-- Compreender os princípios de programação concorrente, incluindo exclusão mútua e sincronização de processos e threads;
-- Compreender o gerenciamento de memória de um SO;
-- Compreender o gerenciamento de E/S de um SO;
-- Compreender o gerenciamento de arquivos de um SO;
-- Introduzir os princípios de projeto de um SO.
+- Apresentar os conceitos de programação orientada a objetos através do uso de uma linguagem de modelagem
+(UML) e uma linguagem de programação orientada a objetos (Java);
+- Introduzir os conceitos de modelagem orientada a objetos;
+- Introduzir os conceitos de padrões de projeto (design patterns);
+- Apresentar as principais noções para o desenvolvimento de aplicações com acesso a banco de dados
