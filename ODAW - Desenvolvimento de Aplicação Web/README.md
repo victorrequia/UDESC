@@ -1,20 +1,16 @@
 ### Fase
-7° fase
+8° fase
 
 ### Ementa
-Negócios de base tecnológica e seu impacto na sociedade; O Empreendedorismo e o empreendedor; Inovação e o
-ecossistema de startups; O processo de empreender e o modelo startup enxuta; Identificação, validação de oportunidades e
-desenvolvimento do cliente; Plano de Negócio e Modelagem de Negócio; Políticas, legislação e sistema de apoio ao
-empreendedorismo. Educação Ambiental. Negócios de base tecnológica como fomentadores da sustentabilidade
-socioambiental.
+Desenvolvimento de aplicações orientado às necessidades do usuário. Estudo e utilização de tecnologias para Web: XML,
+XSL, XHTML, CSS, JavaScript, Java para Web (Servlets, JSP), PHP.
 
 ### Objetivo Geral
-Possibilitar o desenvolvimento de habilidades de gerenciamento e empreendedoras dos alunos. Refletir sobre o campo da
-legislação e empreendimentos em Informática, tendo em vista diversas atividades econômicas. Fomentar o desenvolvimento
-de novos empreendedores, sintonizados com as novas tendências mundiais, identificando oportunidades para aplicar os
-conhecimentos de forma criativa e gerando empreendimentos de alta importância e relevância para a sociedade.
+Capacitar o aluno no conhecimento das tecnologias e desenvolvimento de uma aplicação/ambiente protótipo para Web.
 
 ### Objetivo Específico
-Mostrar ao aluno o que é ser empreendedor e identificar sua capacidade empreendedora. Capacitar o aluno a desenvolver
-habilidades empreendedoras. Demonstrar caminhos para criação de um novo negócio de base tecnológica. Incentivar a
-geração de novas ideias e pensamento crítico e analista. Capacitar o aluno a desenvolver um plano de negócio eficiente.
+- Conceituar os elementos básicos do ambiente web;
+- Conhecer tecnologias para desenvolvimento na Web;
+- Discutir os aspectos de design/usabilidade de um Web Site;
+- Discutir aspectos de segurança em aplicações na web;
+- Desenvolver um ambiente/aplicação web protótipo.
