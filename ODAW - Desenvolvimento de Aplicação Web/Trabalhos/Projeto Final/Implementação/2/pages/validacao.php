@@ -1,0 +1,1 @@
+Ola <?php echo $_POST["nome"]; ?>
