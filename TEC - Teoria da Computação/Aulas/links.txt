@@ -1,0 +1,25 @@
+____________________________________________________________________________________________________________________________________
+Máquinas de Turing
+
+Vídeo - Mapa da MatemáticaURL -> https://www.youtube.com/watch?v=OmJ-4B-mS-Y&t=1s&ab_channel=DomainofScience
+Propositions as TypesURL -> https://www.youtube.com/watch?v=DU846DP7K68&ab_channel=SociedadeBrasileiradeComputa%C3%A7%C3%A3o
+Simulador de Máquina de TuringURL -> http://morphett.info/turing/turing.html
+Videoaula 01 - Máquinas de Turing com Movimento EstacionárioURL -> https://www.youtube.com/watch?v=2RrV5BPKVMw&ab_channel=KarinaRoggia
+Videoaula 02 - Máquinas de Turing com Fita Duplamente InfinitaURL -> https://www.youtube.com/watch?v=OEU2PQwrny8&ab_channel=KarinaRoggia
+Videoaula 03 - Máquinas de Turing MultifitaURL -> https://www.youtube.com/watch?v=vyys4_Udl1Q&ab_channel=KarinaRoggia
+Videoaula 04 - Máquinas de Turing Não DeterminísticasURL -> https://www.youtube.com/watch?v=JlRPwOtNmqw&ab_channel=KarinaRoggia
+Videoaula 05 - Codificação de Máquinas de TuringURL -> https://www.youtube.com/watch?v=oE4JTddb-_c&ab_channel=KarinaRoggia
+____________________________________________________________________________________________________________________________________
+Indecidibilidade e Redução
+
+Videoaula 06 - Linguagens DecidíveisURL -> https://www.youtube.com/watch?v=-wDowdq_AYo&ab_channel=KarinaRoggia
+Vídeo - O Hotel de HilbertURL -> https://ed.ted.com/lessons/the-infinite-hotel-paradox-jeff-dekofsky
+Vídeo - Há infinitos maiores que outros infinitosURL -> https://www.youtube.com/watch?v=dEOBDIyz0BU&ab_channel=UndefinedBehavior
+Vídeo - O Problema da ParadaURL -> https://www.youtube.com/watch?v=92WHN-pAFCs&ab_channel=udiprod
+Videoaula 07 - Linguagens Co-reconhecíveisURL -> https://www.youtube.com/watch?v=Z2LGQ25A1R4&ab_channel=KarinaRoggia
+____________________________________________________________________________________________________________________________________
+Complexidade de Tempo
+
+P versus NP -> http://www.claymath.org/millennium-problems/p-vs-np-problem
+Gravações Complexidade -> https://moodle.joinville.udesc.br/mod/bigbluebuttonbn/view.php?id=159621
+____________________________________________________________________________________________________________________________________
