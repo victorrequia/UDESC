@@ -1,20 +1,22 @@
 ### Fase
-1° fase
+2° fase
 
 ### Ementa
-Conjunto Numéricos; Conceito de Função; Função Afim; Função Quadrática; Função Modular; Função Exponencial;
-Logaritmo; Funções Trigonométrica; Funções Hiperbólicas
+Técnicas de demonstração. Indução matemática: primeiro e segundo princípios, definição indutiva. Álgebra de conjuntos.
+Relações: relação de ordem, relação de equivalência. Funções: funções parciais e totais, funções injetoras, funções
+sobrejetoras, funções bijetoras. Contagem: princípio da multiplicação e adição, princípio de inclusão e exclusão, princípio das
+casas de pombo. Estruturas algébricas: semigrupos, monóides, grupos, reticulados, homomorfismos.
 
 ### Objetivo Geral
-Reforçar e aprimorar conceitos matemáticos vistos no Ensino Básico para preparar o estudante
-para disciplinas posteriores do curso, dando ênfase ao cálculo, ao raciocínio lógico e ao rigor matemático. Além disso,
-incentivar a autonomia e a autocrítica no estudo e na superação de dificuldades
+Proporcionar ao aluno a oportunidade de apropriar-se de conceitos algébricos e da linguagem formal da matemática, e
+relacioná-los com temas e aplicações da Ciência da Computação.
 
 ### Objetivo Específico
-O aluno deverá ser capaz de:
-- Ampliar e fortalecer os conhecimentos a respeito dos números, conjuntos e funções;
-- Ter habilidade de resolver equações e inequações envolvendo expressões algébricas;
-- Identificar as propriedades e os tipos de funções;
-- Representar graficamente as funções;
-- Relacionar os conceitos de funções com as aplicações práticas.
-
+Capacitar o aluno para expressar problemas e soluções em linguagem matemática, utilizando provas formais bem
+estruturadas.
+Capacitar o aluno no uso e reconhecimento de provas e estruturas definidas por indução matemática.
+Capacitar o aluno na identificação e resolução de problemas que envolvam:
+ - conceitos da teoria dos conjuntos;
+ - relações e funções;
+ - processos de contagem e análise combinatória simples;
+ - estruturas algébricas.
