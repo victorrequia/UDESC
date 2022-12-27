@@ -1,0 +1,23 @@
+import math
+
+
+def f(x):
+    y = []
+    for i in range(len(x)):
+        a0 = 2.99983202778
+        a1 = 0.99852661205
+        a2 = -4.74840219965
+        a3 = 0.19677244418
+        a4 = -0.15875389472
+        a5 = 0.76795211103
+        a6 = 0.81956641582
+        a7 = -0.70582662498
+        a8 = 0.19889575878
+        funcao = a0 + a1*x[i] + a2*pow(x[i],2) + a3*pow(x[i],3) + a4*pow(x[i],4) + a5*pow(x[i],5) + a6*pow(x[i],6) + a7*pow(x[i],7) + a8*pow(x[i],8)
+        y.append(funcao)
+    return y
+
+
+x = [(-0.199), 0.168, 0.299, 0.951, 0.982, 1.445]
+s = f(x)
+print([f'{s[element]:+}' for element in range(len(s))])

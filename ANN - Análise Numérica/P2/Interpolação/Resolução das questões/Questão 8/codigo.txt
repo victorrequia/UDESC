@@ -1,0 +1,19 @@
+import math
+
+
+def f(x):
+    y = []
+    for i in range(len(x)):
+        a0 = -1.20825154528
+        a1 = 6.44235741509
+        a2 = -6.25760511202
+        a3 = 2.33984027657
+        a4 = -0.30101182001
+        funcao = a0 + a1*x[i] + a2*pow(x[i],2) + a3*pow(x[i],3) + a4*pow(x[i],4)
+        y.append(funcao)
+    return y
+
+
+x = [1.502,2.642,2.709]
+s = f(x)
+print([f'{s[element]:+}' for element in range(len(s))])

@@ -1,0 +1,14 @@
+import math
+
+
+def f(x):
+    y = []
+    for i in range(len(x)):
+        funcao = math.cos(math.sin(math.log(pow(x[i],2))))
+        y.append(funcao)
+    return y
+
+
+x = [0.434, 0.6, 0.972, 1.156, 1.491, 1.667, 2.074, 2.229, 2.671, 2.865]
+s = f(x)
+print([f'\n{s[element]:+}' for element in range(len(s))])

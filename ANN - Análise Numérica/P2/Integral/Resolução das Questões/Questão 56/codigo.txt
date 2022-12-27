@@ -1,0 +1,21 @@
+import math
+
+def simps(f, a, b, n):
+    h = (b - a) / n
+    soma_odd, soma_even = 0, 0
+    for k in range(1, n, 2):
+        soma_odd += f(a + k * h)
+    for k in range(2, n, 2):
+        soma_even += f(a + k * h)
+    return (h/3) * (f(a) + 4 * soma_odd + 2 * soma_even + f(b))
+
+def f(x):
+    return math.exp(-x ** 2)
+
+a = -0.625
+b = 0.536
+n = [10, 12, 48, 54, 80, 110, 242, 430, 580, 820, 1020]
+
+for i in range(len(n)):
+    i2 = simps(f, a, b, n[i])
+    print(f'Integral com {n[i]} n = ', i2)

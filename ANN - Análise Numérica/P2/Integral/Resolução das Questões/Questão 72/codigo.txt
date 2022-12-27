@@ -1,0 +1,32 @@
+import math
+
+n1 = [(0, 0.5688888888888889), (-0.5384693101056831, 0.47862867049936647), (0.5384693101056831, 0.47862867049936647), (-0.906179845938664, 0.23692688505618908), (0.906179845938664, 0.23692688505618908)]   
+
+print('{x:<20}{c:<20}'.format(x='x_k', c='c_k'))
+for x_k, c_k in n1:
+    print('{x:<20}{c:<20}'.format(x=x_k, c=c_k))
+
+# se for -1 a 1 usamos a forma f(x) direto
+def f(x):
+    return math.exp(-x**2)
+
+def quadratura(f, pontos_e_pesos):
+    soma = 0
+    for x_k, c_k in pontos_e_pesos:
+        soma += c_k * f(x_k)
+    return soma
+
+#r = quadratura(f, n1)
+
+
+# se for distancia diferente de -1 e 1 
+def change(f, a, b, u):
+    return f((b+a)/2 + (b-a)*u/2) * (b-a)/2
+
+a,b = [-1.8138, 1.58714]
+def g(u):
+    return change(f, a, b, u)
+
+r = quadratura(g, n1)
+
+print(r)

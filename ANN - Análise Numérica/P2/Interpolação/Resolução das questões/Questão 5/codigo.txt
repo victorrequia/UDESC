@@ -1,0 +1,14 @@
+import math
+
+
+def f(x):
+    y = []
+    for i in range(len(x)):
+        funcao = math.sin(math.sqrt(math.pi+pow(x[i],2)))
+        y.append(funcao)
+    return y
+
+
+x = [(-1.127), 0.083, 2.269, 2.809, 5.123, 6.281]
+s = f(x)
+print([f'{s[element]:+}' for element in range(len(s))])

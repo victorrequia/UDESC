@@ -1,0 +1,23 @@
+import math
+
+def trapz(f, a, b, n):
+    #é um método ruim para aproximar integrais
+    h = (b - a) / n
+    soma = 0
+    for k in range(1, n):
+        soma += f(a + k * h)
+    soma *=  2
+    soma += (f(a) + f(b))
+    return (h/2) * soma
+
+def f(x):
+    return math.exp(-x**2)
+
+a = -0.93
+b = 0.937
+
+n = [1, 13, 27, 74, 78, 115, 177, 482, 749, 990, 1230] #número de pontos na partição
+
+for i in range(len(n)):
+    r = trapz(f, a, b, n[i])
+    print(f'Aproximação para a derivada n={n[i]} e ',r)

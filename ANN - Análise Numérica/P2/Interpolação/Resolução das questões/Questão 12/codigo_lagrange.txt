@@ -1,0 +1,46 @@
+import math
+
+def lagrange(x, y):
+    # a equação do polinomio de lagrange
+    n = len(x)
+    if n == len(y):
+        eq = ''
+        for k in range(n):
+            numer = '*'.join([f'(x{-xi:+})' for i, xi in enumerate(x) if i != k])
+            denom = '*'.join([f'({x[k]}{-xi:+})' for i, xi in enumerate(x) if i != k])
+            eq += f'{y[k]:+}*({numer})/({denom})'
+        return eq
+    else:
+        raise TypeError('O número de coordenadas de x é diferente do número de coordenadas de y')
+
+if __name__ == '__main__':
+    x = [-0.315, -0.249, 0.052, 0.23, 0.501, 0.683, 1.024, 1.091, 1.342] # coordenadas x dos pontos
+    y = [2.206089550441863, 2.4534032777597092, 3.0391737096205347, 2.980817330587258, 2.3549685534696136, 1.6529656278902314, 0.29689632717819214, 0.13822742469529165, 0.43640677624101964] # coordenadas y dos pontos
+    
+    eq = lagrange(x,y)
+
+    def subs(x):
+        return eval(eq)
+
+    print('p(x) =',eq)
+    #print(subs(1), subs(2), subs(3))
+
+    def f(x):
+        return math.cos(x+math.sqrt(math.log(pow(x,2))))
+
+    num = 5
+    x2 = [2.646, 4.453]
+    y2 = [f(i) for i in x2]
+    print(x2)
+    print(y2)
+
+    #vamos plotar os gráficos
+    from matplotlib import pyplot as plt
+    import numpy as np
+
+    t = np.linspace(1,3,100)
+
+    plt.plot(t, subs(t))
+    plt.scatter(x,y)
+
+    plt.savefig('lagrange3.png')

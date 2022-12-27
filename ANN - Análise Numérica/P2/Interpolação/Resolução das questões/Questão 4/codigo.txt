@@ -1,0 +1,16 @@
+import math
+
+
+def f(x):
+    y = []
+    for i in range(len(x)):
+        aux = math.pow(x[i], 2)      
+    
+        funcao = pow(math.sin(x[i]), 3) - 3*pow(math.sin(x[i]), 2) + math.sin(aux) + 4
+        y.append(funcao)
+    return y
+
+
+x = [(-3.41), 0.447, 3.585]
+s = f(x)
+print([f'{s[element]:+}' for element in range(len(s))])

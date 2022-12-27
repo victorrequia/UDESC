@@ -1,0 +1,2 @@
+Questão 13 - euler.py
+Questão 14 - euler_half.py

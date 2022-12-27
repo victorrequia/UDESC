@@ -1,0 +1,22 @@
+import math
+
+def lagrange(x, y):
+    # a equação do polinomio de lagrange
+    n = len(x)
+    if n == len(y):
+        c = ''
+        for k in range(n):
+            numer = '*'.join([f'(x{-xi:+})' for i, xi in enumerate(x) if i != k])
+            denom = '*'.join([f'({x[k]}{-xi:+})' for i, xi in enumerate(x) if i != k])
+            c += f'{y[k]:+}/({denom})'
+        return c
+    else:
+        raise TypeError('O número de coordenadas de x é diferente do número de coordenadas de y')
+
+if __name__ == '__main__':
+    x = [-1.226, 1.672, 2.932] # coordenadas x dos pontos
+    y = [1.2671109429911434, 1.0193832773905478, 1.977647309342895] # coordenadas y dos pontos
+    
+    eq = lagrange(x,y)
+
+    print('c =',eq)

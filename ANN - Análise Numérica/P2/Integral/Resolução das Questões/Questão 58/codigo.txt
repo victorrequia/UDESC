@@ -1,0 +1,12 @@
+import math
+
+x = [0.615, 0.9585, 1.302, 1.567, 1.832, 2.5385, 3.245, 3.2505, 3.256]
+y = [2.94, 2.884, 2.468, 2.186, 2.028, 2.286, 3.0, 3.0, 3.0]
+
+def somaparab(x, y)
+    soma = 0
+    for k in range(0, len(x) - 2, 2)
+        soma += ((x[k + 1] - x[k])3)  (y[k] + 4  y[k + 1] + y[k + 2])
+    return soma
+
+print(somaparab(x, y))

@@ -1,3 +1,5 @@
+import math
+
 def lagrange(x, y):
     # a equação do polinomio de lagrange
     n = len(x)
@@ -12,9 +14,9 @@ def lagrange(x, y):
         raise TypeError('O número de coordenadas de x é diferente do número de coordenadas de y')
 
 if __name__ == '__main__':
-    x = [1,2,3] # coordenadas x dos pontos
-    y = [2,5,1] # coordenadas y dos pontos
-
+    x = [2.882, 3.058, 3.578, 3.853, 4.33] # coordenadas x dos pontos
+    y = [0.7558686968433715, 0.8175765636377788, 0.9359508180079145, 0.978805162804684, 0.9563947223461173] # coordenadas y dos pontos
+    
     eq = lagrange(x,y)
 
     def subs(x):
@@ -24,10 +26,10 @@ if __name__ == '__main__':
     #print(subs(1), subs(2), subs(3))
 
     def f(x):
-        return 1 / (1 + 25 * x ** 2)
+        return math.cos(x+math.sqrt(math.log(pow(x,2))))
 
     num = 5
-    x2 = [-1 + (2/(num-1)) * i for i in range(num)]
+    x2 = [2.646, 4.453]
     y2 = [f(i) for i in x2]
     print(x2)
     print(y2)
@@ -41,4 +43,4 @@ if __name__ == '__main__':
     plt.plot(t, subs(t))
     plt.scatter(x,y)
 
-    #plt.savefig('lagrange3.png')
+    plt.savefig('lagrange3.png')

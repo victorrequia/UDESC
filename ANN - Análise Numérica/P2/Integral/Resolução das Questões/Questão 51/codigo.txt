@@ -1,0 +1,14 @@
+import math
+
+def soma_trapx(x,y):
+    soma = 0
+    for i in range(len(x)-1):
+        resultado_formula = ((x[i+1]-x[i])*(y[i] + y[i+1]))/2
+        soma += resultado_formula
+    return soma
+
+x = [1.379, 1.821, 2.099, 2.373, 4.151, 4.299]
+y = [2.376, 2.032, 2.01, 2.139, 1.004, 1.16]
+
+resultado_final = soma_trapx(x, y)
+print(resultado_final)
