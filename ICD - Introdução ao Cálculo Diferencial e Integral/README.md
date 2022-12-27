@@ -1,18 +1,20 @@
 ### Fase
-9° fase
+1° fase
 
 ### Ementa
-Fundamentos da ética; O profissional de computação; A abrangência da ética em computação; A importância do raciocínio
-na tomada de decisões éticas; Problemas e pontos a ponderar; Códigos de ética profissionais; Ética profissional; Ética e
-regulamentação da profissão; Códigos de ética profissionais na área de computação.
+Conjunto Numéricos; Conceito de Função; Função Afim; Função Quadrática; Função Modular; Função Exponencial;
+Logaritmo; Funções Trigonométrica; Funções Hiperbólicas
 
 ### Objetivo Geral
-Discutir com os estudantes as questões filosóficas em torno da ética levando-os a refletirem sobre as noções e princípios
-que fundamentam a vida moral e sua conduta profissional respeitando os princípios éticos em todas as esferas da vida em
-sociedade, em especial, aqueles relacionados á Computação e Informática.
+Reforçar e aprimorar conceitos matemáticos vistos no Ensino Básico para preparar o estudante
+para disciplinas posteriores do curso, dando ênfase ao cálculo, ao raciocínio lógico e ao rigor matemático. Além disso,
+incentivar a autonomia e a autocrítica no estudo e na superação de dificuldades
 
 ### Objetivo Específico
-- Compreender o que é a ética e moral e sua construção histórica
-- Reconhecer o papel da ética para a vida em sociedade
-- Entender a importância da ética e da computação para as empresas, organizações e profissionais
-- Analisar os problemas éticos relacionados às Computação e Informática
+O aluno deverá ser capaz de:
+- Ampliar e fortalecer os conhecimentos a respeito dos números, conjuntos e funções;
+- Ter habilidade de resolver equações e inequações envolvendo expressões algébricas;
+- Identificar as propriedades e os tipos de funções;
+- Representar graficamente as funções;
+- Relacionar os conceitos de funções com as aplicações práticas.
+
