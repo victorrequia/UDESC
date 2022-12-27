@@ -1,0 +1,80 @@
+Victor Eduardo Requia	12/05/2022   ODAW
+__________________________________________________________________________________________
+/* Criação da base de dados */
+CREATE DATABASE exercicio08;
+
+USE exercicio08;
+__________________________________________________________________________________________
+/* Criação das tabelas */
+CREATE TABLE usuario (
+    id_usuario int AUTO_INCREMENT,
+    usuario varchar(30) NOT NULL,
+    senha varchar(30) NOT NULL,
+    email varchar(40),
+    telefone varchar(11),
+    
+    PRIMARY KEY (id_usuario)
+);
+
+CREATE TABLE produto (
+    id_produto int,
+    nome varchar(40),
+    quantidade int NOT NULL,
+    preco float NOT NULL,
+    
+    PRIMARY KEY (id_produto)
+);
+
+CREATE TABLE fornecedor (
+    id_fornecedor int AUTO_INCREMENT,
+    empresa varchar(40) NOT NULL,
+    email varchar(40) NOT NULL,
+    telefone varchar(11),
+    
+    PRIMARY KEY (id_fornecedor)
+);
+__________________________________________________________________________________________
+/* Inserir dados */
+INSERT INTO usuario values (default, "usuario1", "senha1", "email1", "telefone1");
+INSERT INTO usuario values (default, "usuario2", "senha2", "email2", "telefone2");
+INSERT INTO usuario values (default, "usuario3", "senha3", "email3", "telefone3");
+
+INSERT INTO produto VALUES (32432, "caneca personalizada", 23, 23.44);
+INSERT INTO produto VALUES (5325, "caderno", 53, 28.00);
+INSERT INTO produto VALUES (3242, "celular", 23, 750.50);
+
+INSERT INTO fornecedor values (default, "Spiral", "spiral@contato.com", "49954862511");
+INSERT INTO fornecedor values (default, "Vult", "vult@contato.com", "49955546511");
+INSERT INTO fornecedor values (default, "Sarandi", "sarandi@contato.com", "49954824121");
+__________________________________________________________________________________________
+/* Alterar dados */
+UPDATE usuario
+SET usuario = "usuarioatualizado"
+WHERE usuario = "usuario1";
+
+UPDATE produto
+SET nome = "borracha"
+WHERE nome = "caderno";
+
+UPDATE fornecedor
+SET empresa = "Happy Days"
+WHERE empresa = "Spiral";
+__________________________________________________________________________________________
+/* Visualizar dados */
+SELECT * FROM usuario;
+SELECT * FROM produto;
+SELECT * FROM fornecedor;
+__________________________________________________________________________________________
+/* Apagar dados */
+DELETE FROM produto;
+DELETE FROM usuario WHERE usuario="usuario1";
+DELETE FROM fornecedor WHERE empresa="Vult";
+__________________________________________________________________________________________
+/* Apagar tabelas */
+DROP TABLE usuario;
+DROP TABLE produto;
+DROP TABLE fornecedor;
+__________________________________________________________________________________________
+/* Apagar base de dados */
+DROP DATABASE exercicio08;
+__________________________________________________________________________________________

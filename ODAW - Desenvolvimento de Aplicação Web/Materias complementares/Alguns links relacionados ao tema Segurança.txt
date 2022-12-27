@@ -1,0 +1,9 @@
+https://cert.br/stats/incidentes/
+
+https://owasp.org/www-project-top-ten/
+
+https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/First_steps/Seguranca_site
+
+https://medium.com/@alexandre.malavasi/25-dicas-de-seguran%C3%A7a-em-sistemas-web-para-desenvolvedores-de1248e6a26a
+
+https://blog.tecnospeed.com.br/seguranca-em-aplicacoes-web/

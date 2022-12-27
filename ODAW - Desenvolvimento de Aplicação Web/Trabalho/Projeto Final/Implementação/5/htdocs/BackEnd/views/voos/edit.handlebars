@@ -1,0 +1,25 @@
+<a href="/voos/home">Voltar</a>
+<h2>Editar voo: {{voo.origem}} X {{voo.destino}}</h2>
+<form action="/voos/update" method="POST">
+    <input type="hidden" name="id" value="{{voo._id}}">
+    <div class="mt-3">
+        <label for="dia" class="form-label">Dia *</label>
+        <input type="date" name="dia" id="dia" value="{{voo.dia}}" required>
+        <label for="disponiveis" class="form-label">Disponíveis *</label>
+        <input type="number" name="disponiveis" id="disponiveis" placeholder="Assentos disponíveis"
+            value="{{voo.disponiveis}}" required>
+    </div>
+    <div class="mt-3">
+        <label for="origem" class="form-label">Origem *</label>
+        <input type="text" name="origem" id="origem" value="{{voo.origem}}" required>
+        <label for="destino" class="form-label">Destino *</label>
+        <input type="text" name="destino" id="destino" value="{{voo.destino}}" required>
+    </div>
+    <div class="mt-3">
+        <label for="codigo" class="form-label">Código *</label>
+        <input type="number" name="codigo" id="codigo" placeholder="Código do voo" value="{{voo.codigo}}" required>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary mt-3">Cadastrar</button>
+    </div>
+</form>

@@ -1,0 +1,66 @@
+<main>
+    <section class="mb-4">
+
+        <!--Section heading-->
+        <h2 class="h1-responsive font-weight-bold text-center my-4">Deixe sua mensagem</h2>
+        <!--Section description-->
+        <p class="text-center w-responsive mx-auto mb-5">Tem alguma dúvida ou sujestão ? Não deixe de deixar sua opinião. É muito importante para nós!</p>
+
+        <div class="row">
+            <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <label for="name" class="">Seu name</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <label for="email" class="">Seu email</label>
+                                <input type="text" id="email" name="email" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mt-3">
+                            <div class="md-form mb-0">
+                                <label for="subject" class="">Assunto</label>
+                                <input type="text" id="subject" name="subject" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mt-3">
+                            <div class="md-form">
+                                <label for="message">Mensagem</label>
+                                <textarea type="text" id="message" name="message" rows="2"
+                                    class="form-control md-textarea"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="text-center text-md-left mt-3">
+                    <button type="submit" class="btn border border-dark">Enviar</button>
+                </div>
+                <div class="status"></div>
+            </div>
+
+            <div class="col-md-3 text-center mt-3">
+                <ul class="list-unstyled mb-0">
+                    <li><i class="bi bi-instagram"></i></i>
+                        <p>Romeu Julieta</p>
+                    </li>
+                    <li><i class="bi bi-whatsapp"></i>
+                        <p>+ 47 85846587</p>
+                    </li>
+
+                    <li><i class="bi bi-envelope-open-heart"></i>
+                        <p>contact@romeujulieta.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>

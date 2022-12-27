@@ -1,0 +1,36 @@
+<h1>Passagens</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Passageiro</th>
+            <th scope="col">Voo</th>
+            <th scope="col">Poltrona</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each reservas}}
+        <tr>
+            <th scope="row">{{@index}}</th>
+            <td class="name-column">
+                {{this.idpassageiro}}
+            </td>
+            <td class="name-column">
+                {{this.idvoo}}
+            </td>
+            <td class="name-column">
+                {{this.poltrona}}
+            </td>
+            <td class="action-column">
+                <a href="passagens/edit/{{this._id}}" class="btn btn-primary">Editar</a>
+                <form action="passagens/delete" method="POST">
+                    <input type="hidden" name="id" value="{{this._id}}">
+                    <input type="submit" class="btn btn-danger" value="Remover">
+                </form>
+            </td>
+        </tr>
+        {{else}}
+        <p>Não há passagens no sistema</p>
+        {{/each}}
+    </tbody>
+</table>

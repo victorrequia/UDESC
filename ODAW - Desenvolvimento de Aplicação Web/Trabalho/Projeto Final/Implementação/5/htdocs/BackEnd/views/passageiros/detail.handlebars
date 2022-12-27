@@ -1,0 +1,14 @@
+<a href="/">Voltar</a>
+
+<h1>{{passageiro.nome}}</h1>
+<p>ID: {{passageiro._id}}</p>
+<p>O passageiro possui R$ {{passageiro.coins}} de saldo</p>
+<p>Email: {{passageiro.email}}</p>
+<p>telefone: {{passageiro.telefone}}</p>
+{{#if passagem}}
+<h2>Passagem:</h2>
+<p>ID voo: {{passagem.idvoo}}</p>
+<p>Rota: {{voo.origem}} X {{voo.destino}}</p>
+<p>Data de voo: {{voo.dia}}</p>
+<p>Poltrona: {{passagem.poltrona}}</p>
+{{/if}}

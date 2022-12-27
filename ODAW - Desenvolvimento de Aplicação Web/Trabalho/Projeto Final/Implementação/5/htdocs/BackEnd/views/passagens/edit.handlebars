@@ -1,0 +1,20 @@
+<a href="/passagens/home">Voltar</a>
+<h2>Editar passagem:</h2>
+<form action="/passagens/update" method="POST">
+    <input type="hidden" name="id" value="{{passagem._id}}">
+    <div class="mb-3">
+        <label for="idpassageiro" class="form-label">Passageiro *</label>
+        <input type="text" class="form-control" id="idpassageiro" name="idpassageiro" placeholder="Insira o ID do passageiro" value="{{passagem.idpassageiro}}" required>
+    </div>
+    <div class="mb-3">
+        <label for="idvoo" class="form-label">Voo *</label>
+        <input type="text" class="form-control" id="idvoo" name="idvoo" placeholder="Insira o ID do voo" value="{{passagem.idvoo}}" required>
+    </div>
+    <div class="mb-3">
+        <label for="poltrona" class="form-label">Poltrona *</label>
+        <input type="number" class="form-control" id="poltrona" name="poltrona" placeholder="Insira o número da poltrona do passageiro" value="{{passagem.poltrona}}" required>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary mt-3">Vender</button>
+    </div>
+</form>

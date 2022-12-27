@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;600&family=Roboto:wght@300;400;700&display=swap');
+
+/* ESTILOS GERAIS */
+body {
+    background: linear-gradient(89.95deg, rgba(218, 201, 201, 0.541) 30%, rgba(204, 190, 190, 0.678)70%);
+}
+
+.primary-color {
+    color: rgb(224, 210, 210);
+}
+
+.background-color {
+    background: linear-gradient(89.95deg, rgba(223, 199, 199, 0.801) 30%, rgb(223, 204, 204)70%);
+}
+
+a,
+i {
+    transition: 1s;
+    text-decoration: none;
+    color: #000000;
+}
+
+p,
+h2 {
+    color: rgba(29, 26, 26, 0.747);
+}
+
+@media(max-width: 425px){
+    #main-container {
+        padding: 30px;
+    }
+
+    #main-container td {
+        height: 70px;
+    }
+
+    #main-container .btn {
+        height: 40px;
+    }
+}
+
+#main-container .action-column {
+    display: flex;
+}
+
+.name-column a {
+    color: #212529;
+    text-decoration: none;
+}
+
+.name-column a:hover {
+    text-decoration: underline;
+}
+
+/*NAVBAR*/
+#navbar {
+    border-bottom: 0.4px solid #976e72;
+}
+
+#logo {
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Updock', cursive;
+}
+
+.nav-item {
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.596);
+}
+
+/* MAIN */
+.cabecalho-imagem {
+    display: flex;
+    align-items: center;
+    gap: 7%;
+}
+
+#conteudo-infos-confeitaria,
+#conteudo-infos-servicos {
+    border-bottom: 0.4px solid #976e72;
+}
+
+#conteudo-infos-servicos .img-fluid {
+    width: 100%;
+    height: 280px;
+}
+
+#conteudo-infos-produtos img {
+    width: 70%;
+    height: 200px;
+}
+
+/*RODAPE*/
+#rodape {
+    border-top: 0.4px solid #976e72;
+}

@@ -1,0 +1,43 @@
+<h1>Voos</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Codigo</th>
+            <th scope="col">Dia</th>
+            <th scope="col">Origem</th>
+            <th scope="col">Destino</th>
+            <th scope="col">Assentos</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each reservas}}
+        <tr>
+            <th scope="row">{{@index}}</th>
+            <td class="name-column"><a href="{{this._id}}">{{this.codigo}}</a>
+            </td>
+            <td class="name-column">
+                {{this.dia}}
+            </td>
+            <td class="name-column">
+                {{this.origem}}
+            </td>
+            <td class="name-column">
+                {{this.destino}}
+            </td>
+            <td class="name-column">
+                {{this.disponiveis}}
+            </td>
+            <td class="action-column">
+                <a href="voos/edit/{{this._id}}" class="btn btn-primary">Editar</a>
+                <form action="voos/delete" method="POST">
+                    <input type="hidden" name="id" value="{{this._id}}">
+                    <input type="submit" class="btn btn-danger" value="Remover">
+                </form>
+            </td>
+        </tr>
+        {{else}}
+        <p>Não há voos no sistema</p>
+        {{/each}}
+    </tbody>
+</table>

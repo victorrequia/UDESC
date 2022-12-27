@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;600&family=Roboto:wght@300;400;700&display=swap');
+
+/* ESTILOS GERAIS */
+body {
+    background: linear-gradient(89.95deg, rgba(223, 199, 199, 0.801) 30%, rgb(223, 204, 204)70%);
+}
+
+.primary-color {
+    color: rgb(224, 210, 210);
+}
+
+.background-color {
+    background: linear-gradient(89.95deg, rgba(223, 199, 199, 0.801) 30%, rgb(223, 204, 204)70%);
+}
+
+a,
+i {
+    transition: 0.5s;
+    text-decoration: none;
+    color: #000000;
+}
+
+.center-image {
+    background-size: cover;
+    background-position: center;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #25282e;
+    color: #FFF;
+    padding: 7px 18px;
+    border-radius: 0;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #FFF;
+}
+
+p,
+h2 {
+    color: rgba(29, 26, 26, 0.747);
+}
+
+/*NAVBAR*/
+#logo,
+#logo h1 {
+    display: flex;
+    align-items: center;
+    font-family: 'Updock', cursive;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Updock', cursive;
+}
+
+.nav-item {
+    font-weight: bold;
+}
+
+/* MAIN */
+.conteudo {
+    padding-left: 3%;
+    padding-right: 3%;
+    border-top: 0.4px solid #976e72;
+    margin-bottom: 3%;
+}
+
+.conteudo-historia-titulo {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.conteudo-historia-confeitaria {
+    display: flex;
+    padding-top: 4%;
+    margin-bottom: 5%;
+    align-items: center;
+}
+
+.conteudo-historia-romeujulieta {
+    display: flex;
+    padding-top: 4%;
+    margin-bottom: 5%;
+    border-top: 0.4px solid #976e72;
+    align-items: center;
+}
+
+.conteudo-historia-especiaria {
+    display: flex;
+    padding-top: 4%;
+    margin-bottom: 5%;
+    border-top: 0.4px solid #976e72;
+    align-items: center;
+}
+
+.cabecalho-imagem {
+    display: flex;
+    align-items: center;
+    gap: 7%;
+}
+
+/* BANNERS */
+#banners-container {
+    padding: 0;
+}
+
+.carousel-caption {
+    bottom: 5em;
+    padding: 1em;
+    left: 12%;
+    right: 12%;
+}
+
+.carousel-caption h5 {
+    font-size: 1.8em;
+}
+
+@media(min-width: 768px) {
+
+    #slider .carousel-item,
+    #slider img {
+        height: 600px;
+    }
+
+    .carousel-caption {
+        left: 23%;
+        right: 23%;
+    }
+
+    .carousel-caption h5 {
+        font-size: 4em;
+    }
+}
+
+
+/*RODAPE*/
+.rodape {
+    text-align: center;
+    border-top: 0.4px solid #976e72;
+    padding-top: 24px;
+}
+
+
+#teste {
+    text-align: center;
+    border-bottom: 0.4px solid #976e72;
+}

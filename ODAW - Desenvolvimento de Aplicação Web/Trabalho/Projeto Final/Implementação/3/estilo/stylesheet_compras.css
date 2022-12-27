@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 400;
+    color: rgba(29, 26, 26, 0.7);
+    border-top: 0.4px solid #976e72;
+    font-size: 100%;
+    background: linear-gradient(89.95deg, #ada99e 30%, #d6d0c2 70%);
+    ;
+    padding-top: 1%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+/* HEADER */
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo-menu {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+
+#cabecalho-menu {
+    display: flex;
+    border-top: 0.4px solid #976e72;
+    gap: 50px;
+}
+
+.cabecalho-menu-item {
+    color: #181717;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Updock', cursive;
+}
+
+.cabecalho-menu-item:hover {
+    font-weight: bold;
+}
+
+.cabecalho-opcoes {
+    display: flex;
+    align-items: center;
+    gap: 50%;
+    margin-right: 5%;
+}
+
+/* CONTEUDO */
+#main-vitrine {
+    border-top: 0.4px solid #976e72;
+}
+
+.compras {
+    border-top: 0.4px solid #976e72;
+    padding: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#produtos{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+}
+
+.produto-single{
+    width: 30%;
+    margin-right: 2%;
+    padding: 0 20px;
+    border: 1px solid rgb(161, 144, 144);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.produto-single p {
+    text-align: center;
+    font-size: 16px;
+    padding: 7px;
+}
+
+.cabecalho-imagem {
+    display: flex;
+    align-items: center;
+    gap: 7%;
+}
+
+.imagem-produto {
+    margin-top: 5px;
+    border: 2px solid #976e72;
+    max-width: 100%;
+}
+
+.produto-single a {
+    text-decoration: none;
+    color: white;
+    background-color: #37915c;
+    text-align: center;
+    display: block;
+    padding: 4px 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#carrinho{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: block;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* RODAPE */
+.rodape {
+    text-align: center;
+    border-top: 0.4px solid #976e72;
+    padding-top: 24px;
+}

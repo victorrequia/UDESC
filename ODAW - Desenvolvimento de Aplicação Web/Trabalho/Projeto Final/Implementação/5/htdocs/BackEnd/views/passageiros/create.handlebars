@@ -1,0 +1,23 @@
+<a href="/">Voltar</a>
+<h2>Cadastrar um cliente:</h2>
+<form action="/passageiros" method="POST">
+    <div class="mb-3">
+        <label for="nome" class="form-label">Nome *</label>
+        <input type="text" class="form-control" required id="nome" name="nome"
+            placeholder="Insira o nome do cliente">
+    </div>
+    <div class="mb-3">
+        <label for="coins" class="form-label">Saldo *</label>
+        <input class="form-control" step="0.01" type="number" name="coins" id="coins"
+            placeholder="Quantidade de moedas aero">
+    </div>
+    <div>
+        <label for="email" class="form-label">E-mail</label>
+        <input type="email" name="email" required id="email" placeholder="Insira o e-mail">
+        <label for="telefone" class="form-label">Telefone</label>
+        <input type="tel" name="telefone" required id="telefone" placeholder="Insira o telefone">
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary mt-3">Cadastrar</button>
+    </div>
+</form>

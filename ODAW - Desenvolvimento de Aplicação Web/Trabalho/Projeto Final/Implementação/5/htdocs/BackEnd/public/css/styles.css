@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;600&family=Roboto:wght@300;400;700&display=swap');
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: rgba(110, 107, 107, 0.158);
+}
+
+#main-container {
+    padding: 30px 0;
+    max-width: 800px;
+    min-height: 400px;
+}
+
+#main-container .action-column {
+    display: flex;
+}
+
+.name-column a {
+    color: #212529;
+    text-decoration: none;
+}
+
+.name-column a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    margin-right: 20px;
+}
+
+i {
+    transition: 1s;
+    text-decoration: none;
+    color: #000000;
+}
+
+footer {
+    height: 200px;
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 425px) {
+    #main-container {
+        padding: 30px;
+    }
+
+    #main-container td {
+        height: 70px;
+    }
+
+    #main-container .btn {
+        height: 40px;
+    }
+}
+
+/*NAVBAR*/
+.navbar-brand {
+    font-family: 'Updock', cursive;
+}

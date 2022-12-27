@@ -1,0 +1,29 @@
+<h1>Cliente <a href="passageiros"><i class="bi bi-person-plus mx-4"></i></a></h1>
+<table class="table mt-4">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each notes}}
+        <tr>
+            <th scope="row">{{@index}}</th>
+            <td class="name-column">
+                <a href="passageiros/{{this._id}}">{{this.nome}}</a>
+            </td>
+            <td class="action-column">
+                <a href="passageiros/edit/{{this._id}}" class="btn btn-primary">Editar</a>
+                <form action="passageiros/delete" method="POST">
+                    <input type="hidden" name="id" value="{{this._id}}">
+                    <input type="submit" class="btn btn-danger" value="Remover">
+                </form>
+            </td>
+        </tr>
+        {{else}}
+            <p>Não há clientes no sistema</p>
+        {{/each}}
+    </tbody>
+</table>

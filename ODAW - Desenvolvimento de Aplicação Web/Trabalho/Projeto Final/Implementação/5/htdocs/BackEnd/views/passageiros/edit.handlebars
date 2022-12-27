@@ -1,0 +1,22 @@
+<a href="/">Voltar</a>
+<h2>Editar passageiro: {{passageiro.nome}}</h2>
+<form action="/passageiros/update" method="POST">
+    <input type="hidden" name="id" value="{{passageiro._id}}">
+    <div class="mb-3">
+        <label for="nome" class="form-label">Nome *</label>
+        <input type="text" class="form-control" required id="nome" name="nome" placeholder="Insira o nome do passageiro" value="{{passageiro.nome}}">
+    </div>
+    <div class="mb-3">
+        <label for="coins" class="form-label">aero coins *</label>
+        <input class="form-control" step="0.01" type="number" name="coins" id="coins" placeholder="Quantidade de moedas aero" value="{{passageiro.coins}}">
+    </div>
+    <div>
+        <label for="email" class="form-label">E-mail</label>
+        <input type="email" name="email" required id="email" placeholder="Insira o e-mail" value="{{passageiro.email}}">
+        <label for="telefone" class="form-label">Telefone</label>
+        <input type="tel" name="telefone" required id="telefone" placeholder="Insira o telefone" value="{{passageiro.telefone}}">
+    </div>
+    <div class="mt-3">
+        <button type="submit" class="btn btn-primary">Editar passageiro</button>
+    </div>
+</form>

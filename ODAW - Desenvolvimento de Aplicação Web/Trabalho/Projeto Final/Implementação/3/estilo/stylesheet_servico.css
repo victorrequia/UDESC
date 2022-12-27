@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgba(29, 26, 26, 0.7);
+    border-top: 0.4px solid #976e72;
+    font-size: 100%;
+    background: linear-gradient(89.95deg, #ada99e 30%, #d6d0c2 70%);
+    ;
+    padding-top: 1%;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-size: 17px;
+}
+
+/* HEADER */
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo-menu {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+
+#cabecalho-menu {
+    display: flex;
+    border-top: 0.4px solid #976e72;
+    gap: 50px;
+}
+
+.cabecalho-menu-item {
+    color: #181717;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Updock', cursive;
+}
+
+.cabecalho-menu-item:hover {
+    font-weight: bold;
+}
+
+.cabecalho-opcoes {
+    display: flex;
+    align-items: center;
+    gap: 50%;
+    margin-right: 5%;
+}
+
+
+/* CONTEUDO */
+p {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.conteudo-servicos {
+    margin-top: 20px;
+    text-align: center;
+    border-top: 0.4px solid #976e72;
+    padding-top: 24px;
+}
+
+.servicos {
+    padding-top: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tabela {
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.servicos-titulo {
+    margin-bottom: 16px;
+}
+
+.cabecalho-imagem {
+    display: flex;
+    align-items: center;
+    gap: 7%;
+}
+
+/* RODAPE */
+.rodape {
+    text-align: center;
+    border-top: 0.4px solid #976e72;
+    padding-top: 24px;
+}
