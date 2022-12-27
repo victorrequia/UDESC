@@ -1,18 +1,14 @@
 ### Fase
-6° fase
+1° fase
 
 ### Ementa
-Introdução à Pesquisa Operacional. Modelagem de problemas. Programação linear; solução gráfica e por SIMPLEX.
-Programação inteira. Métodos de Transporte e designação. Outros métodos de PO. Uso do computador para solução de
-problemas de pesquisa operacional.
+Cálculo lambda, avaliação de expressões/redução (lazy, eager), recursão, polimorfismo, imutabilidade, funções de ordem
+superior, aplicação parcial de funções, tipos de dados algébricos
 
 ### Objetivo Geral
-CAPACITAR o aluno na formulação e resolução de problemas clássicos de pesquisa operacional
+- Conceituar o Paradigma Funcional, Lambda Cálculo, vantagens e limitações.
+- Trabalhar estruturas inerentes à linguagem funcional, como listas e tuplas.
 
 ### Objetivo Específico
-- CONCEITUAR pesquisa operacional
-- CAPACITAR o aluno na solução de problemas de transporte e atribuição (manual e com computador)
-- CAPACITAR o aluno na formulação e e solução de problemas de programação inteira (manual e com computador)
-- CAPACITAR o aluno na solução de problemas de transporte e atribuição (manual e com computador)
-- CONCEITUAR outras técnicas de Pesquisa operacional
-- CAPACITAR o aluno na solução de problemas de filas, simulação e programação de projetos)
+- Aplicar os conceitos de linguagem de programação funcional utilizando Haskell: listas, tuplas, casamento de padrões,
+recursão, polimorfismo, tipos de dados algébricos e Monada.
