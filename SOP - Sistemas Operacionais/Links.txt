@@ -1,0 +1,101 @@
+MINIX 3: A Highly Reliable, Self-Repairing Operating System
+http://www.minix3.org/docs/jorrit-herder/osr-jul06.pdf
+
+Exemplos de descritores de processos
+httpsv://github.com/mit-pdos/xv6-public/blob/master/proc.h (xv6)
+http://fxr.watson.org/fxr/source/sys/proc.h#L562 (FreeBSD)
+http://fxr.watson.org/fxr/source/sys/proc.h?v=OPENBSD#L152 (OpenBSD)
+https://github.com/opensource-apple/xnu/blob/master/bsd/sys/proc_internal.h#L194 (XNU == Mac OS X)
+
+IBM AIX 7.3 General Programming Concepts
+https://www.ibm.com/docs/en/aix/7.3?topic=programming-writing-reentrant-threadsafe-code
+
+POSIX Threads Programming
+https://hpc-tutorials.llnl.gov/posix/
+
+Playlist das videoaulasURL
+https://www.youtube.com/playlist?list=PLNsyM5MBjYzd_uTCtvvt1EAnmaKrBJwQi
+
+Livros Online:
+Sistemas Operacionais: Conceitos e Mecanismos (Carlos Maziero)
+http://wiki.inf.ufpr.br/maziero/doku.php?id=socm:start
+
+Operating Systems: Three Easy Pieces (Remzi H. Arpaci-Dusseau e Andrea C. Arpaci-Dusseau)
+http://pages.cs.wisc.edu/~remzi/OSTEP/
+
+An Operating Systems Vade Mecum (Raphael Finkel)
+https://www.researchgate.net/publication/220694982_An_operating_systems_vade_mecum_2_ed
+
+Operating Systems and Middleware: Supporting Controlled Interaction (Max Hailperin)
+https://gustavus.edu/mcs/max/os-book/
+
+Think OS: A Brief Introduction to Operating Systems (Allen B. Downey)
+http://greenteapress.com/thinkos/index.html
+
+Programação de sistemas (incluindo Pthreads, processos)
+POSIX Threads Programming
+https://hpc-tutorials.llnl.gov/posix/
+
+Multi-Threaded Programming With POSIX Threads
+https://web.archive.org/web/20140102060513/http://users.actcom.co.il/~choo/lupg/tutorials/multi-thread/multi-thread.html
+
+Pthread Primer
+http://pages.cs.wisc.edu/~travitch/pthreads_primer.html
+
+Advanced Linux Programming (ALP)
+http://mentorembedded.github.io/advancedlinuxprogramming/
+
+An Introduction to Linux IPC (Michael Kerrisk)
+http://man7.org/conf/lca2013/IPC_Overview-LCA-2013-printable.pdf
+
+Programação Assembly MIPS:
+MIPS Quick Tutorial
+https://minnie.tuhs.org/CompArch/Resources/mips_quick_tutorial.html
+
+Fundamentals of MIPS Programming in Assembly Language (Karl Von Dyson)
+https://www.udemy.com/blog/mips-assembly-language-programming/
+
+Programmed Introduction to MIPS Assembly Language (Bradley Kjell)
+https://chortle.ccsu.edu/AssemblyTutorial/index.html
+
+MIPS Assembly Language Programming (Robert L. Britton)
+https://minnie.tuhs.org/CompArch/Resources/mips_text.pdf
+
+Programação Assembly Intel x86:
+Programming from the Ground Up (Jonathan Bartlett)
+http://savannah.nongnu.org/projects/pgubook/
+
+A Guide to Programming Intel IA32 PC Architecture (Kai Li)
+http://flint.cs.yale.edu/cs422/doc/pc-arch.html
+
+PC Assembly Language (Paul Carter)
+http://pacman128.github.io/pcasm/
+
+Introduction to Linux Intel Assembly Language (Norm Matloff)
+http://heather.cs.ucdavis.edu/~matloff/50/LinuxAssembly.html
+
+x86-64 Assembly Language Programming with Ubuntu (Ed Jorgensen)
+http://www.egr.unlv.edu/~ed/x86.html
+
+Programação em C:
+Programming in C -- UNIX System Calls and Subroutines using C (David Marshall)
+http://www.cs.cf.ac.uk/Dave/C/CE.html
+
+Ferramentas de programação em ambiente Unix:
+The Student's Guide to the Secret Art of Debugging (Norm Matloff)
+http://heather.cs.ucdavis.edu/~matloff/debug.html
+
+Programming Tools (FreeBSD Developers' Handbook)
+http://www.freebsd.org/doc/en_US.ISO8859-1/books/developers-handbook/tools.html
+
+Debugging (Patrick Horgan)
+http://dbp-consulting.com/tutorials/debugging/index.html
+
+Writing Device Drivers in Linux: A Brief Tutorial (Xavier Calbet)
+http://freesoftwaremagazine.com/articles/drivers_linux/
+
+Understanding the Linux Virtual Memory Manager (Mel Gorman)
+https://www.kernel.org/doc/gorman/
+
+Mapa interativo do kernel Linux (Constantine Shulyupin)
+https://makelinux.github.io/kernel/map/
