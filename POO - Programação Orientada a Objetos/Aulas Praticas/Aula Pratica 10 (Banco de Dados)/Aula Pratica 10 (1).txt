@@ -1,0 +1,90 @@
+-------------------------------------------------------------------------------------------------------------------
+Exercício 1
+create table cidade(
+	id int,
+	nome varchar(50),
+	estado varchar(50),
+	primary key (id)
+);
+
+create sequence id_cidade;
+
+create table cliente(
+	id int,
+	cpf int,
+	nome varchar(50),
+	endereco varchar(100),
+	telefone int,
+	primary key (id)
+);
+
+create sequence id_cliente;
+
+create table reserva(
+	id int,
+	date date,
+	hora time,
+	preco float,
+	classeVoo varchar(10),
+	idaEvolta boolean,
+	id_ida int,
+	id_origem int,
+	id_destino int,
+	id_cliente int,
+	primary key (id),
+	foreign key (id_ida) references reserva,
+	foreign key (id_origem) references cidade,
+	foreign key (id_destino) references cidade,
+	foreign key (id_cliente) references cliente
+);
+	
+create sequence id_reserva;
+
+insert into cidade(select nextval('id_cidade'),'Maravilha','SC')
+insert into cidade(select nextval('id_cidade'),'Chapeco','SC')
+insert into cidade(select nextval('id_cidade'),'Rio de Janeiro','RJ')
+	
+select * from cidade
+
+insert into cliente (select nextval('id_cliente'),'7485','Victor','Bom Retiro','3284')
+
+select * from cliente
+
+insert into reserva (select nextval('id_reserva'),'2021-03-10','17:30:00',100.00,'Comercial',false,null,1,2,1)
+insert into reserva (select nextval('id_reserva'),'2021-03-10','17:30:00',100.00,'Comercial',true,1,2,1,1)
+
+select * from reserva
+-------------------------------------------------------------------------------------------------------------------
+Exercício 2
+create table endereco(
+	id int,
+	rua varchar(100),
+	numero int,
+	cep int,
+	cidade varchar(30),
+	estado varchar(2),
+	pais varchar(10),
+	primary key(id)
+);
+
+create sequence id_endereco;
+
+create table pessoa(
+	cpf bigint,
+	nome varchar(50),
+	id_endereco int,
+	primary key (cpf),
+	foreign key (id_endereco) references endereco
+);
+
+create table animais(
+	id int,
+	nome varchar(15),
+	descricao varchar(50),
+	id_tipoAnimal int,
+	id_pessoa int,
+	foreign key (cpf) references pessoa
+);
+
+create sequence id_animais;
+-------------------------------------------------------------------------------------------------------------------

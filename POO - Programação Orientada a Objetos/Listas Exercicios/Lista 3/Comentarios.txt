@@ -1,0 +1,5 @@
+- Questão 1 (1.0): tudo ok
+
+- Questão 2:
+
+a) (1.0): Ok. Apenas a ideia de gerar um raio aleatório deveria ser em outro lugar diferente...

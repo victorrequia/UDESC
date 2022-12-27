@@ -1,0 +1,38 @@
+Consultas
+--------------------------------------
+create table paciente(
+	id int,
+	nome varchar(25),
+	cidade varchar(25),
+	descricao varchar(100),
+	cpf bigint,
+	idade int,
+	primary key (id)
+);
+
+create sequence id_paciente;
+
+create table medico(
+	id int,
+	nome varchar(25),
+	cidade varchar(25),
+	especializacao varchar (100),
+	idade int,
+	cpf bigint,
+	primary key(id)
+);
+
+create sequence id_medico;
+
+create table consulta(
+	id int,
+	data varchar(10),
+	hora varchar(5),
+	foreign key(id) references medico,
+	foreign key(id) references paciente,
+	diagnostico varchar(100),
+	valorConsulta float,
+	primary key(id)
+);
+
+create sequence id_consulta;

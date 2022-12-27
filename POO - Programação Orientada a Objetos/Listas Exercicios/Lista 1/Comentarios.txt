@@ -1,0 +1,8 @@
+(0.4) Questão 2:
+
+- Faltou a ordenação do vetor resultante
+
+- Não calcula o vetor resultante de forma correta, pois a condição de ambos
+serem impares só acontece caso ambos forem pares. Em seu algoritmo ele verifica
+apenas se ambos são pares, se forem, soma os dois resultados. Se ambos não forem pares
+(isto é, um deles for impar), seu algoritmo multiplica os dois.

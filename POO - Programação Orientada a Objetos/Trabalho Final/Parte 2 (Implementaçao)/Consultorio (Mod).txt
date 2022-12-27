@@ -1,0 +1,35 @@
+create sequence id_medico;
+create sequence id_consulta;
+create sequence id_paciente;
+
+create table medico(
+	id int,
+	nome varchar(25),
+	cidade varchar(25),
+	especializacao varchar (100),
+	idade int,
+	cpf bigint,
+	primary key(id)
+);
+
+create table paciente(
+	id int,
+	nome varchar(25),
+	cidade varchar(25),
+	descricao varchar(100),
+	cpf varchar(11),
+	idade int,
+	primary key (id)
+);
+
+create table consulta(
+    id int,
+    data varchar(10),
+    diagnostico varchar(100),
+    valorConsulta float,
+    id_medico int,
+    id_paciente int,
+    primary key (id),
+    foreign key (id_medico) references medico,
+    foreign key (id_paciente) references paciente
+);

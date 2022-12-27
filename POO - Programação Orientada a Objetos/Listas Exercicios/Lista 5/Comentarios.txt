@@ -1,0 +1,22 @@
+	
+Questão 1
+
+a) (1.5) Tudo ok.
+
+b) (1.0) Tudo ok.
+
+Questão 2 (2.0) Tudo ok!
+
+a) (1.0) Tudo ok!
+
+Questão 3
+
+a) (1.0) Tudo ok.
+
+b) (1.0) Sensor não possui relacionamento com Animal, porém implementou corretamente o relacionamento! Tudo ok.
+
+c) (1.5) Tudo ok.
+
+d) (1.0) Tudo ok.
+
+Extra (0.5) Faltou calcular os fatores e instanciar os objetos.

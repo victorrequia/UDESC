@@ -1,0 +1,22 @@
+	
+- Questão 1:
+
+a) (1.0): tudo ok!
+
+b) (1.5): tudo ok!
+
+c) (1.5): tudo ok!
+
+d) (0.5): tudo ok!
+
+- Questão 2:
+
+a) (2.3): seu método get lança exceção sempre que for utilizado.
+
+b) (1.0): tudo ok! Mas cuidado que você está fazendo um cast de objeto para musica e isso pode acabar lançando uma exceção. Também evitar nome de classes minúsculas.
+
+c) (1.0): tudo ok!
+
+d) (1.0): tudo ok!
+
+- Extra: não enviou
