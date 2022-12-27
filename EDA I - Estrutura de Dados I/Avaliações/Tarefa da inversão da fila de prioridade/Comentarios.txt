@@ -1,0 +1,1 @@
+no final poderia usar o memso "aux"ao invés de declarar um novo ponteiro "auxcauda", mas funciona e está bom.

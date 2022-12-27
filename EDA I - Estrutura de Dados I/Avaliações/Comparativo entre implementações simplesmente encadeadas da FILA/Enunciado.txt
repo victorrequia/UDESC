@@ -1,0 +1,5 @@
+Comparativo proposto na aula virtual do dia 08/07/2020
+
+Compare as duas implementações de filas simplesmente encadeadas em termos das operações usuais
+qual delas é a mais eficiente especialmente em relação a inserção e remoção? Justifique
+a sua resposta com um teste de mesa.

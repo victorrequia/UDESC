@@ -1,0 +1,5 @@
+Implemente a função int inverteFilaPrio(FDEprio *p) a qual recebe a fila de prioridade e se a fila estiver
+vazia ou ocorrer uma condição de erro, retorna FRACASSO (0). Caso contrário, realiza a inversão da sequência
+de itens inseridos na fila e retorna SUCESSO (1). OBS: A função será agregada ao rol de operações disponibilizadas
+pela fila de prioridade e não demandará nenhuma alteração nas implementações das demais funcionalidades já implementadas.
+Ou seja, a nova operação não gera quebra de consistência da fila em relação às demais funcionalidades atualmente disponíveis.
