@@ -1,19 +1,28 @@
 ### Fase
-6° fase
+4° fase
 
 ### Ementa
-Histórico e contextualização da Computação. Máquinas de Turing. Relações entre modelos de computabilidade e suas
-equivalências. Problema da Parada. A Tese de Church-Turing. Indecidibilidade. Redutibilidade de linguagens e de problemas.
-Complexidade de Tempo: análise de algoritmos, as classes de problemas P, NP e NP-Completo, Teorema de Cook-Levin.
+Pesquisa e teoria. Metodologia da Pesquisa: métodos e técnicas. Tipos de pesquisas. Planejamento da pesquisa. O relatório
+da pesquisa. Projeto de pesquisa. Normalização do trabalho científico. Identificação dos diversos tipos de artigos e trabalhos
+nacionais e internacionais.
 
 ### Objetivo Geral
-Capacitar o aluno para a aplicação sistematizada e formalizada de conceitos e resultados relativos à computabilidade e à
-decidibilidade de linguagens e problemas, e à complexidade de tempo de algoritmos.
+Desenvolver as habilidades e conhecimentos necessários para saber fazer pesquisa científica, projeto de pesquisa e
+respectivos relatórios de pesquisa, a citar TCC, Artigo Científico e Relatório de Estágio
 
 ### Objetivo Específico
-- Conceituar as Máquinas de Turing e estruturas de poder computacional equivalente;
-- Apresentar equivalências de modelos computacionais;
-- Apresentar a Tese de Church-Turing.;
-- Conceituar a decidibilidade de linguagens e problemas;
-- Capacitar o aluno na prova por redução de linguagens e problemas;
-- Introduzir os conceitos de complexidade de tempo.
+- Compreender conhecimento, ciência, pesquisa científica, empírica e teórica;
+- Conhecer a classificação das pesquisas;
+- Compreender e apreender os passos da construção do conhecimento científico;
+- Conhecer e fazer uso das bases de dados científicas, normas ABNT e Manual de Trabalhos Acadêmicos da UDESC;
+- Realizar Pesquisa Bibliográfica;
+- Aprender a fazer citações e referência;
+- Aprender redação científica;
+- Aprender a desenvolver e definir tema, problema e fundamentação teórica, pergunta de pesquisa, objetivo geral e
+específico, e justificativa;
+- Compreender Variável - tipos, função e funcionamento;
+- Conhecer os métodos e técnicas de coleta e análise dos dados;
+- Construir um Projeto de Pesquisa;
+- Construir Relatórios de Estágio, TCC e artigo científico;
+- Conhecer a comunicação específica da Engenharia Civil e seus meios de divulgação: Conferências, Journals, Revistas
+especializadas na área.
