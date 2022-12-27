@@ -1,0 +1,34 @@
+Victor Eduardo Requia	08/06/2022	BAN II
+____________________________________________________________________________________________________
+Descrição: Considerando o BD da oficina mecânica, faça a especificação dos comandos SQL para criação de índices conforme descrito abaixo.
+
+1)      Crie um índice para cada uma das chaves estrangeiras presentes do esquema de dados.
+
+2)      Crie um índice para acelerar a busca dos mecânicos pela função.
+
+3)      Crie um índice para acelerar a ordenação dos consertos pela data e hora.
+
+4)      Crie um índice para acelerar a busca de clientes pelo cpf.
+
+5)      Crie um índice para acelerar a busca pelas primeiras 5 letras do nome dos clientes.
+
+6)      Crie um índice para acelerar a busca dos clientes com CPF com final XXX.XXX.XXX-55.
+____________________________________________________________________________________________________
+/* 1) Crie um índice para cada uma das chaves estrangeiras presentes do esquema de dados. */
+CREATE INDEX inx_chave_estrangeira ON mecanico USING btree (cods);
+____________________________________________________________________________________________________
+/* 2) Crie um índice para acelerar a busca dos mecânicos pela função. */
+CREATE INDEX inx_mecanico_funcao ON mecanico USING btree (substr(funcao, 1, 10));
+____________________________________________________________________________________________________
+/* 3) Crie um índice para acelerar a ordenação dos consertos pela data e hora. */
+CREATE INDEX inx_conserto_dara_hora ON conserto USING btree (data, hora);
+____________________________________________________________________________________________________
+/* 4) Crie um índice para acelerar a busca de clientes pelo cpf. */
+CREATE INDEX inx_cliente_cpf ON cliente USING btree (cpf);
+____________________________________________________________________________________________________
+/* 5) Crie um índice para acelerar a busca pelas primeiras 5 letras do nome dos clientes. */
+CREATE INDEX inx_cliente_nome ON cliente USING btree(substring(nome, 1, 5));
+____________________________________________________________________________________________________
+/* 6) Crie um índice para acelerar a busca dos clientes com CPF com final XXX.XXX.XXX-55. */
+CREATE INDEX inx_cliente_cpf_final ON cliente USING btree(cpf) where cpf ilike '_________55';
+____________________________________________________________________________________________________

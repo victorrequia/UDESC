@@ -1,0 +1,193 @@
+Victor Eduardo Requia  02/05/2022 BANII
+______________________________________________________________________________________________________________________________________________
+Descrição: Considerando o BD de uma oficina mecânica desenvolvido nas últimas aulas (e disponível na página da disciplina), faça a especificação dos seguintes gatilhos em PostgreSQL:
+
+1)      Gatilho para impedir a inserção ou atualização de Clientes com o mesmo CPF.
+
+2)      Gatilho para impedir a inserção ou atualização de Mecânicos com idade menor que 20 anos.
+
+3)      Gatilho para atribuir um cods (sequencial) para um novo setor inserido.
+
+4)      Gatilho para impedir a inserção de um mecânico ou cliente com CPF inválido.
+
+5)      Gatilho para impedir que um mecânico seja removido caso não exista outro mecânico com a mesma função.
+
+6)      Gatilho que ao inserir, atualizar ou remover um mecânico, reflita as mesmas modificações na tabela de Cliente. Em caso de atualização, se o mecânico ainda não existir na tabela de Cliente, deve ser inserido.
+
+7)      Gatilho para impedir que um conserto seja inserido na tabela Conserto se o mecânico já realizou mais de 20 horas extras no mês.
+
+8)      Gatilho para impedir que mais de 1 conserto seja agendado no mesmo setor na mesma hora. 
+______________________________________________________________________________________________________________________________________________
+--1) Gatilho para impedir a inserção ou atualização de Clientes com o mesmo CPF.
+
+create or replace function verifica_cpf() returns trigger as
+$$
+begin
+	if TG_OP = 'INSERT' then
+		if (select count(codc) from cliente where cpf = new.cpf) > 0 then
+			raise exception 'CPF ja cadastrado';
+		end if;
+	elseif TG_OP = 'UPDATE' then
+		if (old.cpf <> new.cpf and codc <> new.codc) then
+			if(select count(codc) from cliente where cpf = new.cpf) > 0 then
+				raise exception 'CPF ja cadastrado';
+			end if;
+		end if;
+	end if;
+	return new;
+end;
+$$
+
+language plpgsql;
+
+create trigger verifica_cpf before insert or update on cliente
+for each row execute procedure verifica_cpf();
+______________________________________________________________________________________________________________________________________________
+--2) Gatilho para impedir a inserção ou atualização de Mecânicos com idade menor que 20 anos.
+
+create or replace function insercao_mecanico() returns trigger as
+$$
+begin
+	if new.idade < 20 then
+		raise exception 'Mecanico com idade menor que 20 anos';
+	end if;
+	return new;
+end;
+$$
+
+language plpgsql;
+
+create trigger verificaIdade before insert or delete on mecanico
+for each row execute procedure insercao_mecanico();
+______________________________________________________________________________________________________________________________________________
+--3)  Gatilho para atribuir um cods (sequencial) para um novo setor inserido.
+
+create sequence novo_cods start 10;
+
+create or replace function novo_cods() returns trigger as
+$$
+begin
+	new.cods := nextval('novo_cods');
+	return new;
+end;
+$$
+
+language plpgsql;
+
+create trigger novo_cods before insert on setor
+for each row execute procedure novo_cods();
+______________________________________________________________________________________________________________________________________________
+--5) Gatilho para impedir que um mecânico seja removido caso não exista outro mecânico com a mesma função.
+
+create or replace function verifica_funcao() returns trigger as
+$$
+begin
+	if ((select count(1) from mecanico where funcao = old.funcao) <2) then
+		raise exception 'Impossível remover, existe apenas este mecânico nesta função';
+	end if;
+	return old;
+end;
+$$
+
+language plpgsql;
+
+create trigger verifica_funcao before delete on mecanico
+for each row execute procedure verifica_funcao();
+______________________________________________________________________________________________________________________________________________
+--6) Gatilho que ao inserir, atualizar ou remover um mecânico, reflita as mesmas modificações na tabela de Cliente.
+--   Em caso de atualização, se o mecânico ainda não existir na tabela de Cliente, deve ser inserido.
+
+create sequence cliente_codc_squence start 8;
+
+create or replace function atualiza_cliente() returns trigger as
+$$
+begin
+	if TG_OP = 'INSERT' then
+		insert into cliente values (nextval('cliente_codc_sequence'), 
+		new.cpf, new.nome, new.idade, new.endereco, new.cidade);
+	elseif TG_OP = 'UPDATE' then
+		if (select 1 from cliente where cpf = new.cpf) then
+			update cliente set nome = new.nome, idade = new.idade,
+			endereco = new.endereco, cidade = new.cidade
+			where cpf = new.cpf;
+		else
+			insert into cliente values (nextval('cliente_codc_seq'), new.cpf,
+			new.nome, new.idade, new.endereco, new.cidade);
+		end if;
+	elseif TG_OP = 'DELETE' then
+		delete from cliente where cpf = old.cpf;
+	end if;
+	return null;
+end;
+$$
+
+language plpgsql;
+
+create trigger atualiza_cliente after insert or update or delete on mecanico
+	for each row execute procedure atualiza_cliente();
+______________________________________________________________________________________________________________________________________________
+--7) Gatilho para impedir que um conserto seja inserido na tabela Conserto se o mecânico já realizou mais de 20 horas extras no mês.
+
+create or replace function hora_extra(pcodm int, pmes int, pano int) returns int as
+$$
+declare
+	horas_trabalhadas int default 0;
+begin
+	select count(codm) from conserto where codm = pcodm and date_part('month',data) = pmes
+	and date_part('year',data) = pano into horas_trabalhadas;
+
+	if horas_trabalhadas > 160 then
+		return horas_trabalhadas - 160;
+	else
+		return 0;
+	end if;
+end;
+$$
+
+language plpgsql;
+
+create or replace function verifica_extras() returns trigger as
+$$
+declare
+	v_mes int;
+	v_ano int;
+begin
+	v_mes := data_part('month', new.data);
+	v_ano := data_part('year', new.data);
+	if (hora_extra(new.codm, mes, ano)) > 20 then
+		raise exception 'Quantidade de horas extras excedida';
+	end if;
+	return new;
+end;
+$$
+
+language plpgsql;
+
+create trigger verifica_extras before insert or update on conserto 
+for each row execute procedure verifica_extras();
+______________________________________________________________________________________________________________________________________________
+--8) Gatilho para impedir que mais de 1 conserto seja agendado no mesmo setor na mesma hora. 
+
+create or replace function insere_conserto() returns trigger as
+$$
+declare
+	v_cods int default 0;
+	new_cods int default 0;
+begin
+	select cods from mecanico m where
+	m.codm = new.codm limit 1
+	into v_cods;
+
+	if (select 1 from conserto c join mecanico m using(codm) where
+		c.data = new.data and c.hora = new.hora and m.cods = v_cods) then
+		raise exception 'Já existe conserto marcado no mesmo horário';
+	end if;
+	return new;
+end;
+$$
+
+language plpgsql;
+
+create trigger insere_conserto before insert on conserto
+for each row execute procedure insere_conserto();
+______________________________________________________________________________________________________________________________________________

@@ -1,0 +1,79 @@
+Victor Eduardo Requia  13/04/2022  BANII
+______________________________________________________________________________________________
+Descrição: Considerando o esquema da mecânica automotiva, faça a especificação dos comandos SQL para as seguintes consultas:
+
+1)      Recupere o CPF e o nome dos mecânicos que trabalham nos setores número 1 e 2 (faça a consulta utilizado a cláusula IN).
+
+2)      Recupere o CPF e o nome dos mecânicos que trabalham nos setores 'Funilaria' e 'Pintura' (faça a consulta utilizando sub-consultas aninhadas).
+
+3)      Recupere o CPF e nome dos mecânicos que atenderam no dia 13/06/2014 (faça a consulta usando INNER JOIN).
+
+4)      Recupere o nome do mecânico, o nome do cliente e a hora do conserto para os consertos realizados no dia 12/06/2014 (faça a consulta usando INNER JOIN).
+
+5)      Recupere o nome e a função de todos os mecânicos, e o número e o nome dos setores para os mecânicos que tenham essa informação.
+
+6)      Recupere o nome de todos os mecânicos, e as datas dos consertos para os mecânicos que têm consertos feitos (deve aparecer apenas um registro de nome de mecânico para cada data de conserto).
+
+7)      Recupere a média da quilometragem de todos os veículos dos clientes.
+
+8)      Recupere a soma da quilometragem dos veículos de cada cidade onde residem seus proprietários.
+
+9)      Recupere a quantidade de consertos feitos por cada mecânico durante o período de 12/06/2014 até 19/06/2014
+
+10)   Recupere a quantidade de consertos feitos agrupada pela marca do veículo.
+
+11)   Recupere o modelo, a marca e o ano dos veículos que têm quilometragem maior que a média de quilometragem de todos os veículos.
+
+12)   Recupere o nome dos mecânicos que têm mais de um conserto marcado para o mesmo dia.
+______________________________________________________________________________________________
+
+1) select cpf, nome from mecanico 
+   where cods in (1,2);
+
+2) select cpf, nome from mecanico 
+   where cods in (select cods from setor where nome='Funilaria' and nome='Pintura');
+
+3) select cpf, m.nome from conserto c
+   join mecanico m
+   on c.codm = m.codm
+   where data in ('2014/06/13');
+
+4) select m.nome, cli.nome, c.hora from mecanico m
+   join conserto c using (codm)
+   join veiculo v using (codv)
+   join cliente cli using (codc)
+   where data='2014-06-12';;
+
+5) select m.nome, m.funcao, m.cods, s.nome from mecanico m
+   join setor s
+   on m.cods = s.cods;
+
+6) select m.nome, c.data from mecanico m
+   join conserto c
+   on m.codm = c.codm;
+
+7) select avg(quilometragem) from veiculo;
+
+8) select c.cidade, sum(v.quilometragem)
+   from cliente c
+   join veiculo v using (codc)
+   group by c.cidade;
+
+9) select count(1) from conserto
+   where data between '2014/06/12' and '2014/06/19';
+
+10) select count(*), v.marca from conserto c
+    join veiculo v
+    on c.codv = v.codv
+    group by v.marca;
+
+11) select modelo, marca, ano from veiculo 
+    where quilometragem > (select avg(quilometragem) from veiculo);
+
+12) select m.nome, count(codm)
+    from mecanico m
+    join conserto c using (codm)
+    group by m.nome, c.data
+    having count(codm) > 1;
+
+______________________________________________________________________________________________

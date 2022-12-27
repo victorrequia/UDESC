@@ -1,0 +1,219 @@
+Victor Eduardo Requia  25/04/2022  BANII
+______________________________________________________________________________________________________________________________________________
+Descrição: Considerando o BD de uma oficina mecânica desenvolvido nas últimas aulas (e disponível na página da disciplina), faça a especificação das seguintes funções
+em PostgreSQL.
+
+1)      Função para inserção de um mecânico.
+
+2)      Função para exclusão de um mecânico. 
+
+3)      Função única para inserção, atualizar e exclusão de um cliente.
+
+4)      Função que limite o cadastro de no máximo 10 setores na oficina mecânica.
+
+5)      Função que limita o cadastro de um conserto apenas se o mecânico não tiver mais de 3 consertos agendados para o mesmo dia.
+
+6)      Função para calcular a média geral de idade dos Mecânicos e Clientes.
+
+7)      Função única que permita fazer a exclusão de um Setor, Mecânico, Cliente ou Veículo.
+
+8)      Considerando que na tabela Cliente apenas codc é a chave primária, faça uma função que remova clientes com CPF repetido, deixando apenas um cadastro para cada CPF.
+        Escolha o critério que preferir para definir qual cadastro será mantido: aquele com a menor idade, que possuir mais consertos agendados, etc. Para testar a função,
+        não se esqueça de inserir na tabela alguns clientes com este problema.
+
+9)   Função para calcular se o CPF é válido*.
+
+10)   Função que calcula a quantidade de horas extras de um mecânico em um mês de trabalho. O número de horas extras é calculado a partir das horas que excedam as 160 horas de trabalho mensais. O número de horas mensais trabalhadas é calculada a partir dos consertos realizados. Cada conserto tem a duração de 1 hora.
+______________________________________________________________________________________________________________________________________________
+--1) Função para inserção de um mecânico.
+
+create function insere_mecanico 
+	(pcodm int, pcpf char(11), pnome varchar(50), pidade int, pendereco varchar(500), 
+	pcidade varchar(500), pfuncao varchar(50), pcods int) returns void as
+$$
+	insert into mecanico values(pcodm, pcpf, pnome, pidade, pendereco, pcidade, pfuncao, pcods);
+$$
+
+language sql;
+______________________________________________________________________________________________________________________________________________
+--2) Função para exclusão de um mecânico. 
+
+create function exclui_mecanico (pcodm int) returns void as
+$$
+	delete from mecanico where codm = pcodm;
+$$
+
+language sql;
+______________________________________________________________________________________________________________________________________________
+--3) Função única para inserção, atualizar e exclusão de um cliente.
+
+create function atualiza_cliente
+						   (op char, pcodc int, pcpf char(11), pnome varchar(50), pidade int, 
+							pendereco varchar(500), pcidade varchar (500)) returns int as
+$$
+	declare
+		vlinhas int default 0;
+	begin
+		if upper(op) = 'I' then
+			insert into cliente values (pcodc, pcpf, pnome, pidade, pendereco, pcidade);
+			get diagnostics vlinhas = row_count;
+		elseif upper(op) = 'D' then
+			delete from cliente where codc = pcodc;
+			get diagnostics vlinhas = row_count;
+		elseif upper(op) = 'U' then
+			update cliente set nome = pnome, idade = pidade, endereco = endereco, cidade = pcidade where codc = pcodc;
+		end if;
+		get diagnostics vlinhas = row_count;
+		return vlinhas;
+	end;
+$$
+
+language plpgsql
+______________________________________________________________________________________________________________________________________________
+--4) Função que limite o cadastro de no máximo 10 setores na oficina mecânica.
+
+create function cadastra_setor (pcods int, pnome varchar (50)) returns int as
+$$
+	declare
+		vlinhas int default 0;
+	begin
+		if (select count(cods) from setor) < 10 then
+			insert into setor values (pcods, pnome);
+			get diagnostics vlinhas = row_count;
+		else
+			raise exception 'Não foi possível incluir o setor pois o número máximo (10) foi atingido';
+		end if;
+		return vlinhas;
+	end;
+$$
+
+language plpgsql;
+______________________________________________________________________________________________________________________________________________
+--5) Função que limita o cadastro de um conserto apenas se o mecânico não tiver mais de 3 consertos agendados para o mesmo dia.
+
+create function cadastra_conserto (pcodm int, pcodv int, pdata date, phora time) returns void as
+$$	
+	begin
+		if (select count(codm) from conserto where codm=pcodm) < 3 then
+			insert into conserto values (pcodm, pcodv, pdata, phora);
+		else
+			raise exception 'Não foi possível incluir o setor pois o número máximo (10) foi atingido';
+		end if;
+	end;
+$$
+
+language plpgsql; 
+______________________________________________________________________________________________________________________________________________
+--6) Função para calcular a média geral de idade dos Mecânicos e Clientes.
+
+create function mecanico_cliente_media_idade () returns float as
+$$	
+	declare
+		media_mecanico float default 0;
+		media_cliente float default 0;
+		media_geral float default 0;
+	begin
+		select avg(idade) into media_mecanico from mecanico;
+		select avg(idade) into media_cliente from cliente; 
+		media_geral := media_mecanico + media_cliente;
+		return media_geral;
+	end;
+$$
+
+language plpgsql;
+______________________________________________________________________________________________________________________________________________
+--7) Função única que permita fazer a exclusão de um Setor, Mecânico, Cliente ou Veículo.
+
+create function exclusao_geral (nomeTabela varchar, chave varchar[], valor varchar[]) returns void as
+$$
+	begin
+		if upper(nomeTabela) = 'SETOR' then
+			execute exlui_setor(chave, valor);
+		elseif upper(nomeTabela) = 'MECANICO' then
+			execute exclui_mecanico(chave, valor);
+		elseif upper(nomeTabela) = 'CLIENTE' then
+			execute exclui_cliente(chave, valor);
+		elseif upper(nomeTabela) = 'VEICULO' then
+			execute exclui_veiculo(chave, valor);
+		end if;
+	end;
+$$
+
+language plpgsql;
+______________________________________________________________________________________________________________________________________________
+/*8) Considerando que na tabela Cliente apenas codc é a chave primária, faça uma função que remova clientes
+     com CPF repetido, deixando apenas um cadastro para cada CPF. Escolha o critério que preferir para definir
+     qual cadastro será mantido: aquele com a menor idade, que possuir mais consertos agendados, etc. Para testar a 
+     função, não se esqueça de inserir na tabela alguns clientes com este problema.*/
+
+create function remove_cliente_repetido () returns int as 
+$$
+	declare
+		max_idade cliente%rowtype;
+		vCliente cliente%rowtype;
+	begin		
+		for vCliente in select * from cliente loop
+			select * into max_idade from cliente where cpf = vCliente.cpf and idade >= (select max(idade) from cliente where cpf = vCliente.cpf);
+			delete from cliente where cpf = vCliente.cpf;
+			insert into cliente values (max_idade);
+		end loop;
+	end;
+$$
+
+language plpgsql;
+______________________________________________________________________________________________________________________________________________
+--9) Função para calcular se o CPF é válido.
+
+create function validaCPF(pcpf char(11)) returns boolean as
+$$
+	declare
+	
+	begin
+		for cont in 1..11 loop
+			cpf(cont) := cast(substring(pcpf from cont for 1) as integer);
+		and loop;
+		-- Verifica o primeiro digito
+		for cont in 1..9 loop
+			pdigito[cont] := cpf[cont] * sequencia1[cont];
+			somapdigito := somapdigito + pdigito[cont];
+		and loop
+		resto := somapdigito % 11;
+		if resto < 2 then
+			digito := 0;
+		else
+			digito := 11-resto;
+		end if;
+		-- Verifica o segundo digito
+		for cont in 1..10 loop
+			sdigito[cont] := cpf[cont] * sequencia2[cont];
+			somasdigito := somasdigito + sdigito[cont];
+		end loop;
+		resto := somadigito % 11;
+		if resto < 2 then
+	end;
+$$
+
+language plpgsql;
+______________________________________________________________________________________________________________________________________________
+10) /*Função que calcula a quantidade de horas extras de um mecânico em um mês de trabalho.
+      O número de horas extras é calculado a partir das horas que excedam as 160 horas de trabalho mensais.
+      O número de horas mensais trabalhadas é calculada a partir dos consertos realizados. Cada conserto tem a duração de 1 hora.*/
+
+create function calcula_extras(pcodm, pinicio, pfim) return int as
+$$
+	declare
+		horasTrab integer default 0;
+	begin
+		select count(1)  from conserto where codm = pcodm and
+		date_part('month',data) = pmes and
+		data_part('year', data) = pano into horasTrab;
+		if(horasTrab > 160) then
+			return horasTrab - 160;
+		else
+			return 0;
+		end if;
+	end
+$$
+
+language plpgsql;
+______________________________________________________________________________________________________________________________________________

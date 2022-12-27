@@ -1,0 +1,626 @@
+USE academico;
+
+INSERT INTO Departamento (codigo, nome) VALUES
+    ('CMP','CIENCIA DA COMPUTACAO');
+INSERT INTO Departamento (codigo, nome) VALUES
+    ('FIT','FILOSOFIA E TEOLOGIA');
+INSERT INTO Departamento (codigo, nome) VALUES
+    ('ADM','ADMINISTRACAO');
+INSERT INTO Departamento (codigo, nome) VALUES
+    ('ENG','ENGENHARIA');
+INSERT INTO Departamento (codigo, nome) VALUES
+    ('ECO','ECONOMIA');
+INSERT INTO Departamento (codigo, nome) VALUES
+    ('BIO','BIOLOGIA');
+INSERT INTO Departamento (codigo, nome) VALUES
+    ('ZOO','ZOOTECNICA');
+INSERT INTO Departamento (codigo, nome) VALUES
+    ('MAF','MATEMATICA E FISICA');
+INSERT INTO Departamento (codigo, nome) VALUES
+    ('FAR','FARMACIA');
+
+INSERT INTO Professor (cpf, nome, dataNascimento, logradouro, bairro, cidade, estado, cep, codigoDepartamento) VALUES
+    ('11111111111','Ivon Canedo', '1970-05-04','Rua 1','S Bueno','Goiania','GO',74000001,'CMP');
+INSERT INTO Professor (cpf, nome, dataNascimento, logradouro, bairro, cidade, estado, cep, codigoDepartamento) VALUES
+    ('22222222222','Marcio Kanutto', '1970-10-30','Rua 2','S Sul','Goiania','GO',74000002,'CMP');
+INSERT INTO Professor (cpf, nome, dataNascimento, logradouro, bairro, cidade, estado, cep, codigoDepartamento) VALUES
+    ('33333333333','Flacio dos Reis', '1970-03-10','Rua 2','Ipanema','Rio de Janeiro','RJ',60000003,'FIT');
+INSERT INTO Professor (cpf, nome, dataNascimento, logradouro, bairro, cidade, estado, cep, codigoDepartamento) VALUES
+    ('44444444444','Maria Ribeiro', '1970-06-30','Rua 3','Pavuna','Sao Paulo','SP',50000004,'ADM');
+INSERT INTO Professor (cpf, nome, dataNascimento, logradouro, bairro, cidade, estado, cep, codigoDepartamento) VALUES
+    ('55555555555','Carla Lemos', '1972-07-30','Rua 4','S Oeste','Goiania','GO',74000005,'ADM');
+INSERT INTO Professor (cpf, nome, dataNascimento, logradouro, bairro, cidade, estado, cep, codigoDepartamento) VALUES
+    ('66666666666','Marcos Cintra', '1971-04-20','Rua 5','S Central','Goiania','GO',75000006,'ENG');
+INSERT INTO Professor (cpf, nome, dataNascimento, logradouro, bairro, cidade, estado, cep, codigoDepartamento) VALUES
+    ('77777777777','Francisco Chagas', '1975-10-12','Rua 6','Vila Nova','B Horizonte','MG',45000007,'ENG');
+INSERT INTO Professor (cpf, nome, dataNascimento, logradouro, bairro, cidade, estado, cep, codigoDepartamento) VALUES
+    ('88888888888','Virgilio', '1976-03-14','Rua 7','S Universitario','Salvador','BA',35000008,'BIO');
+INSERT INTO Professor (cpf, nome, dataNascimento, logradouro, bairro, cidade, estado, cep, codigoDepartamento) VALUES
+    ('99999999999','Francisco Reis', '1978-10-20','Rua 8','Marista','Goiania','GO',36000009,'FIT');
+
+INSERT INTO Curso (codigo, nome, codigoDepartamento) VALUES
+    ('CMP','CIENCIA DA COMPUTACAO','CMP');
+INSERT INTO Curso (codigo, nome, codigoDepartamento) VALUES
+    ('ENC','ENGENHARIA DE COMPUTACAO','CMP');
+INSERT INTO Curso (codigo, nome, codigoDepartamento) VALUES
+    ('FIL','FILOSOFIA E TEOLOGIA','FIT');
+INSERT INTO Curso (codigo, nome, codigoDepartamento) VALUES
+    ('TEO','TEOLOGIA','FIT');
+INSERT INTO Curso (codigo, nome, codigoDepartamento) VALUES
+    ('ADM','ADMINISTRACAO','ADM');
+INSERT INTO Curso (codigo, nome, codigoDepartamento) VALUES
+    ('ENG','ENGENHARIA CIVIL','ENG');
+INSERT INTO Curso (codigo, nome, codigoDepartamento) VALUES
+    ('ECO','ECONOMIA','ECO');
+INSERT INTO Curso (codigo, nome, codigoDepartamento) VALUES
+    ('BIO','BIOLOGIA','BIO');
+INSERT INTO Curso (codigo, nome, codigoDepartamento) VALUES
+    ('ZOO','ZOOTECNICA','BIO');
+INSERT INTO Curso (codigo, nome, codigoDepartamento) VALUES
+    ('MAT','MATEMATICA','MAF');
+INSERT INTO Curso (codigo, nome, codigoDepartamento) VALUES
+    ('FIS','FISICA','MAF');
+
+INSERT INTO Disciplina (codigoCurso, codigo, nome, creditos, aulasTeoricas, aulasPraticas) VALUES
+    ('CMP',4070,'ENGENHARIA DE SOFTWARE',6,4,2);
+INSERT INTO Disciplina (codigoCurso, codigo, nome, creditos, aulasTeoricas, aulasPraticas) VALUES
+    ('CMP',4433,'BANCO DE DADOS I',4,2,2);
+INSERT INTO Disciplina (codigoCurso, codigo, nome, creditos, aulasTeoricas, aulasPraticas) VALUES
+    ('CMP',4033,'PROJETO DE SISTEMA',6,6,0);
+INSERT INTO Disciplina (codigoCurso, codigo, nome, creditos, aulasTeoricas, aulasPraticas) VALUES
+    ('CMP',3243,'ANALISE',4,4,0);
+INSERT INTO Disciplina (codigoCurso, codigo, nome, creditos, aulasTeoricas, aulasPraticas) VALUES
+    ('ADM',1000,'INTRODUCAO A ADMINISTRACAO',4,4,0);
+INSERT INTO Disciplina (codigoCurso, codigo, nome, creditos, aulasTeoricas, aulasPraticas) VALUES
+    ('FIL',3444,'INTRODUCAO A FILOSOFIA',4,4,0);
+INSERT INTO Disciplina (codigoCurso, codigo, nome, creditos, aulasTeoricas, aulasPraticas) VALUES
+    ('CMP',3030,'BANCO DE DADOS II',6,4,2);
+INSERT INTO Disciplina (codigoCurso, codigo, nome, creditos, aulasTeoricas, aulasPraticas) VALUES
+    ('MAT',1010,'CALCULO I',4,4,0);
+INSERT INTO Disciplina (codigoCurso, codigo, nome, creditos, aulasTeoricas, aulasPraticas) VALUES
+    ('FIS',1020,'FISICA I',6,4,0);
+INSERT INTO Disciplina (codigoCurso, codigo, nome, creditos, aulasTeoricas, aulasPraticas) VALUES
+    ('ADM',4040,'ADMINISTRACAO PUBLICA',4,4,0);
+INSERT INTO Disciplina (codigoCurso, codigo, nome, creditos, aulasTeoricas, aulasPraticas) VALUES
+    ('MAT',8080,'ALGEBRA LINEAR',6,6,0);
+INSERT INTO Disciplina (codigoCurso, codigo, nome, creditos, aulasTeoricas, aulasPraticas) VALUES
+    ('FIS',2020,'FISICA II',6,4,2);
+INSERT INTO Disciplina (codigoCurso, codigo, nome, creditos, aulasTeoricas, aulasPraticas) VALUES
+    ('FIL',9090,'FILOFIA II',4,4,0);
+
+INSERT INTO Vinculo (cpfProfessor, codigoCurso, codigoDisciplina) VALUES
+    ('11111111111','CMP',4070);
+INSERT INTO Vinculo (cpfProfessor, codigoCurso, codigoDisciplina) VALUES
+    ('22222222222','CMP',4433);
+INSERT INTO Vinculo (cpfProfessor, codigoCurso, codigoDisciplina) VALUES
+    ('22222222222','CMP',4033);
+INSERT INTO Vinculo (cpfProfessor, codigoCurso, codigoDisciplina) VALUES
+    ('11111111111','CMP',3030);
+INSERT INTO Vinculo (cpfProfessor, codigoCurso, codigoDisciplina) VALUES
+    ('33333333333','CMP',3243);
+INSERT INTO Vinculo (cpfProfessor, codigoCurso, codigoDisciplina) VALUES
+    ('44444444444','ADM',1000);
+INSERT INTO Vinculo (cpfProfessor, codigoCurso, codigoDisciplina) VALUES
+    ('33333333333','CMP',3030);
+INSERT INTO Vinculo (cpfProfessor, codigoCurso, codigoDisciplina) VALUES
+    ('55555555555','ADM',4040);
+INSERT INTO Vinculo (cpfProfessor, codigoCurso, codigoDisciplina) VALUES
+    ('66666666666','FIL',3444);
+INSERT INTO Vinculo (cpfProfessor, codigoCurso, codigoDisciplina) VALUES
+    ('77777777777','FIS',1020);
+INSERT INTO Vinculo (cpfProfessor, codigoCurso, codigoDisciplina) VALUES
+    ('77777777777','FIS',2020);
+INSERT INTO Vinculo (cpfProfessor, codigoCurso, codigoDisciplina) VALUES
+    ('88888888888','MAT',8080);
+INSERT INTO Vinculo (cpfProfessor, codigoCurso, codigoDisciplina) VALUES
+    ('88888888888','MAT',1010);
+
+INSERT INTO DiaDaSemana (codigo, nome) VALUES
+    (1,'DOMINGO');
+INSERT INTO DiaDaSemana (codigo, nome) VALUES
+    (2,'SEGUNDA-FEIRA');
+INSERT INTO DiaDaSemana (codigo, nome) VALUES
+    (3,'TERCA-FEIRA');
+INSERT INTO DiaDaSemana (codigo, nome) VALUES
+    (4,'QUARTA-FEIRA');
+INSERT INTO DiaDaSemana (codigo, nome) VALUES
+    (5,'QUINTA-FEIRA');
+INSERT INTO DiaDaSemana (codigo, nome) VALUES
+    (6,'SEXTA-FEIRA');
+INSERT INTO DiaDaSemana (codigo, nome) VALUES
+    (7,'SABADO');
+
+INSERT INTO Semestre (ano, numero, dataInicioDasAulas, dataTerminoDasAulas) VALUES
+    (2012,2, '2012-03-06', '2012-12-18');
+
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',4070,'A01',0,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',4070,'A01',1,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',4070,'A01',2,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',4070,'A02',1,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',4070,'C01',0,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',4070,'C01',1,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',4070,'C01',2,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',4433,'A01',0,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',4433,'A01',1,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',4433,'A01',2,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',4433,'C01',0,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',4433,'C01',1,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',4433,'C01',2,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',4433,'A02',0,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',4433,'A02',1,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',4433,'A02',2,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',4033,'A01',0,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',4033,'C01',0,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('ADM',1000,'A01',0,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('ADM',1000,'C01',0,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('FIL',3444,'A01',0,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('MAT',1010,'A01',0,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('MAT',1010,'C01',0,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('FIS',2020,'A01',0,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('FIS',2020,'A01',1,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('FIS',2020,'A01',2,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('FIS',2020,'C01',0,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('FIS',2020,'C01',1,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('FIS',2020,'C01',2,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',3243,'A01',0,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',3243,'C01',0,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',3243,'A02',0,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',3030,'A01',0,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',3030,'A01',1,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',3030,'A02',2,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',3030,'C01',0,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',3030,'C01',2,2012,2);
+INSERT INTO Turma (codigoCurso, codigoDisciplina, numero, numeroSubTurma, anoSemestre, numeroSemestre) VALUES
+    ('CMP',3030,'A01',2,2012,2);
+
+
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('CMP',4070,'A01',0,2012,2,4,'T','1M');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('CMP',4070,'A01',0,2012,2,7,'T','1M');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('CMP',4070,'A01',1,2012,2,4,'P','2M');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('CMP',4070,'A01',2,2012,2,7,'P','3M');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('CMP',4070,'C01',0,2012,2,4,'T','1N');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('CMP',4070,'C01',0,2012,2,6,'T','1N');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('CMP',4070,'C01',1,2012,2,4,'P','2N');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('CMP',4070,'C01',2,2012,2,6,'P','3N');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('CMP',4433,'A01',0,2012,2,2,'T','1M');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('CMP',4433,'A01',1,2012,2,5,'P','1M');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('CMP',4433,'A01',2,2012,2,5,'P','2M');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('CMP',4433,'C01',0,2012,2,3,'T','2N');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('CMP',4433,'C01',1,2012,2,6,'P','2N');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('CMP',4433,'C01',2,2012,2,6,'P','3N');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('CMP',4433,'A02',0,2012,2,4,'T','1M');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('CMP',4433,'A02',1,2012,2,7,'P','1M');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('CMP',4433,'A02',2,2012,2,7,'P','2M');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('CMP',3030,'A01',0,2012,2,2,'T','2M');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('CMP',3030,'A01',0,2012,2,5,'T','1M');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('CMP',3030,'A01',1,2012,2,5,'P','2M');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('CMP',3030,'A01',2,2012,2,5,'P','3M');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('ADM',1000,'A01',0,2012,2,4,'T','1M');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('ADM',1000,'A01',0,2012,2,7,'T','1M');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('ADM',1000,'C01',0,2012,2,4,'T','2N');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('ADM',1000,'C01',0,2012,2,7,'T','2N');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('FIL',3444,'A01',0,2012,2,2,'T','1M');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('FIL',3444,'A01',0,2012,2,4,'T','1M');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('FIS',2020,'A01',0,2012,2,5,'T','1M');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('FIS',2020,'A01',0,2012,2,7,'T','1M');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('FIS',2020,'A01',1,2012,2,7,'P','2M');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('FIS',2020,'A01',2,2012,2,7,'P','3M');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('FIS',2020,'C01',0,2012,2,3,'T','1N');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('FIS',2020,'C01',0,2012,2,6,'T','1N');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('FIS',2020,'C01',1,2012,2,6,'P','2N');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('FIS',2020,'C01',2,2012,2,6,'P','3N');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('MAT',1010,'A01',0,2012,2,4,'T','3M');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('MAT',1010,'A01',0,2012,2,7,'T','3M');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('MAT',1010,'C01',0,2012,2,4,'T','3N');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('MAT',1010,'C01',0,2012,2,7,'T','3N');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('CMP',4033,'C01',0,2012,2,3,'T','3N');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('CMP',4033,'C01',0,2012,2,4,'T','3N');
+INSERT INTO DiasDeAula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, codigoDiaSemana, tipoAula, horario) VALUES
+    ('CMP',4033,'C01',0,2012,2,7,'T','3N');
+
+
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('CMP',4070,'A01',0,2012,2, '2012-03-03',1,'Introducao','11111111111');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('CMP',4070,'A01',0,2012,2, '2012-03-06',1,'Introducao','11111111111');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('CMP',4070,'A01',1,2012,2, '2012-03-03',1,'Introducao','11111111111');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('CMP',4070,'A01',2,2012,2, '2012-03-06',2,'Revisao de conteudo','11111111111');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('CMP',4070,'C01',0,2012,2, '2012-03-03',1,'Diagrama de Classes','11111111111');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('CMP',4070,'C01',0,2012,2, '2012-03-05',1,'Introducao','11111111111');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('CMP',4070,'C01',1,2012,2, '2012-03-03',2,'Desenvolvimento agil de Software','11111111111');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('CMP',4070,'C01',2,2012,2, '2012-03-05',2,'Diagrama de Classes','11111111111');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('CMP',4433,'A01',0,2012,2, '2012-03-01',1,'Revisao de conteudo','22222222222');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('CMP',4433,'A01',1,2012,2, '2012-03-04',1,'Algebra Relacional','22222222222');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('CMP',4433,'A01',2,2012,2, '2012-03-04',1,'Algebra Relacional parte 2','22222222222');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('CMP',4433,'C01',0,2012,2, '2012-03-02',1,'Revisao de conteudo','22222222222');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('CMP',4433,'C01',1,2012,2, '2012-03-05',1,'Algebra Relacional','22222222222');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('CMP',4433,'C01',2,2012,2, '2012-03-05',2,'Revisao de conteudo','22222222222');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('CMP',4433,'A02',0,2012,2, '2012-03-02',1,'Funcoes e Gatilhos','22222222222');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('CMP',4433,'A02',1,2012,2, '2012-03-06',1,'Introducao','22222222222');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('CMP',4433,'A02',2,2012,2, '2012-03-06',2,'SQL','22222222222');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('CMP',4033,'C01',0,2012,2, '2012-03-02',1,'Revisao de conteudo','22222222222');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('CMP',4033,'C01',0,2012,2, '2012-03-03',1,'Introducao','22222222222');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('CMP',4033,'C01',0,2012,2, '2012-03-06',1,'Prova','22222222222');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('CMP',3030,'A01',0,2012,2, '2012-03-01',1,'Diagrama entidade-relacionamento','33333333333');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('CMP',3030,'A01',0,2012,2, '2012-03-04',1,'Funcoes e Gatilhos','33333333333');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('CMP',3030,'A01',1,2012,2, '2012-03-04',1,'Revisao de conteudo','33333333333');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('CMP',3030,'A01',2,2012,2, '2012-03-04',1,'Diagrama entidade-relacionamento','33333333333');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('ADM',1000,'A01',0,2012,2, '2012-06-03',1,'Apresentacao','44444444444');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('ADM',1000,'A01',0,2012,2, '2012-03-06',1,'Revisao de conteudo','44444444444');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('ADM',1000,'C01',0,2012,2, '2012-06-03',1,'Trabalho','44444444444');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('ADM',1000,'C01',0,2012,2, '2012-03-06',1,'Prova','44444444444');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('FIL',3444,'A01',0,2012,2, '2012-03-01',1,'Introducao','66666666666');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('FIL',3444,'A01',0,2012,2, '2012-03-03',1,'Prova','66666666666');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('FIS',2020,'A01',0,2012,2, '2012-10-04',1,'RESUMO','77777777777');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('FIS',2020,'A01',0,2012,2, '2012-03-06',1,'Revisao de conteudo','77777777777');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('FIS',2020,'A01',1,2012,2, '2012-03-06',2,'Revisao de conteudo parte 2','77777777777');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('FIS',2020,'A01',2,2012,2, '2012-03-06',3,'Apresentacao de trabalho','77777777777');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('FIS',2020,'C01',0,2012,2, '2012-03-02',1,'Introducao','77777777777');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('FIS',2020,'C01',0,2012,2, '2012-03-05',1,'Revisao de conteudo','77777777777');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('FIS',2020,'C01',1,2012,2, '2012-03-05',2,'Prova','77777777777');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('FIS',2020,'C01',2,2012,2, '2012-03-05',3,'Prova','77777777777');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('MAT',1010,'A01',0,2012,2, '2012-03-03',1,'Introducao','88888888888');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('MAT',1010,'A01',0,2012,2, '2012-03-06',1,'Introducao','88888888888');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('MAT',1010,'C01',0,2012,2, '2012-03-03',2,'Integral','88888888888');
+INSERT INTO Aula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, data, numero, resumo, cpfProfessor) VALUES
+    ('MAT',1010,'C01',0,2012,2, '2012-03-06',2,'Prova','88888888888');
+
+
+INSERT INTO Genero (sigla) VALUES
+    ('M');
+INSERT INTO Genero (sigla) VALUES
+    ('F');
+
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (1,'ADNALDO LEMES', '1978-10-10','RUA 1','S BUENO','GO',74000000,'M');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (2,'ADIRANA BELLINI', '1979-03-03','RUA 2','S CENTRAL','GO',71230000,'F');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (3,'ALEXANDRE BARRETO', '1980-05-20','RUA 3','BILA NOVA','GO',78000000,'M');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (4,'CARLOS VENANCIO', '1980-10-12','RUA 4','S MARISTA','GO',65000000,'M');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (5,'DANIEL PINTO', '1977-03-03','RUA 5','P LUDOVICO','GO',54000000,'M');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (6,'DANILLO LUGSTOSA', '1978-10-10','RUA 6','S OESTE','GO',23000500,'M');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (7,'DENNIA ASSIS', '1979-03-03','RUA 7','S SUL','GO',73000000,'F');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (8,'ELIZZIANE VIEIRA', '1980-05-20','RUA 8','S COIMBRA','GO',74000000,'F');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (9,'EMERSON SALGADO', '1980-10-12','RUA 9','J AMERICA','GO',74000000,'M');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (10,'FABIANO ROCHA', '1977-03-03','RUA 10','CAMPINAS','GO',71230000,'M');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (11,'FABRICIO PERICLES', '1978-10-10','RUA 11','S BUENO','GO',78000000,'M');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (12,'FERNANDA CURADO', '1979-03-03','RUA 1','S CENTRAL','GO',65000000,'F');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (13,'FERNANDA FRANCA', '1980-05-20','RUA 2','BILA NOVA','GO',54000000,'F');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (14,'FERNANDA RIBEIRO', '1980-10-12','RUA 3','S MARISTA','GO',23000500,'F');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (15,'FERNANDO ANTONIO', '1977-03-03','RUA 4','P LUDOVICO','GO',73000000,'M');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (16,'GUSTAVO ALESSANDRO', '1978-10-10','RUA 5','S OESTE','GO',74000000,'M');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (17,'LEANDRO HENRIQUE', '1979-03-03','RUA 6','S SUL','GO',74000000,'M');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (18,'LEONARDO DIAS', '1980-05-20','RUA 7','S COIMBRA','GO',71230000,'M');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (19,'LORAYNE NOVAIS', '1980-10-12','RUA 8','J AMERICA','GO',78000000,'F');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (20,'LORENA CAETANO', '1977-03-03','RUA 9','CAMPINAS','GO',65000000,'F');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (21,'MARCELO NARVAES', '1978-10-10','RUA 10','S BUENO','GO',54000000,'M');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (22,'MARCUS BORGES', '1979-03-03','RUA 11','S CENTRAL','GO',23000500,'M');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (23,'PATRICIA DE PAULA', '1980-05-20','RUA 1','BILA NOVA','GO',73000000,'F');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (24,'PATRICIA SILVA', '1980-10-12','RUA 2','S MARISTA','GO',74000000,'F');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (25,'RENATA CARVALHO', '1977-03-03','RUA 3','P LUDOVICO','GO',74000000,'F');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (26,'RICARDO LOPES', '1978-10-10','RUA 4','S OESTE','GO',71230000,'M');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (27,'RODRIGO BORGES', '1979-03-03','RUA 5','S SUL','GO',78000000,'M');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (28,'STEFANE CELIAC', '1980-05-20','RUA 6','S COIMBRA','GO',65000000,'F');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (29,'TACITO CLAUDIO', '1980-10-12','RUA 7','J AMERICA','GO',54000000,'M');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (30,'TATIANA PIRES', '1977-03-03','RUA 8','CAMPINAS','GO',23000500,'F');
+INSERT INTO Aluno (matricula, nome, dataNascimento, logradouro, bairro, estado, cep, genero) VALUES
+    (31,'WALKER DA SILVA', '1980-02-15','RUA 9','DERGO','GO',73000000,'M');
+
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('CMP',4070,'A01',0,2012,2,1, '2012-05-03',7.0);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('CMP',4070,'A01',0,2012,2,2, '2012-05-06',8.3);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('CMP',4070,'A01',1,2012,2,3, '2012-05-03',3.0);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('CMP',4070,'A01',2,2012,2,4, '2012-05-06',5.5);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('CMP',4070,'C01',0,2012,2,5, '2012-05-03',4.0);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('CMP',4070,'C01',0,2012,2,6, '2012-05-05',9.7);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('CMP',4070,'C01',1,2012,2,7, '2012-05-03',7.0);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('CMP',4070,'C01',2,2012,2,8, '2012-05-05',7.0);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('CMP',4433,'A01',0,2012,2,1, '2012-05-01',7.3);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('CMP',4433,'A01',1,2012,2,9, '2012-05-04',7.0);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('CMP',4433,'A01',2,2012,2,4, '2012-05-04',9.6);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('CMP',3030,'C01',0,2012,2,2, '2012-05-02',9.0);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('CMP',4433,'C01',0,2012,2,2, '2012-05-02',9.0);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('CMP',4433,'C01',1,2012,2,3, '2012-05-05',6.4);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('CMP',4433,'C01',2,2012,2,5, '2012-05-05',10.0);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('CMP',4433,'A02',0,2012,2,6, '2012-05-02',10.0);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('CMP',4433,'A02',1,2012,2,7, '2012-05-06',6.1);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('CMP',3030,'A02',2,2012,2,14, '2012-05-06',10.0);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('CMP',4433,'A02',2,2012,2,14, '2012-05-06',10.0);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('CMP',4033,'C01',0,2012,2,4, '2012-05-02',7.9);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('CMP',4033,'C01',0,2012,2,5, '2012-05-03',7.0);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('CMP',4033,'C01',0,2012,2,6, '2012-05-06',7.5);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('CMP',3030,'A01',0,2012,2,7, '2012-05-01',7.0);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('CMP',3030,'A01',0,2012,2,17, '2012-05-04',3.3);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('CMP',3030,'A01',1,2012,2,18, '2012-05-04',8.0);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('CMP',3030,'A01',2,2012,2,19, '2012-05-04',8.4);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('ADM',1000,'A01',0,2012,2,20, '2012-05-03',7.2);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('ADM',1000,'A01',0,2012,2,21, '2012-05-06',8.0);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('ADM',1000,'C01',0,2012,2,22, '2012-05-03',3.0);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('ADM',1000,'C01',0,2012,2,23, '2012-05-06',6.3);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('FIL',3444,'A01',0,2012,2,24, '2012-05-01',8.0);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('FIL',3444,'A01',0,2012,2,25, '2012-05-03',8.0);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('FIS',2020,'A01',0,2012,2,26, '2012-05-04',7.5);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('FIS',2020,'A01',0,2012,2,27, '2012-05-06',7.0);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('FIS',2020,'A01',1,2012,2,28, '2012-05-06',6.7);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('FIS',2020,'A01',2,2012,2,29, '2012-05-06',6.0);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('FIS',2020,'C01',0,2012,2,30, '2012-05-02',5.0);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('FIS',2020,'C01',0,2012,2,31, '2012-05-05',5.8);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('FIS',2020,'C01',1,2012,2,15, '2012-05-05',4.0);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('FIS',2020,'C01',2,2012,2,16, '2012-05-05',4.0);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('MAT',1010,'A01',0,2012,2,10, '2012-05-03',4.9);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('MAT',1010,'A01',0,2012,2,11, '2012-05-06',7.0);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('MAT',1010,'C01',0,2012,2,12, '2012-05-03',2.3);
+INSERT INTO Matricula (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, matriculaAluno, dataMatricula, notaFinal) VALUES
+    ('MAT',1010,'C01',0,2012,2,13, '2012-05-06',6.2);
+
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('CMP',4070,'A01',0,2012,2, '2012-03-03',1,1, '2012-05-03','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('CMP',4070,'A01',0,2012,2, '2012-03-06',1,2, '2012-05-06','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('CMP',4070,'A01',1,2012,2, '2012-03-03',1,3, '2012-05-03','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('CMP',4070,'A01',2,2012,2, '2012-03-06',2,4, '2012-05-06','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('CMP',4070,'C01',0,2012,2, '2012-03-03',1,5, '2012-05-03','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('CMP',4070,'C01',0,2012,2, '2012-03-05',1,6, '2012-05-05','N');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('CMP',4070,'C01',1,2012,2, '2012-03-03',2,7, '2012-05-03','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('CMP',4070,'C01',2,2012,2, '2012-03-05',2,8, '2012-05-05','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('CMP',4433,'A01',0,2012,2, '2012-03-01',1,1, '2012-05-01','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('CMP',4433,'A01',1,2012,2, '2012-03-04',1,9, '2012-05-04','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('CMP',4433,'A01',2,2012,2, '2012-03-04',1,4, '2012-05-04','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('CMP',4433,'C01',0,2012,2, '2012-03-02',1,2, '2012-05-02','N');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('CMP',4433,'C01',1,2012,2, '2012-03-05',1,3, '2012-05-05','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('CMP',4433,'C01',2,2012,2, '2012-03-05',2,5, '2012-05-05','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('CMP',4433,'A02',0,2012,2, '2012-03-02',1,6, '2012-05-02','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('CMP',4433,'A02',1,2012,2, '2012-03-06',1,7, '2012-05-06','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('CMP',4433,'A02',2,2012,2, '2012-03-06',2,14, '2012-05-06','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('CMP',4033,'C01',0,2012,2, '2012-03-02',1,4, '2012-05-02','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('CMP',4033,'C01',0,2012,2, '2012-03-03',1,5, '2012-05-03','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('CMP',4033,'C01',0,2012,2, '2012-03-06',1,6, '2012-05-06','N');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('CMP',3030,'A01',0,2012,2, '2012-03-01',1,7, '2012-05-01','N');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('CMP',3030,'A01',0,2012,2, '2012-03-04',1,17, '2012-05-04','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('CMP',3030,'A01',1,2012,2, '2012-03-04',1,18, '2012-05-04','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('CMP',3030,'A01',2,2012,2, '2012-03-04',1,19, '2012-05-04','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('ADM',1000,'A01',0,2012,2, '2012-06-03',1,20, '2012-05-03','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('ADM',1000,'A01',0,2012,2, '2012-03-06',1,21, '2012-05-06','N');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('ADM',1000,'C01',0,2012,2, '2012-06-03',1,22, '2012-05-03','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('ADM',1000,'C01',0,2012,2, '2012-03-06',1,23, '2012-05-06','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('FIL',3444,'A01',0,2012,2, '2012-03-01',1,24, '2012-05-01','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('FIL',3444,'A01',0,2012,2, '2012-03-03',1,25, '2012-05-03','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('FIS',2020,'A01',0,2012,2, '2012-10-04',1,26, '2012-05-04','N');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('FIS',2020,'A01',0,2012,2, '2012-03-06',1,27, '2012-05-06','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('FIS',2020,'A01',1,2012,2, '2012-03-06',2,28, '2012-05-06','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('FIS',2020,'A01',2,2012,2, '2012-03-06',3,29, '2012-05-06','N');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('FIS',2020,'C01',0,2012,2, '2012-03-02',1,30, '2012-05-02','N');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('FIS',2020,'C01',0,2012,2, '2012-03-05',1,31, '2012-05-05','N');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('FIS',2020,'C01',1,2012,2, '2012-03-05',2,15, '2012-05-05','N');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('FIS',2020,'C01',2,2012,2, '2012-03-05',3,16, '2012-05-05','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('MAT',1010,'A01',0,2012,2, '2012-03-03',1,10, '2012-05-03','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('MAT',1010,'A01',0,2012,2, '2012-03-06',1,11, '2012-05-06','N');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('MAT',1010,'C01',0,2012,2, '2012-03-03',2,12, '2012-05-03','S');
+INSERT INTO Frequencia (codigoCurso, codigoDisciplina, numeroTurma, numeroSubTurma, anoSemestre, numeroSemestre, dataAula, numeroAula, matriculaAluno, dataMatricula, indPresenca) VALUES
+    ('MAT',1010,'C01',0,2012,2, '2012-03-06',2,13, '2012-05-06','N');

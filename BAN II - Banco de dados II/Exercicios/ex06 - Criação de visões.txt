@@ -1,0 +1,97 @@
+Victor Eduardo Requia  20/04/2022  BANII
+______________________________________________________________________________________________
+1)      Mostre o nome e a função dos mecânicos.
+
+2)      Mostre o modelo e a marca dos veículos dos clientes.
+
+3)      Mostre o nome dos mecânicos, o nome dos clientes, o modelo dos veículos e a data e hora dos consertos realizados.
+
+4)      Mostre o ano dos veículos e a média de quilometragem para cada ano.
+
+5)      Mostre o nome dos mecânicos e o total de consertos feitos por um mecânico em cada dia.
+
+6)      Mostre o nome dos setores e o total de consertos feitos em um setor em cada dia.
+
+7)      Mostre o nome das funções e o número de mecânicos que têm uma destas funções.
+
+8)      Mostre o nome dos mecânicos e suas funções e, para os mecânicos que estejam alocados a um setor, informe também o número e nome do setor.
+
+9)      Mostre o nome das funções dos mecânicos e a quantidade de consertos feitos agrupado por cada função.
+______________________________________________________________________________________________
+--1)Mostre o nome e a função dos mecânicos.
+create view mecanico_nome_funcao (nome, funcao) as
+select m.nome, m.funcao
+from mecanico m;
+
+select * from mecanico_nome_funcao
+
+--2)Mostre o modelo e a marca dos veículos dos clientes
+create view veiculo_modelo_marca as
+select v.modelo, v.marca
+from veiculo v;
+
+select * from veiculo_modelo_marca
+
+--3)Mostre o nome dos mecânicos, o nome dos clientes, o modelo dos veículos
+--  e a data e hora dos consertos realizados.
+create view nmec_ncli_mvei_dhcon (nomemecanico, nomecliente, modelo, data, hora) as
+select m.nome, cli.nome, v.modelo, c.data, c.hora from mecanico m
+   join conserto c using (codm)
+   join veiculo v using (codv)
+   join cliente cli using (codc);
+   
+select * from nmec_ncli_mvei_dhcon;
+   
+--4)Mostre o ano dos veículos e a média de quilometragem para cada ano.  
+create view veiculo_ano_media as
+select v.ano, avg(v.quilometragem) from veiculo v
+group by v.ano
+order by v.ano;
+
+select * from veiculo_ano_media;
+
+--5)Mostre o nome dos mecânicos e o total de consertos feitos
+--  por um mecânico em cada dia.
+create view mecanico_qconserto_dia as
+select m.nome, c.data, count(codm)
+from mecanico m
+join conserto c using (codm)
+group by m.nome, c.data;
+
+select * from mecanico_qconserto_dia;
+
+--6)Mostre o nome dos setores e o total de consertos feitos em um setor em cada dia.
+create view setor_conserto as
+select s.nome, c.data, count(codm)
+from mecanico m
+join conserto c using (codm)
+join setor s using (cods)
+group by s.nome, c.data;
+
+select * from setor_conserto;
+
+--7)Mostre o nome das funções e o número de mecânicos que têm uma destas funções.
+create view mecanico_funcao as
+select m.funcao, count(m.funcao) from mecanico m
+group by m.funcao;
+
+select * from mecanico_funcao;
+
+--8)Mostre o nome dos mecânicos e suas funções e, para os mecânicos que 
+--  estejam alocados a um setor, informe também o número e nome do setor.
+create view mecanico_funcao_setor (nomemecanico, funcao, codsetor, nomesetor) as
+select m.nome, m.funcao, m.cods, s.nome from mecanico m
+   join setor s
+   on m.cods = s.cods;
+   
+select * from mecanico_funcao_setor;
+
+--9)Mostre o nome das funções dos mecânicos e a quantidade de consertos feitos
+--  agrupado por cada função.
+create view mecanico_funcao_qconserto as 
+select m.funcao, count(m.codm) from mecanico m
+join conserto c using (codm)
+group by m.funcao;
+
+select * from mecanico_funcao_qconserto;
+______________________________________________________________________________________________

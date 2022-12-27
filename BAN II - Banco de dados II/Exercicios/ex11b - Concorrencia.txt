@@ -1,0 +1,9 @@
+3)
+
+Wait-die
+a) esperam
+b) velha
+
+Wound-wait
+a)abortam
+b)maior

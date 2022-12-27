@@ -1,0 +1,137 @@
+CREATE KEYSPACE academico WITH REPLICATION = {'class': 'SimpleStrategy', 'replication_factor' : 1};
+
+USE academico;
+
+CREATE TABLE Departamento(
+    codigo text,
+    nome text,
+    PRIMARY KEY (codigo)
+);
+
+CREATE TABLE Professor(
+    cpf text PRIMARY KEY,
+    nome text,
+    dataNascimento timestamp,
+    logradouro text,
+    bairro text,
+    cidade text,
+    estado text,
+    cep int,
+    codigoDepartamento text
+);
+
+CREATE TABLE Curso(
+    codigo text PRIMARY KEY,
+    nome text,
+    codigoDepartamento text
+);
+
+CREATE TABLE Disciplina(
+    codigoCurso text,
+    codigo int,
+    nome text,
+    creditos int,
+    aulasTeoricas int,
+    aulasPraticas int,
+    PRIMARY KEY (codigoCurso, codigo)
+);
+
+CREATE TABLE Vinculo(
+    cpfProfessor text,
+    codigoCurso text,
+    codigoDisciplina int,
+    PRIMARY KEY (cpfProfessor, codigoCurso, codigoDisciplina)
+);
+
+CREATE TABLE DiaDaSemana(
+    codigo int PRIMARY KEY,
+    nome text
+);
+
+CREATE TABLE Semestre(
+    ano int,
+    numero int,
+    dataInicioDasAulas timestamp,
+    dataTerminoDasAulas timestamp,
+    PRIMARY KEY (ano, numero)
+);
+
+CREATE TABLE Turma(
+    codigoCurso text,
+    codigoDisciplina int,
+    numero text,
+    numeroSubTurma int,
+    anoSemestre int,
+    numeroSemestre int,
+    PRIMARY KEY (codigoCurso,codigoDisciplina,numero,numeroSubTurma,anoSemestre,numeroSemestre)
+);
+
+CREATE TABLE DiasDeAula(
+    codigoCurso text,
+    codigoDisciplina int,
+    numeroTurma text,
+    numeroSubTurma int,
+    anoSemestre int,
+    numeroSemestre int,
+    codigoDiaSemana int,
+    tipoAula text,
+    horario text,
+    PRIMARY KEY (codigoCurso,codigoDisciplina,numeroTurma,numeroSubTurma,anoSemestre,numeroSemestre,codigoDiaSemana)
+);
+
+CREATE TABLE Aula(
+    codigoCurso text,
+    codigoDisciplina int,
+    numeroTurma text,
+    numeroSubTurma int,
+    anoSemestre int,
+    numeroSemestre int,
+    data timestamp,
+    numero int,
+    resumo text,
+    cpfProfessor text,
+    PRIMARY KEY (codigoCurso,codigoDisciplina,numeroTurma,numeroSubTurma,anoSemestre,numeroSemestre,data,numero)
+);
+
+CREATE TABLE Genero(
+    sigla text PRIMARY KEY
+);
+
+CREATE TABLE Aluno(
+    matricula int PRIMARY KEY,
+    nome text,
+    dataNascimento timestamp,
+    logradouro text,
+    bairro text,
+    estado text,
+    cep int,
+    genero text
+);
+
+CREATE TABLE Matricula(
+    codigoCurso text,
+    codigoDisciplina int,
+    numeroTurma text,
+    numeroSubTurma int,
+    anoSemestre int,
+    numeroSemestre int,
+    matriculaAluno int,
+    dataMatricula  timestamp,
+    notaFinal double,
+    PRIMARY KEY (codigoCurso,codigoDisciplina,numeroTurma,numeroSubTurma,anoSemestre,numeroSemestre,matriculaAluno,dataMatricula)
+);
+
+CREATE TABLE Frequencia(
+    codigoCurso text,
+    codigoDisciplina int,
+    numeroTurma text,
+    numeroSubTurma int,
+    anoSemestre int,
+    numeroSemestre int,
+    dataAula timestamp,
+    numeroAula int,
+    matriculaAluno int,
+    dataMatricula timestamp,
+    indPresenca text,
+    PRIMARY KEY (codigoCurso,codigoDisciplina,numeroTurma,numeroSubTurma,anoSemestre,numeroSemestre,dataAula,numeroAula,matriculaAluno,dataMatricula)
+);

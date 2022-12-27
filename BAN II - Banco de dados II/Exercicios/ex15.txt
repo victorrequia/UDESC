@@ -1,0 +1,67 @@
+Victor Eduardo Requia	22/06/2022	BAN II
+______________________________________________________________________________________________________
+
+CREATE TYPE tipo_tratamento AS (
+	data date,
+	descricao varchar(50)
+)
+
+CREATE TYPE tipo_animal AS (
+	id int,
+	nome varchar(50),
+	raca varchar(50),
+	sexo char(1)
+)
+
+CREATE TABLE animal OF tipo_animal;
+ALTER TABLE animal ADD primary key(id);
+
+CREATE TABLE veterinario (
+	crm char(10),
+	nome varchar(50),
+	convenio int,
+	
+	PRIMARY KEY (crm)
+)
+
+CREATE TABLE consulta (
+	crm char(10),
+	id_animal int,
+	data date,
+	resultado text,
+	tratamentos tipo_tratamento[],
+	
+	PRIMARY KEY (crm, id_animal),
+	FOREIGN KEY (crm) references veterinario,
+	FOREIGN KEY (id_animal) references animal
+)
+
+CREATE TABLE matriz (
+	PRIMARY KEY (id)
+) INHERITS (animal); 
+
+CREATE TABLE reprodutor (
+	PRIMARY KEY (id)
+) INHERITS (animal);
+
+CREATE TABLE adquirido (
+	nome_pai varchar(50),
+	nome_mae varchar(50),
+	valor float,
+	PRIMARY KEY (id)
+) INHERITS (reprodutor);
+
+CREATE TABLE cria (
+	data_desmame date,
+	PRIMARY KEY (id)
+) INHERITS (reprodutor);
+
+CREATE TABLE cobertura (
+	reprodutor_id int,
+	matriz_id int,
+	
+	PRIMARY KEY (reprodutor_id, matriz_id),
+	FOREIGN KEY (reprodutor_id) REFERENCES reprodutor,
+	FOREIGN KEY (matriz_id) REFERENCES matriz
+)
+______________________________________________________________________________________________________

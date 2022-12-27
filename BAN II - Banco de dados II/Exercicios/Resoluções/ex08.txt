@@ -1,0 +1,355 @@
+--1)  Gatilho para impedir a inserção ou atualização de Clientes com o mesmo CPF.
+create or replace function verificaCPF() returns trigger as
+$$
+begin
+  if TG_OP = 'INSERT' then
+     if (select count(1) from cliente where cpf=new.cpf) >0 then
+        raise exception 'CPF já cadastrado';
+     end if;
+  elsif TG_OP = 'UPDATE' then
+        if (new.cpf <> old.cpf) then
+           if (select count(1) from cliente where cpf=new.cpf) >0 then
+              raise exception 'CPF já cadastrado';
+           end if;
+        end if; 
+   end if;
+   return new;
+end;
+$$
+language plpgsql;
+
+ou
+
+create or replace function verificaCPF() returns trigger as
+$$
+begin
+	if (select 1 from cliente where cpf = new.cpf and codc <> new.codc) then
+		raise exception 'CPF já cadastrado.';
+	end if;
+	return new;
+end;
+$$
+language plpgsql;
+
+create trigger verificaCPF before insert or update on cliente for row execute procedure verificaCPF();
+
+select * from cliente
+
+delete from cliente where codc = 8
+
+insert into cliente values(8, '20000200001', 'Luiz', 20, 'Vila Nova', 'Jlle');
+
+update cliente 
+set
+  idade = 50,
+  cpf = '20000200000'
+where
+  codc = 8
+
+
+--2)Gatilho para impedir a inserção ou atualização de Mecânicos com idade menor que 20 anos.
+
+create or replace function verificaIdade() returns trigger as
+$$
+begin
+   if new.idade < 20 then
+      raise exception 'Mecanico nao pode ter idade menor que 20 anos';
+   end if;
+   return new;
+end;
+$$
+language plpgsql;
+
+create trigger verificaIdadeMec before insert or update on mecanico
+ for each row execute procedure verificaIdade();
+
+insert into mecanico (codm, cpf, nome, idade) values (12, 43242, 'teste1', 18)
+
+select * from mecanico
+
+
+--3)      Gatilho para atribuir um cods (sequencial) para um novo setor inserido.
+create sequence novo_cods start 10;
+
+create or replace function novo_cods() returns trigger as
+$$
+begin
+   new.cods := nextval('novo_cods');
+   return new;
+end;
+$$
+language plpgsql;
+
+create trigger novo_cods before insert on setor
+ for each row execute procedure novo_cods();
+
+ select * from setor
+
+ insert into setor (nome) values ('teste');
+ 
+ 
+--4)      Gatilho para impedir a inserção de um mecânico ou cliente com CPF inválido.
+create or replace function validaCPF() returns trigger as 
+$$
+declare
+cpf integer[11];
+charcpf char(11);
+sequencia1 integer[] default array [10,9,8,7,6,5,4,3,2];
+sequencia2 integer[] default array [11,10,9,8,7,6,5,4,3,2];
+pdigito integer[9];
+sdigito integer[10];
+somapdigito integer default 0;
+somasdigito integer default 0;
+cont integer default 0;
+resto integer;
+digito integer; 
+        
+begin
+        for cont in 1..11 loop
+            cpf[cont] := CAST(substring(new.cpf from cont for 1) as integer);
+        end loop;
+        -- Verifica 1º dígito
+        for cont in 1..9 loop
+            pdigito[cont] := cpf[cont] * sequencia1[cont];
+            somapdigito := somapdigito + pdigito[cont];
+        end loop;
+	resto := somapdigito % 11;
+        if resto < 2 then
+           digito := 0;
+        else
+           digito := 11-resto;
+        end if;
+        if digito <> cpf[10] then
+	   raise exception 'CPF inválido';
+	end if;
+        -- Verifica 2º dígito
+        for cont in 1..10 loop
+            sdigito[cont] := cpf[cont] * sequencia2[cont];
+            somasdigito := somasdigito + sdigito[cont];
+        end loop;
+	resto := somasdigito % 11;
+        if resto < 2 then
+           digito := 0;
+        else
+           digito := 11-resto;
+        end if;
+        if digito <> cpf[11] then
+	   raise exception 'CPF inválido';
+	end if;
+       return new;
+end;
+$$
+language plpgsql;
+
+create trigger tg_validaCPF before insert or update on mecanico for each row execute procedure validaCPF();
+
+insert into mecanico values (10, '22233344400', 'Márcia', 33, 'Pantanal', 'Florianópolis', 'desamassa', 3)
+
+-- OU
+
+--4)      Gatilho para impedir a inserção de um mecânico ou cliente com CPF inválido.
+--Criação da função
+
+create or replace function validaCPF(p_cpf char(11)) returns boolean as 
+$$ 
+declare
+cpf integer[11];
+sequencia1 integer[] default array [10,9,8,7,6,5,4,3,2];
+sequencia2 integer[] default array [11,10,9,8,7,6,5,4,3,2];
+pdigito integer[9];
+sdigito integer[10];
+somapdigito integer default 0;
+somasdigito integer default 0;
+cont integer default 0;
+resto integer;
+digito integer; 
+        
+begin
+        for cont in 1..11 loop
+            cpf[cont] := CAST(substring(p_cpf from cont for 1) as integer);
+        end loop;
+        -- Verifica 1º dígito
+        for cont in 1..9 loop
+            pdigito[cont] := cpf[cont] * sequencia1[cont];
+            somapdigito := somapdigito + pdigito[cont];
+        end loop;
+	resto := somapdigito % 11;
+        if resto < 2 then
+           digito := 0;
+        else
+           digito := 11-resto;
+        end if;
+        if digito <> cpf[10] then
+	   return false;
+	end if;
+        -- Verifica 2º dígito
+        for cont in 1..10 loop
+            sdigito[cont] := cpf[cont] * sequencia2[cont];
+            somasdigito := somasdigito + sdigito[cont];
+            
+        end loop;
+	resto := somasdigito % 11;
+        if resto < 2 then
+           digito := 0;
+        else
+           digito := 11-resto;
+        end if;
+        if digito <> cpf[11] then
+	   return false;
+	end if;
+       return true;
+end;
+$$
+language plpgsql;
+
+create or replace function verificaCPF() returns trigger as
+$$
+begin
+   if (not (validaCPF(new.cpf))) then
+      raise exception 'CPF inválido.';
+   end if;
+   return new;
+end;
+$$
+language plpgsql;
+
+create trigger cpfMecanico before insert or update on mecanico for row execute procedure verificaCPF();
+
+create trigger cpfCliente before insert or update on cliente for row execute procedure verificaCPF();
+
+
+insert into mecanico values (13, '22233344405', 'Márcia', 33, 'Pantanal', 'Florianópolis', 'desamassa', 3)
+
+select * from mecanico
+
+
+
+--5 Gatilho para impedir que um mecânico seja removido caso não exista 
+--outro mecânico com a mesma função.
+
+create or replace function verificaFuncao() returns trigger as
+$$
+begin
+   if ((select count(1) from mecanico where  funcao = old.funcao) < 2) then
+	raise exception 'Não é possível excluir o mecâncio, pois ele é o único nessa função';
+   end if;
+   return old;
+end;
+$$
+language plpgsql;
+
+create trigger verificaFuncao before delete on mecanico 
+for each row execute procedure verificaFuncao();
+
+delete from mecanico where codm=1
+
+
+--6)Gatilho que ao inserir, atualizar ou remover um mecânico, reflita as mesmas modificações na tabela de Cliente. 
+--Em caso de atualização, se o mecânico ainda não existir na tabela de Cliente, deve ser inserido.
+-- Operações? insert, update, delete
+-- Quem? mecanico
+-- Quando? after
+-- Nível? row level
+
+create or replace function atualizaMecCli() returns trigger as
+$$
+begin
+	if TG_OP = 'INSERT' then
+		insert into cliente values (nextval('cliente_codc_seq'), new.cpf, new.nome, new.idade, new.endereco, new.cidade);
+	elsif TG_OP = 'UPDATE' then
+		if ( select 1 from cliente where cpf = new.cpf) then
+			update cliente set nome = new.nome, idade = new.idade, endereco = new.endereco, cidade = new.cidade	where cpf = new.cpf;
+		else
+			insert into cliente values (nextval('cliente_codc_seq'), new.cpf, new.nome, new.idade, new.endereco, new.cidade);
+		end if;
+	elsif TG_OP = 'DELETE' then
+		delete from cliente where cpf = old.cpf;
+	end if;
+	return null;
+end;
+$$
+language plpgsql;
+
+create trigger atualizaMecCli after insert or update or delete on mecanico 
+								for each row execute procedure atualizaMecCli()
+
+
+INSERT INTO mecanico VALUES (9, '02817720962', 'João da Silva', 40, 'América', 'Joinville', 'som', 1)
+
+delete from mecanico where codm = 9;
+
+update mecanico set nome = 'João José da Silva' where codm = 9;
+
+
+create sequence cliente_codc_seq start 20;
+
+
+select * from cliente
+select * from mecanico
+
+
+
+--7
+create or replace function calculaHorasExtras(pcodm int, mes int, ano int) returns int as
+$$
+declare vHoras int default 0;
+     sql text;
+     diasMes int[] default array [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+begin
+   
+   sql := 'select count(1) from conserto c where c.codm = '||pcodm||
+   ' and c.data between '||'''01/'||mes||'/'||ano||''''||' and '||''''||
+   diasMes[mes]||'/'||mes||'/'||ano||'''';
+   raise notice 'SQL = %', sql;
+   execute sql into vHoras;
+   raise notice 'vHoras = %', vHoras;
+   if vHoras <= 160 then
+       return 0;
+   else
+      return vHoras - 160;
+   end if;
+end;
+$$
+language plpgsql;
+
+select calculaHorasExtras(1, 6, 2014)
+
+create or replace function verificaHoraExtra() returns trigger as
+$$
+declare mes int; ano int;
+begin
+   mes := date_part('month', new.data);
+   ano := date_part('year', new.data);
+   if(calculaHorasExtras(new.codm,mes,ano) > 20) then
+	raise exception 'O funcionário excedeu a quantidade de horas extras no mês.';
+   end if;
+   return new;
+end;
+$$
+language plpgsql;
+
+create trigger verificaHoraExtra before insert or update on conserto 
+for each row execute procedure verificaHoraExtra();
+
+
+-- 8) Gatilho para impedir que mais de 1 conserto seja agendado no mesmo setor na mesma hora. 
+-- Operações? insert, update
+-- Quem? conserto
+-- Quando? before
+
+create or replace function verificaHorario() returns trigger as
+$$
+begin
+	if (select count(1) from conserto join mecanico using (codm) where data = new.data and hora = new.hora group by cods) > 0 then
+		raise exception 'Setor já tem conserto agendado para esta data e hora';
+	end if;
+	return new;
+end;
+$$
+language plpgsql;
+
+create trigger verificaHorario before insert or update on conserto for each row execute procedure verificaHorario();
+
+INSERT INTO conserto VALUES (1, 3, '13/06/2020', '15:00')
+
+select * from conserto

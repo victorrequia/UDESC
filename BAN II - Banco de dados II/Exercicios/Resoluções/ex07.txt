@@ -1,0 +1,317 @@
+-- 1) Função para inserção e exclusão de um Setor.
+create or replace function insertSetor(cods int, nome varchar(50)) returns void
+as
+$$
+  insert into setor values (cods, nome);
+ $$
+language SQL;
+
+create or replace function deleteSetor(pcods int) returns void
+as
+$$
+  delete from setor s where s.cods = pcods;
+ $$
+language SQL;
+
+-- Insere setor
+Select insertSetor(5,'Administracao');
+-- deleta setor
+Select deleteSetor(5);
+
+select * from setor
+
+--OU
+
+create or replace function atualizaSetor(op char, pcods int, pnome varchar(50)) returns int
+as
+$$
+declare linhas int := 0;
+begin
+    if upper(op) = 'I' then
+	insert into setor values (pcods, pnome);
+    elsif upper(op) = 'D' then
+	delete from setor s where s.cods = pcods;
+    end if;
+    get diagnostics linhas = row_count;
+    return linhas;  
+end;
+$$
+language plpgsql;
+
+select atualizaSetor('i',7,'teste')
+select atualizaSetor('d',7,'teste')
+
+select * from setor
+
+--2) Função para exclusão de um Mecânico.
+create or replace function exclueMecanico(pcodm int) returns int as
+$$
+declare 
+  vLinhas int default 0;
+begin
+  delete from mecanico where codm = pcodm;
+  get diagnostics vLinhas = row_count;
+  if (vLinhas > 0) then
+	return 1;
+   else
+         return 0;
+    end if;
+end;
+$$
+language plpgsql;
+
+
+--6)Função para calcular a média geral de idade dos Mecânicos e Clientes.
+create or replace function calculamediaMecCli() returns float as
+$$
+declare vidade int default 0;
+	somaidade int default 0;
+        resultado float default 0;
+        quant int default 0;
+begin
+   for vidade in select idade from mecanico loop
+       somaidade := somaidade + vidade;
+       quant := quant +1;
+   end loop;
+   for vidade in select idade from cliente loop
+       somaidade := somaidade + vidade;
+       quant := quant+1;
+   end loop;
+   resultado := somaidade / quant;
+   return resultado;
+end;
+$$
+language plpgsql;
+
+select calculamediaMecCli()
+
+
+--7) Uma única função que permita fazer exclusão de um Setor, Mecânico, Cliente ou Veículo.
+create or replace function alteraBD(nomeTabela varchar, chave varchar[], valor int[]) returns void as
+$$
+begin
+   if upper(nomeTabela) = 'SETOR' then
+       execute excluiSetor(chave, valor);
+   elsif upper(nomeTabela) = 'CONSERTO' then
+       execute excluiConserto(chave, valor);
+   elsif upper(nomeTabela) = 'CLIENTE' then
+	   execute excluiCliente(chave, valor);
+   end if;
+
+end;
+$$
+language plpgsql;
+
+create or replace function excluiSetor(chave varchar[], valor int[]) returns void as
+$$
+begin
+  execute 'delete from setor where ' ||chave[1]||' = ' || valor[1];
+end;
+$$
+language plpgsql;
+
+create or replace function excluiConserto(chave varchar[], valor int[]) returns void as
+$$
+begin
+  execute 'delete from conserto where ' ||chave[1]||' = ' || valor[1] || ' and '||chave[2]||' = ' || valor[2];
+end;
+$$
+language plpgsql;
+
+create or replace function excluiCliente(chave varchar[], valor int[]) returns void as
+$$
+begin
+  execute 'delete from cliente where ' ||chave[1]||' = ' || valor[1];
+end;
+$$
+language plpgsql;
+
+select alteraBD('setor', array['cods'], array[1]);
+
+select alteraBD('conserto', array['codm', 'codv'], array[1, 1]);
+
+
+select * from setor
+
+select * from conserto
+
+
+--8)Faça uma função que remova clientes com CPF repetido.
+create or replace function excluiClienteCPF() returns int as
+$$
+declare vcodc int;
+        vcpf char(11); totalLinhas int :=0;
+        cont int := 0; linhas int :=0;
+begin
+  for vcpf in select cpf from cliente group by cpf having count(1)>1 loop
+	cont :=0;
+	for vcodc in select codc from cliente c where c.cpf=vcpf order by idade loop
+		if cont > 0 then
+		   delete from cliente cli where cli.codc = vcodc;
+		   get diagnostics linhas = row_count;
+		   totalLinhas := totalLinhas + linhas;
+		end if;
+		cont := cont +1;
+	end loop;
+  end loop;
+  return totalLinhas;
+end;
+$$
+language plpgsql;
+
+select cpf, count(1) from cliente group by cpf having count(1)>1
+select * from cliente
+
+INSERT INTO cliente VALUES (8, '20000200000', 'Fabiano', 25, 'América', 'Joinville'),
+(9, '20000220000', 'Baldo', 29, 'Saguaçú', 'Joinville'),
+(10, '22000200000', 'Antonio', 38, 'Vila Nova', 'Joinville'),
+(11, '22000200000', 'Sebastiao', 39, 'Vila Nova', 'Joinville')
+
+select excluiClienteCPF();
+
+-- ou 
+
+-- 8)
+
+create or replace function deleta_cpf_repetido() returns void as
+$$
+declare
+    vcodc int;
+begin
+   	for vcodc in select distinct c1.codc from cliente c1 join cliente c2 on 
+    					(c1.cpf = c2.cpf)
+    					where c1.codc > c2.codc loop
+            	delete from cliente where codc = vcodc;
+    end loop;
+end;
+$$
+language plpgsql;
+
+select deleta_cpf_repetido()
+
+select * from cliente
+
+
+
+--9)   Função para calcular se o CPF é válido
+create or replace function validaCPF(p_cpf char(11)) returns boolean as 
+$$ 
+declare
+cpf integer[11];
+sequencia1 integer[] default array [10,9,8,7,6,5,4,3,2];
+sequencia2 integer[] default array [11,10,9,8,7,6,5,4,3,2];
+pdigito integer[9];
+sdigito integer[10];
+somapdigito integer default 0;
+somasdigito integer default 0;
+cont integer default 0;
+resto integer;
+digito integer; 
+        
+begin
+        for cont in 1..11 loop
+            cpf[cont] := CAST(substring(p_cpf from cont for 1) as integer);
+        end loop;
+        -- Verifica 1º dígito
+        for cont in 1..9 loop
+            pdigito[cont] := cpf[cont] * sequencia1[cont];
+            somapdigito := somapdigito + pdigito[cont];
+        end loop;
+	resto := somapdigito % 11;
+        if resto < 2 then
+           digito := 0;
+        else
+           digito := 11-resto;
+        end if;
+        if digito <> cpf[10] then
+	   return false;
+	end if;
+        -- Verifica 2º dígito
+        for cont in 1..10 loop
+            sdigito[cont] := cpf[cont] * sequencia2[cont];
+            somasdigito := somasdigito + sdigito[cont];
+            
+        end loop;
+	resto := somasdigito % 11;
+        if resto < 2 then
+           digito := 0;
+        else
+           digito := 11-resto;
+        end if;
+        if digito <> cpf[11] then
+	   return false;
+	end if;
+       return true;
+end;
+$$
+language plpgsql;
+
+
+SELECT validaCPF('22233344405')
+
+
+
+--10)   Função que calcula a quantidade de horas extras de um mecânico em um mês de trabalho. 
+--O número de horas extras é calculado a partir das horas que excedam as 160 horas de trabalho mensais. 
+--O número de horas mensais trabalhadas é calculada a partir dos consertos realizados. Cada conserto tem a duração de 1 hora.
+create or replace function calculaHorasExtras(pcodm int, pinicio date, pfim date) returns int as
+$$
+declare vHoras int default 0;
+begin
+   select count(1) into vHoras from conserto c where c.codm = pcodm and 
+   c.data between pinicio and pfim;
+   if vHoras <= 160 then
+       return 0;
+   else
+      return vHoras - 160;
+   end if;
+end;
+$$
+language plpgsql;
+
+select calculaHorasExtras(1, '01/06/2014', '30/06/2014')
+
+--ou 
+
+create or replace function calculaHorasExtras(pcodm int, mes int, ano int) returns int as
+$$
+declare vHoras int default 0;
+     sql text;
+     diasMes int[] default array [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+begin
+   
+   sql := 'select count(1) from conserto c where c.codm = '||pcodm||
+   ' and c.data between '||'''01/'||mes||'/'||ano||''''||' and '||''''||
+   diasMes[mes]||'/'||mes||'/'||ano||'''';
+   raise notice 'SQL = %', sql;
+   execute sql into vHoras;
+   raise notice 'vHoras = %', vHoras;
+   if vHoras <= 160 then
+       return 0;
+   else
+      return vHoras - 160;
+   end if;
+end;
+$$
+language plpgsql;
+
+--ou
+
+create or replace function calculaHoraExtra(pcodm int, pmes int, pano int) returns int as
+$$
+declare
+   horasTrab integer default 0;
+begin
+   select count(1) into horasTrab
+   from conserto where codm = pcodm and date_part('month', data) = pmes and
+   date_part('year', data) = pano;
+   if horasTrab > 160 then
+      return horasTrab - 160;
+    else
+       return 0;
+    end if;
+end;
+$$
+language plpgsql;
+
+select calculaHorasExtras(1, 6, 2014)

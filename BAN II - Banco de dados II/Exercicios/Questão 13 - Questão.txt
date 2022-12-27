@@ -1,0 +1,27 @@
+Descrição: Considerando o BD da oficina mecânica, faça a otimização dos comandos SQL para as seguintes consultas.
+
+- Faça a criação dos índices e as modificações na especificação das consultas que achar necessário para melhorar a sua otimização.
+
+- Avalie a otimização realizada analisando a consulta por meio da ferramenta Explain Analyze do pgAdmin.
+
+1)      Recupere o CPF e o nome dos mecânicos que trabalham nos setores maiores que 100 e menores que 200.
+
+2)      Recupere o CPF e nome dos mecânicos que atenderam no dia 13/06/2018.
+
+3)      Recupere o nome do mecânico, o nome do cliente e a hora do conserto para os consertos realizados de 12/06/2018 à 25/09/2018.
+
+4)      Recupere o nome e a função de todos os mecânicos, e o número e o nome dos setores para os mecânicos que tenham essa informação.
+
+5)      Recupere o nome de todos os mecânicos, e as datas dos consertos para os mecânicos que têm consertos feitos (deve aparecer apenas um registro de nome de mecânico para cada data de conserto).
+
+6)      Recupere a média da quilometragem de todos os veículos dos clientes.
+
+7)      Recupere a soma da quilometragem dos veículos de cada cidade onde residem seus proprietários.
+
+8)      Recupere a quantidade de consertos feitos por cada mecânico durante o período de 12/06/2018 até 19/010/2018
+
+9)   Recupere a quantidade de consertos feitos agrupada pela marca do veículo.
+
+10)   Recupere o modelo, a marca e o ano dos veículos que têm quilometragem maior que a média de quilometragem de todos os veículos.
+
+11)   Recupere o nome dos mecânicos que têm mais de um conserto marcado para o mesmo dia.
