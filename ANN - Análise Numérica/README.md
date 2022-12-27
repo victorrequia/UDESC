@@ -2,29 +2,27 @@
 4° fase
 
 ### Ementa
-Noções de arquitetura e organização de computadores. Estrutura e funcionamento da CPU. Registradores. Hierarquia de
-memórias. Conjunto, formato e armazenamento de instruções. Noções de linguagem Assembly. Dispositivos de entrada e
-saída. Pipeline de instruções. Arquiteturas RISC e CISC. Noções de processamento paralelo. Noções de Microcontroladores.
+Análise numérica: características e importância. Máquinas digitais: precisão, exatidão e erros. Aritmética de ponto flutuante.
+Sistemas de numeração. Resolução computacional de sistemas de equações lineares. Resolução de equações algébricas e
+transcendentes. Resolução de sistemas de equações não lineares. Aproximação de funções: interpolação polinomial,
+interpolação spline, ajustamento de curvas, aproximação racional e por polinômios de Chebyschev. Integração numérica:
+Newton-Cotes e quadratura gaussiana
 
 ### Objetivo Geral
-Desenvolver as competências de: Relacionar os conceitos e abstrações de sistemas digitais na concepção de sistemas
-computacionais, identificando o impacto dos fatores da arquitetura e organização de computadores no projeto e
-implementação de software e hardware. Criar programas em linguagem de montagem (assembly), relacionando linguagens
-de alto nível (C) e de máquina com componentes de hardware. Compreender conceitos de arquitetura e organização de
-computadores.
+Deixar clara a importância de todos os conceitos, métodos e modelos matemáticos e computacionais que podem ser
+utilizados na resolução de problemas cuja solução não pode ser facilmente obtida utilizando-se apenas as técnicas
+introduzidas nos cursos iniciais de cálculo, álgebra e equações diferenciais.
+Familiarizar o aluno com expressões chave como: processos iterativos, estabilidade, aproximação, erro, convergência,
+condições suficientes e/ou necessárias e demais conceitos importantes que garantem a aplicabilidade de métodos numéricos
+na resolução de problemas do mundo real.
+Criar meios para que o aluno obtenha um bom domínio, teórico e prático, de cada um dos métodos que serão apresentados
+ao longo do curso
 
 ### Objetivo Específico
-Estudantes serão capazes de:
-- Aplicar sistemas de numeração e suas conversões compreendendo sua representação em sistemas digitais (e.g. em
-memória)
-- Projetar sistemas digitais simples com base em componentes digitais em lógica combinatorial e sequencial
-- Compreender sistemas computacionais usuais
-- Conhecer os componentes de um sistema computacional (e.g. registros, memória, dispositivos de E/S)
-- Identificar o impacto dos fatores da arquitetura e organização de computadores no projeto de software e hardware em
-situações problemas.
-- Criar programas em linguagem de montagem (assembly) para a solução de situações problemas
-- Relacionar linguagens de montagem e de máquina com módulos de hardware
-- Traduzir simples programas de C para linguagem de máquina
-- Compreender a organização interna de arquiteturas de microprocessadores
-- Compreender conceitos de: pipeline, harzard, fluxo de dados, Interrupções, Exceções, Entrada e Saída (E/S),
-processamento paralelo, memória, cache e microcontroladores.
+Ao final do semestre letivo o aluno deverá ser capaz de utilizar os conceitos e métodos numéricos para:
+- encontrar zeros de funções de uma e/ou várias variáveis;
+- efetuar interpolação polinomial;
+- ajustar curvas a dados discretos ou contínuos;
+- calcular integrais definidas e derivadas, e extrapolar sobre os valores obtidos;
+- solucionar problemas de valor inicial;
+- elaborar e aplicar rotinas dos métodos estudados em qualquer linguagem de programação
