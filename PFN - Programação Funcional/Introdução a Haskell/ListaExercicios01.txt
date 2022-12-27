@@ -1,0 +1,30 @@
+1. ehPar: escreva uma função que receba um número e retorne True caso este número seja par, e False caso contrário.
+   Ex: ehPar 10 => True
+
+2. anoIdade: escreva uma função que receba o ano de nascimento e retorne a idade.
+   Ex: anoIdade 1985 => 35
+   
+3. permiteDirigir: utilizando a funçao anoIdade, escreva uma função que dado o ano de nascimento, retorne True caso tenha idade igual ou superior a 18 anos, e False caso contrário.
+   Ex: permiteDirigir 1985 => True
+
+4. zeroPosNeg: escreva uma função que receba um número inteiro e retorne: "zero" caso seja 0, "positivo" caso seja maior que 0 e "negativo" caso seja menor que 0.
+   Ex: zeroPosNeg 8 => "positivo"
+
+5. media3: escreva uma função que receba 3 números, calcule e retorne a parte inteira da média.
+   Ex: media3 8 4 20 => 10
+
+6. areaSala: escreva uma função que receba as medidas de comprimento e largura de uma sala, e retorne a sua área.
+   Ex: areaSala 2 5 => 10 
+
+7. minHoras: escreva uma função que receba um período de tempo em minutos, e retorne quantas horas equivalem.
+   Ex: minHoras 30 => 0
+       minHoras 200 => 3
+
+8. dobroOuTriplo: escreva uma função que calcule o dobro de um número caso ele seja positivo, e seu triplo caso seja negativo.
+   Ex: dobroOuTriplo 2 => 2
+
+9. ehAprovado: escreva uma função que receba 3 notas, calcule a média (utilize a função media3 criada anteriormente), e retorne "aprovado" caso a média seja maior ou igual a 7, e "reprovado" caso contrário.
+   Ex: ehAprovado 7 8 9 => "aprovado"
+
+10. somaDigitos: escreva uma função que receba um número natural de 0 a 999 e retorna a soma de seus dígitos.
+    Ex: somaDigitos 328 => 13

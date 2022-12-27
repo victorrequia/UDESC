@@ -1,0 +1,85 @@
+1)a) 
+Entrda :: 
+fib 6
+
+Interpretação :: 
+fib 6 -> casa com fib 0 ? Não (proxima linha)
+fib 6 -> casa com fib 1 ? Não (proxima linha)
+fib 6 -> casa com fib n ? Sim (Então)
+fib 6 = fib (5) + fib (4) (Chamada recursiva de fib, é calculada
+cada uma das chamas)
+
+{*Calcula fib 4
+fib 4 -> casa com fib 0 ? Não (proxima linha)
+fib 4 -> casa com fib 1 ? Não (proxima linha)
+fib 4 -> casa com fib n ? Sim (Então)
+fib 4 = fib (3) + fib (2) (Chamada recursiva de fib, é calculada
+cada uma das chamas)
+
+//
+**Calcula fib 2
+fib 2 -> casa com fib 0 ? Não (proxima linha)
+fib 2 -> casa com fib 1 ? Não (proxima linha)
+fib 2 -> casa com fib n ? Sim (Então)
+fib 2 = fib (1) + fib (0)
+
+**Calcula fib 0
+fib 0 -> casa com fib 0 ? Sim (retorna 0) **
+
+fib 2 = fib (1) + 0
+
+**Calcula fib 1
+fib 1 -> casa com fib 0 ? Não (proxima linha)
+fib 1 -> casa com fib 1 ? Sim (retorn 1) **
+
+fib 2 = 1 + 0
+fib 2 = 1  (retorna 1)
+
+fib 4 = fib (3) + 1
+
+//
+**Calcula fib 3
+fib 3 -> casa com fib 0 ? Não (proxima linha)
+fib 3 -> casa com fib 1 ? Não (proxima linha)
+fib 3 -> casa com fib n ? Sim (Então)
+fib 3 = fib (2) + fib (1) (Chamada recursiva de fib, é calculada
+cada uma das chamas) 
+
+**Calcula fib 1
+fib 1 - casa com fib 0 ? Não (proxima linha)
+fib 1 - casa com fib 1 ? Sim (retorna 1) **
+
+fib 3 = fib (2) + 1
+
+**Calcula fib 2
+...
+fib 2 = fib (1) + fib (0)
+...
+fib 2 = 1 + 0
+fib 2 = 1 **
+
+fib 3 = 1 + 1
+fib 3 = 2 (retorna 2)
+
+fib 4 = 2 + 1
+fib 4 = 3 (retorna 3)}
+}
+
+Com o fib de 4 calculado, calcula-se o fib de 5 da mesa forma
+fib 6 = fib (5) + 3
+
+fib 5 -> casa com fib 0 ? Não (proxima linha)
+fib 5 -> casa com fib 1 ? Não (proxima linha)
+fib 5 -> casa com fib n ? Sim (Então)
+fib 5 = fib (4) + fib (3) (Chamada recursiva de fib, é calculada
+cada uma das chamas) 
+...
+
+saida:: 
+fib 6 = 5 + 3 = 8
+
+
+
+
+
+
