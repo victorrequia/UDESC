@@ -1,20 +1,18 @@
 ### Fase
-7° fase
+9° fase
 
 ### Ementa
-Sistemas de Manufatura. Introdução à Automação da Manufatura. Equipamentos Industriais. Sistemas de Software. Integração e Controle.
+Fundamentos da ética; O profissional de computação; A abrangência da ética em computação; A importância do raciocínio
+na tomada de decisões éticas; Problemas e pontos a ponderar; Códigos de ética profissionais; Ética profissional; Ética e
+regulamentação da profissão; Códigos de ética profissionais na área de computação.
 
 ### Objetivo Geral
-Os objetivos desta disciplina são: cobrir de maneira introdutória os conteúdos da área de Automação e Controle da forma
-que é especificada no currículo de referência da Sociedade Brasileira de Computação (SBC), fornecer subsídios para que o
-estudante possa compreender os problemas específicos associados aos problemas de automação das empresas, em
-automação e controle nas indústrias, produzindo soluções adequadas a esse perfil, bem como fornecer um diferencial para o
-mercado de trabalho nacional.
+Discutir com os estudantes as questões filosóficas em torno da ética levando-os a refletirem sobre as noções e princípios
+que fundamentam a vida moral e sua conduta profissional respeitando os princípios éticos em todas as esferas da vida em
+sociedade, em especial, aqueles relacionados á Computação e Informática.
 
 ### Objetivo Específico
-- CONCEITUAR Engenharia de Produto e Engenharia de Processos.
-- INTRODUZIR o processo de projeto, análise, planejamento, operação e controle automático da manufatura de produtos.
-- APRESENTAR os sistemas computacionais envolvidos nestes processos bem como alguns equipamentos.
-- CARACTERIZAR os tipos de dispositivos empregados na automação da manufatura e seus usos.
-- APRESENTAR a integração e automação da manufatura a partir dos sistemas computacionais e equipamentos apresentados
-e caracterizados na disciplina.
+- Compreender o que é a ética e moral e sua construção histórica
+- Reconhecer o papel da ética para a vida em sociedade
+- Entender a importância da ética e da computação para as empresas, organizações e profissionais
+- Analisar os problemas éticos relacionados às Computação e Informática
