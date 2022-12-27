@@ -1,14 +1,14 @@
 ### Fase
-3° fase
+4° fase
 
 ### Ementa
-Representação e manipulação de tipos abstratos de dados. Estruturas lineares.
-Introdução a estruturas hierárquicas. Métodos de classificação. Análise de eficiência. Aplicações.
+Conceitos de arquivos. Interfaces com o sistema operacional, acesso sequencial e direto. Ordenação externa. Pesquisa em
+memória secundária, indexação árvore B. Compressão de dados.
 
 ### Objetivo Geral
-capacitar o aluno a desenvolver soluções computacionais eficientes através da utilização de algoritmos eficientes e
-estrutura(s) de dados adequada(s).
+Capacitar o aluno a desenvolver soluções computacionais eficientes através da utilização da adequada arquitetura de
+arquivos, algoritmos eficientes e estruturas de dados adequadas à indexação dos mesmos.
 
 ### Objetivo Específico
-Implementar as principais estruturas de dados (lista, fila, pilha, árvore) Analisar os principais algoritmos que tratam
-conjuntos de dados (ordenação, busca) Capacitar os alunos a avaliar o melhor algoritmo para solucionar certo problema
+Implementar indexação de arquivos. Analisar os principais algoritmos que tratam as principais estruturas de indexação.
+Capacitar os alunos a avaliar o algoritmo mais adequado para solucionar um dado problema.
