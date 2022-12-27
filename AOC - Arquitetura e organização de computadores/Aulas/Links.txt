@@ -1,0 +1,9 @@
+Vídeoaula: Continuação 6.5 - HazardsURL -> https://www.youtube.com/watch?v=IpFzJ_SRALc&ab_channel=YuriKL
+
+Vídeoaula: Aula 6.6 - Caminho de Dados com PipelineURL -> https://www.youtube.com/watch?v=w_btLyIUDBw&ab_channel=YuriKL
+
+Vídeoaula: Aula 6.7 - Hazards de Dados: Construindo ForwardingsURL -> https://www.youtube.com/watch?v=S-UU-5kbOqE&ab_channel=YuriKL
+
+Vídeo: Aula 6.8 - Hazards de ControleURL -> https://www.youtube.com/watch?v=r5CohY5g9zg&ab_channel=YuriKL
+
+Vídeo: Aula 6.9 - Exceções, Interrupções e ESURL -> https://www.youtube.com/watch?v=YIVYWWQxpXw&ab_channel=YuriKL
