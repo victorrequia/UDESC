@@ -2,19 +2,19 @@
 7° fase
 
 ### Ementa
-Sistemas de Manufatura. Introdução à Automação da Manufatura. Equipamentos Industriais. Sistemas de Software. Integração e Controle.
+Negócios de base tecnológica e seu impacto na sociedade; O Empreendedorismo e o empreendedor; Inovação e o
+ecossistema de startups; O processo de empreender e o modelo startup enxuta; Identificação, validação de oportunidades e
+desenvolvimento do cliente; Plano de Negócio e Modelagem de Negócio; Políticas, legislação e sistema de apoio ao
+empreendedorismo. Educação Ambiental. Negócios de base tecnológica como fomentadores da sustentabilidade
+socioambiental.
 
 ### Objetivo Geral
-Os objetivos desta disciplina são: cobrir de maneira introdutória os conteúdos da área de Automação e Controle da forma
-que é especificada no currículo de referência da Sociedade Brasileira de Computação (SBC), fornecer subsídios para que o
-estudante possa compreender os problemas específicos associados aos problemas de automação das empresas, em
-automação e controle nas indústrias, produzindo soluções adequadas a esse perfil, bem como fornecer um diferencial para o
-mercado de trabalho nacional.
+Possibilitar o desenvolvimento de habilidades de gerenciamento e empreendedoras dos alunos. Refletir sobre o campo da
+legislação e empreendimentos em Informática, tendo em vista diversas atividades econômicas. Fomentar o desenvolvimento
+de novos empreendedores, sintonizados com as novas tendências mundiais, identificando oportunidades para aplicar os
+conhecimentos de forma criativa e gerando empreendimentos de alta importância e relevância para a sociedade.
 
 ### Objetivo Específico
-- CONCEITUAR Engenharia de Produto e Engenharia de Processos.
-- INTRODUZIR o processo de projeto, análise, planejamento, operação e controle automático da manufatura de produtos.
-- APRESENTAR os sistemas computacionais envolvidos nestes processos bem como alguns equipamentos.
-- CARACTERIZAR os tipos de dispositivos empregados na automação da manufatura e seus usos.
-- APRESENTAR a integração e automação da manufatura a partir dos sistemas computacionais e equipamentos apresentados
-e caracterizados na disciplina.
+Mostrar ao aluno o que é ser empreendedor e identificar sua capacidade empreendedora. Capacitar o aluno a desenvolver
+habilidades empreendedoras. Demonstrar caminhos para criação de um novo negócio de base tecnológica. Incentivar a
+geração de novas ideias e pensamento crítico e analista. Capacitar o aluno a desenvolver um plano de negócio eficiente.
