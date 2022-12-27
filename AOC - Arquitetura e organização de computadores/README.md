@@ -1,20 +1,30 @@
 ### Fase
-7° fase
+4° fase
 
 ### Ementa
-Sistemas de Manufatura. Introdução à Automação da Manufatura. Equipamentos Industriais. Sistemas de Software. Integração e Controle.
+Noções de arquitetura e organização de computadores. Estrutura e funcionamento da CPU. Registradores. Hierarquia de
+memórias. Conjunto, formato e armazenamento de instruções. Noções de linguagem Assembly. Dispositivos de entrada e
+saída. Pipeline de instruções. Arquiteturas RISC e CISC. Noções de processamento paralelo. Noções de Microcontroladores.
 
 ### Objetivo Geral
-Os objetivos desta disciplina são: cobrir de maneira introdutória os conteúdos da área de Automação e Controle da forma
-que é especificada no currículo de referência da Sociedade Brasileira de Computação (SBC), fornecer subsídios para que o
-estudante possa compreender os problemas específicos associados aos problemas de automação das empresas, em
-automação e controle nas indústrias, produzindo soluções adequadas a esse perfil, bem como fornecer um diferencial para o
-mercado de trabalho nacional.
+Desenvolver as competências de: Relacionar os conceitos e abstrações de sistemas digitais na concepção de sistemas
+computacionais, identificando o impacto dos fatores da arquitetura e organização de computadores no projeto e
+implementação de software e hardware. Criar programas em linguagem de montagem (assembly), relacionando linguagens
+de alto nível (C) e de máquina com componentes de hardware. Compreender conceitos de arquitetura e organização de
+computadores.
 
 ### Objetivo Específico
-- CONCEITUAR Engenharia de Produto e Engenharia de Processos.
-- INTRODUZIR o processo de projeto, análise, planejamento, operação e controle automático da manufatura de produtos.
-- APRESENTAR os sistemas computacionais envolvidos nestes processos bem como alguns equipamentos.
-- CARACTERIZAR os tipos de dispositivos empregados na automação da manufatura e seus usos.
-- APRESENTAR a integração e automação da manufatura a partir dos sistemas computacionais e equipamentos apresentados
-e caracterizados na disciplina.
+Estudantes serão capazes de:
+- Aplicar sistemas de numeração e suas conversões compreendendo sua representação em sistemas digitais (e.g. em
+memória)
+- Projetar sistemas digitais simples com base em componentes digitais em lógica combinatorial e sequencial
+- Compreender sistemas computacionais usuais
+- Conhecer os componentes de um sistema computacional (e.g. registros, memória, dispositivos de E/S)
+- Identificar o impacto dos fatores da arquitetura e organização de computadores no projeto de software e hardware em
+situações problemas.
+- Criar programas em linguagem de montagem (assembly) para a solução de situações problemas
+- Relacionar linguagens de montagem e de máquina com módulos de hardware
+- Traduzir simples programas de C para linguagem de máquina
+- Compreender a organização interna de arquiteturas de microprocessadores
+- Compreender conceitos de: pipeline, harzard, fluxo de dados, Interrupções, Exceções, Entrada e Saída (E/S),
+processamento paralelo, memória, cache e microcontroladores.
