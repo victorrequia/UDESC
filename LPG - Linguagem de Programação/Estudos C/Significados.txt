@@ -1,0 +1,3 @@
+(stdio.h) = standard input-output header
+(stdlib.h) = standard library 
+(void) = Em inglês, void quer dizer vazio e é isto mesmo que o void é. Ele nos permite fazer funções que não retornam nada e funções que não têm parâmetros
