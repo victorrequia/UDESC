@@ -1,0 +1,42 @@
+Na árvore AVL, podemos aplicar 4 tipos de operações
+1° Rotação simples a direita
+2° Rotação simples a esquerda
+3° Rotação dupla a direita
+4° Rotação dupla a esquerda
+-> Para aplicarmos uma operação de balanceamento, qualquer nó da árvore deve ter o fb diferente de 0,1 ou -1
+-> Uma rotação simples ocorre quando um nó está desbalanceado e o seu filho estiver no mesmo sentido de inclinação, formando uma reta
+-> Uma rotação-dupla ocorre quando um nó estiver desbalanceado e seu filho estiver inclinado no sentido inverso do pai, formando um "joelho"
+-> se necessário, as rotações devem ser feitas após operações de remoção e inserção
+
+Exemplos:
+1° Rotação simples à direita (RSD):
+Obs: A subárvore está mais alta no lado esquerdo
+Deve ser efetuada quando o fb do nó desbalanceado e do o filho à esquerda são positivos
+-> Árvore com os nós 100 (raiz), 90 (esquerda de 100), 80 (esquerda de 90)
+Neste caso, para realizar a rotação, 90 vira a raiz da arvore, tendo como filho a direita o nó 100 e a esquerda 80
+-> Árvore balanceada 90 (raiz), 80 (filho à esquerda), 100 (filho à direita)
+
+2° Rotação simples à esquerda (RSE):
+Obs: A subárvore está mais alta no lado direito
+Deve ser efetuada quando o fb do nó desbalanceado e do o filho à esquerda são negativos
+-> Árvore com os nós 100 (raiz), 110 (direita de 100), 120 (direita de 110)
+Neste caso, para realizar a rotação, 110 vira a raiz da arvore, tendo como filho a direita o nó 120 e a esquerda 100
+-> Árvore balanceada 90 (raiz), 80 (filho à esquerda), 100 (filho à direita)
+
+3° Rotação dupla à direita (RDD)
+Obs: A subárvore está mais alta no lado esquerdo
+Deve ser efetuada quando o fb do nó desbalanceado for positivo e o nó à direita negativo
+-> Árvore com os nós 100 (raiz), 80 (esquerda de 100), 90 (direita de 80)
+Neste caso, realizamos uma RSE em (80 e 90)
+-> Ficando assim, 100 (raiz), 90 (filho esquerdo de 100), 80 (filho esquerdo de 90)
+Agora realizamos uma RSD (100 e 90)
+-> Ficando assim 90 (raiz), 100 (filho a direita de 90), 80 (filho a esquerda de 90)
+
+4° Rotação dupla à esquerda (RDE)
+Obs: A subárvore está mais alta no lado direito
+Deve ser efetuada quando o fb do nó desbalanceado for negativo e o nó à direita positivo
+-> Árvore com os nós 100 (raiz), 120 (direita de 100), 110 (esquerda de 80)
+Neste caso, realizamos uma RSD em (120 e 110)
+-> Ficando assim, 100 (raiz), 110 (filho direito de 100), 120 (filho direito de 110)
+Agora realizamos uma RSE (100 e 110)
+-> Ficando assim 110 (raiz), 100 (filho a esquerda de 110), 120 (filho a direita de 120)
