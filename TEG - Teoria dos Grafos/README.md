@@ -1,19 +1,20 @@
 ### Fase
-6° fase
+4° fase
 
 ### Ementa
-Histórico e contextualização da Computação. Máquinas de Turing. Relações entre modelos de computabilidade e suas
-equivalências. Problema da Parada. A Tese de Church-Turing. Indecidibilidade. Redutibilidade de linguagens e de problemas.
-Complexidade de Tempo: análise de algoritmos, as classes de problemas P, NP e NP-Completo, Teorema de Cook-Levin.
+Conceitos e definições de grafos. Representação computacional. Conexividade, Isomorfismo, Planaridade e Coloração.
+Ordenação topológica. Grafos Hamiltonianos, Eulerianos e Árvores. Buscas em Grafos. Caminho Mínimo. Árvore geradora.
+Fluxos em Redes. Introdução ao estudo de estruturas combinatórias.
 
 ### Objetivo Geral
-Capacitar o aluno para a aplicação sistematizada e formalizada de conceitos e resultados relativos à computabilidade e à
-decidibilidade de linguagens e problemas, e à complexidade de tempo de algoritmos.
+Apresentar os principais conceitos da área de grafos aos acadêmicos e aplicar os conhecimentos no desenvolvimento,
+implementação e análise dos algoritmos aplicados na Teoria de Grafos
 
 ### Objetivo Específico
-- Conceituar as Máquinas de Turing e estruturas de poder computacional equivalente;
-- Apresentar equivalências de modelos computacionais;
-- Apresentar a Tese de Church-Turing.;
-- Conceituar a decidibilidade de linguagens e problemas;
-- Capacitar o aluno na prova por redução de linguagens e problemas;
-- Introduzir os conceitos de complexidade de tempo.
+Ao final da disciplina os estudantes vão ter noções gerais para serem capazes de:
+- Apresentar os conceitos básicos de Grafos;
+- Apresentar os aspectos de planaridade, isomorfismo e coloração;
+- Representar grafos computacionalmente;
+- Resolver exercícios práticos de implementação;
+- Apresentar os conceitos de Árvores;
+- Apresentar diversos algoritmos, suas aplicações e propor exercícios de implementação aos alunos;
