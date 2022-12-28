@@ -1,0 +1,20 @@
+Abaixo, foram selecionados alguns materiais (ferramentas) importantes para a disciplina...
+
+Aplicação Web para apoio de cursos de Linguagens Formais e Teoria dos Autómatos - OFLAP - http://ctp.di.fct.unl.pt/FACTOR/OFLAT/
+
+JFLAP - Software for experimenting with formal languages topic - http://www.jflap.org
+
+Online Regex tester and debuger - regex101 - https://regex101.com
+
+Finite State Machine Designer - FSM - http://ricardofm.me/disciplinas/lfa0001/fsm
+
+Graph Visualization Software - GraphViz - HP do projeto - Ferramenta online
+* Exemplo (GraphViz) - Resultados via Web
+
+Visually simulate your DFAs, NFAs and ε-NFAs - FSM Simulator - http://ivanzuzak.info/noam/webapps/fsm_simulator/
+
+Simulador de Autômatos (inclusive com pilha) - Automaton Simulator - http://ricardofm.me/disciplinas/lfa0001/automaton_simulator (obs.: não distingue a de A)
+
+Ambiente para simulação de Autômatos Finitos - AUGER - http://www.evoluma.com/auger/
+
+Ferramenta para simplificação/padronização/reconhecimento de linguagens (gramáticas) - http://ricardofm.me/disciplinas/lfa0001/lfa.html
