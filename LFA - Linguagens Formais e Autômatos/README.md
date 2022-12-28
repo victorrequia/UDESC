@@ -1,19 +1,21 @@
 ### Fase
-6° fase
+4° fase
 
 ### Ementa
-Conceitos básicos de Interação Humano-Computador (IHC): Interfaces, Sistemas Interativos, Usuários, Usabilidade,
-Componentes de Software e Hardware. Fundamentos teóricos. Projeto e Prototipação de Interfaces. Avaliação de Interfaces:
-tipos e técnicas de avaliação. Interfaces Web. Interfaces Avançadas e Novas Tendências.
+Alfabetos e Linguagens. Linguagens, gramáticas e expressões regulares, autômatos finitos. Linguagens e gramáticas livres
+de contexto e autômatos de pilha. Linguagens sensíveis ao contexto. Implementação dos conceitos para a solução de
+problemas básicos.
 
 ### Objetivo Geral
-Aplicar os fundamentos de Interfaces para o projeto e a construção de interfaces.
+Capacitar o aluno para a aplicação sistematizada e formalizada de conceitos e resultados relativos às linguagens,
+gramáticas, autômatos e reconhecedores.
 
 ### Objetivo Específico
-Capacitar o aluno a:
-- Conhecer os fundamentos de interfaces e investigar a usabilidade em interfaces humano-computador.
-- Projetar uma interface com Usabilidade.
-- Aplicar o conceito de avaliação de interfaces.
-- Identificar as diferenças entre os diversos estilos e paradigmas de interação.
-- Desenvolver espírito crítico e consciência dos pressupostos éticos que regulamentam as pesquisas envolvendo seres
-humanos.
+- APRESENTAR os principais métodos de tratamento sintático de linguagens abstratas, com a respectiva associação às
+linguagens típicas da Ciência da Computação;
+- CONCEITUAR as linguagens regulares, autômatos finitos e expressões regulares;
+- APRESENTAR a equivalência entre os modelos;
+- CONCEITUAR autômatos a pilha determinísticos e não determinísticos;
+- INTRODUZIR os conceitos sobre gramáticas livres de contexto;
+- INTRODUZIR os conceitos de linguagens sensíveis ao contexto;
+- APRESENTAR a hierarquia de Chomsky.
