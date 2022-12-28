@@ -1,20 +1,19 @@
 ### Fase
-1° fase
+6° fase
 
 ### Ementa
-Conjunto Numéricos; Conceito de Função; Função Afim; Função Quadrática; Função Modular; Função Exponencial;
-Logaritmo; Funções Trigonométrica; Funções Hiperbólicas
+Conceitos básicos de Interação Humano-Computador (IHC): Interfaces, Sistemas Interativos, Usuários, Usabilidade,
+Componentes de Software e Hardware. Fundamentos teóricos. Projeto e Prototipação de Interfaces. Avaliação de Interfaces:
+tipos e técnicas de avaliação. Interfaces Web. Interfaces Avançadas e Novas Tendências.
 
 ### Objetivo Geral
-Reforçar e aprimorar conceitos matemáticos vistos no Ensino Básico para preparar o estudante
-para disciplinas posteriores do curso, dando ênfase ao cálculo, ao raciocínio lógico e ao rigor matemático. Além disso,
-incentivar a autonomia e a autocrítica no estudo e na superação de dificuldades
+Aplicar os fundamentos de Interfaces para o projeto e a construção de interfaces.
 
 ### Objetivo Específico
-O aluno deverá ser capaz de:
-- Ampliar e fortalecer os conhecimentos a respeito dos números, conjuntos e funções;
-- Ter habilidade de resolver equações e inequações envolvendo expressões algébricas;
-- Identificar as propriedades e os tipos de funções;
-- Representar graficamente as funções;
-- Relacionar os conceitos de funções com as aplicações práticas.
-
+Capacitar o aluno a:
+- Conhecer os fundamentos de interfaces e investigar a usabilidade em interfaces humano-computador.
+- Projetar uma interface com Usabilidade.
+- Aplicar o conceito de avaliação de interfaces.
+- Identificar as diferenças entre os diversos estilos e paradigmas de interação.
+- Desenvolver espírito crítico e consciência dos pressupostos éticos que regulamentam as pesquisas envolvendo seres
+humanos.
