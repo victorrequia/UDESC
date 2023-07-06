@@ -1,0 +1,369 @@
+------------- FACEIS -------------
+INSERT INTO question ( question_text, difficult) VALUES ( 'Qual é a função principal de um sistema operacional?', 1);
+INSERT INTO question ( question_text, difficult) VALUES ( 'O que é um navegador de internet?', 1);
+INSERT INTO question ( question_text, difficult) VALUES ( 'O que é um firewall?', 1);
+INSERT INTO question ( question_text, difficult) VALUES ( 'O que é um backup de dados?', 1);
+INSERT INTO question ( question_text, difficult) VALUES ( 'O que é a computação em nuvem?', 1);
+INSERT INTO question ( question_text, difficult) VALUES ( 'O que é um banco de dados relacional?', 1);
+INSERT INTO question ( question_text, difficult) VALUES ( 'O que é um algoritmo?', 1);
+INSERT INTO question ( question_text, difficult) VALUES ( 'O que é a inteligência artificial?', 1);
+INSERT INTO question ( question_text, difficult) VALUES ( 'O que é um hacker?', 1);
+INSERT INTO question ( question_text, difficult) VALUES ( 'O que é um sistema de gerenciamento de banco de dados (SGBD)?', 1);
+
+-- Respostas para a pergunta 1
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (1, false, 'Gerenciar a conexão de internet');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (1, false, 'Executar programas de edição de texto');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (1, true, 'Controlar o hardware e os recursos do computador');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (1, false, 'Fornecer energia para o computador');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (1, false, 'Aquecer o processador');
+
+-- Respostas para a pergunta 2
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (2, false, 'Um dispositivo de armazenamento externo');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (2, false, 'Um programa para reproduzir músicas');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (2, false, 'Um software de edição de imagens');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (2, true, 'Um programa para acessar páginas da web');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (2, false, 'Um sistema operacional para dispositivos móveis');
+
+-- Respostas para a pergunta 3
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (3, false, 'Um dispositivo para impressão de documentos');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (3, false, 'Um programa para criar apresentações de slides');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (3, false, 'Um tipo de vírus de computador');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (3, true, 'Um mecanismo de segurança para proteger redes');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (3, false, 'Uma ferramenta para backup de arquivos');
+
+-- Respostas para a pergunta 4
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (4, false, 'Um tipo de arquivo compactado');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (4, true, 'Uma cópia de segurança dos dados para proteção');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (4, false, 'Um formato de vídeo de alta resolução');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (4, false, 'Uma tecnologia para conexão de dispositivos sem fio');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (4, false, 'Um dispositivo de armazenamento externo');
+
+-- Respostas para a pergunta 5
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (5, false, 'Um tipo de impressora portátil');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (5, false, 'Um software para edição de vídeos');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (5, false, 'Uma rede de computadores interligados');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (5, true, 'Uma tecnologia para armazenamento e processamento de dados na internet');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (5, false, 'Um sistema operacional para dispositivos móveis');
+
+-- Respostas para a pergunta 6
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (6, false, 'Um software para edição de imagens');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (6, false, 'Um dispositivo para reprodução de áudio');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (6, false, 'Um tipo de vírus de computador');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (6, true, 'Um sistema para armazenar e gerenciar dados relacionados em tabelas');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (6, false, 'Um tipo de dispositivo de entrada');
+
+-- Respostas para a pergunta 7
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (7, false, 'Um tipo de software malicioso');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (7, false, 'Um dispositivo para fazer ligações telefônicas');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (7, false, 'Uma linguagem de programação');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (7, true, 'Um conjunto de instruções para resolver um problema');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (7, false, 'Um formato de arquivo de texto');
+
+-- Respostas para a pergunta 8
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (8, false, 'Um tipo de processador de alta velocidade');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (8, false, 'Um software para criar gráficos em 3D');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (8, true, 'Uma área da ciência da computação que busca desenvolver máquinas capazes de realizar tarefas que exigem inteligência humana');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (8, false, 'Um tipo de conexão de internet de alta velocidade');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (8, false, 'Uma linguagem de programação orientada a objetos');
+
+-- Respostas para a pergunta 9
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (9, false, 'Um tipo de vírus de computador');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (9, false, 'Um dispositivo de armazenamento externo');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (9, true, 'Uma pessoa que possui habilidades avançadas em computação e utiliza seus conhecimentos para descobrir falhas em sistemas de segurança');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (9, false, 'Um tipo de software para monitoramento de redes');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (9, false, 'Um programa para recuperação de dados perdidos');
+
+-- Respostas para a pergunta 10
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (10, false, 'Um programa para edição de vídeos');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (10, false, 'Um dispositivo para armazenar arquivos');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (10, false, 'Um tipo de vírus de computador');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (10, false, 'Um sistema para controlar a temperatura do computador');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (10, true, 'Um software para armazenar, gerenciar e recuperar informações em um banco de dados');
+
+---------------- inter ----------------
+
+-- Questão 1
+INSERT INTO question (question_text, difficult) VALUES ('O que é um servidor web?', 3);
+
+-- Questão 3
+INSERT INTO question (question_text, difficult) VALUES ('O que é um banco de dados relacional?', 3);
+
+-- Questão 3
+INSERT INTO question (question_text, difficult) VALUES ('O que é criptografia de dados?', 3);
+
+-- Questão 4
+INSERT INTO question (question_text, difficult) VALUES ('O que é um sistema operacional?', 3);
+
+-- Questão 5
+INSERT INTO question (question_text, difficult) VALUES ('O que é programação orientada a objetos?', 3);
+
+-- Questão 6
+INSERT INTO question (question_text, difficult) VALUES ('O que é cloud computing?', 3);
+
+-- Questão 7
+INSERT INTO question (question_text, difficult) VALUES ('O que é um algoritmo?', 3);
+
+-- Questão 8
+INSERT INTO question (question_text, difficult) VALUES ('O que é inteligência artificial?', 3);
+
+-- Questão 9
+INSERT INTO question (question_text, difficult) VALUES ('O que é virtualização?', 3);
+
+-- Questão 10
+INSERT INTO question (question_text, difficult) VALUES ('O que é big data?', 3);
+
+-- Respostas para a pergunta 11
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (11, true, 'Um servidor responsável por processar solicitações e fornecer páginas web aos clientes');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (11, false, 'Um software para gerenciar e-mails');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (11, false, 'Um dispositivo utilizado para armazenar arquivos');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (11, false, 'Um tipo de vírus de computador');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (11, false, 'Um programa para criar animações em 3D');
+
+-- Respostas para a pergunta 12
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (12, true, 'Um tipo de banco de dados que organiza os dados em tabelas relacionadas');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (12, false, 'Um software para desenho gráfico');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (12, false, 'Um dispositivo para armazenar arquivos em nuvem');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (12, false, 'Uma linguagem de programação orientada a objetos');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (12, false, 'Um tipo de vírus de computador');
+
+-- Respostas para a pergunta 13
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (13, true, 'Um conjunto de técnicas para tornar os dados ininteligíveis para pessoas não autorizadas');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (13, false, 'Um software para criar modelos 3D');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (13, false, 'Um tipo de vírus de computador');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (13, false, 'Uma linguagem de programação utilizada para criptografar dados');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (13, false, 'Um dispositivo de armazenamento externo');
+
+-- Respostas para a pergunta 14
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (14, true, 'Um software responsável por gerenciar recursos e fornecer uma interface entre o usuário e o hardware');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (14, false, 'Um tipo de vírus de computador');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (14, false, 'Um dispositivo para fazer ligações telefônicas');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (14, false, 'Um programa para edição de vídeos');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (14, false, 'Um tipo de software malicioso');
+
+-- Respostas para a pergunta 15
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (15, true, 'Um paradigma de programação que utiliza objetos como unidades fundamentais');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (15, false, 'Um tipo de vírus de computador');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (15, false, 'Uma linguagem de programação para cálculos matemáticos');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (15, false, 'Um dispositivo de armazenamento externo');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (15, false, 'Um programa para criar gráficos e imagens');
+
+-- Respostas para a pergunta 16
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (16, true, 'Um modelo de computação que permite acessar recursos e serviços pela internet');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (16, false, 'Um tipo de vírus de computador');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (16, false, 'Uma linguagem de programação para automação de processos');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (16, false, 'Um dispositivo de armazenamento externo');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (16, false, 'Um programa para fazer backup de arquivos');
+
+-- Respostas para a pergunta 17
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (17, true, 'Um conjunto de instruções sequenciais para resolver um problema específico');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (17, false, 'Um tipo de vírus de computador');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (17, false, 'Um dispositivo utilizado para capturar imagens');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (17, false, 'Uma linguagem de programação para design gráfico');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (17, false, 'Um programa para criar animações em 2D');
+
+-- Respostas para a pergunta 18
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (18, true, 'Um campo de estudo que desenvolve sistemas capazes de realizar tarefas que normalmente exigem inteligência humana');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (18, false, 'Um tipo de vírus de computador');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (18, false, 'Uma linguagem de programação para análise estatística');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (18, false, 'Um dispositivo de armazenamento externo');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (18, false, 'Um programa para criar gráficos e imagens');
+
+-- Respostas para a pergunta 19
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (19, true, 'A criação de uma versão virtual de um recurso de hardware ou software');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (19, false, 'Um tipo de vírus de computador');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (19, false, 'Um software para monitorar a temperatura do computador');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (19, false, 'Uma linguagem de programação para desenvolvimento web');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (19, false, 'Um dispositivo utilizado para armazenar arquivos');
+
+-- Respostas para a pergunta 20
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (20, true, 'Uma tecnologia que permite a transmissão de dados sem fio entre dispositivos');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (20, false, 'Um tipo de vírus de computador');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (20, false, 'Um dispositivo utilizado para armazenar arquivos');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (20, false, 'Uma linguagem de programação para desenvolvimento de jogos');
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (20, false, 'Um programa para criar animações em 3D');
+
+------------ dificeis -----------------
+-- Questão 1
+INSERT INTO question (question_text, difficult) VALUES ('Qual é o protocolo de criptografia usado para garantir a segurança das transações online?', 5);
+
+-- Questão 2
+INSERT INTO question (question_text, difficult) VALUES ('O que é SQL Injection?', 5);
+
+-- Questão 3
+INSERT INTO question (question_text, difficult) VALUES ('O que é uma rede VPN?', 5);
+
+-- Questão 4
+INSERT INTO question (question_text, difficult) VALUES ('O que é o protocolo IPv6?', 5);
+
+-- Questão 5
+INSERT INTO question (question_text, difficult) VALUES ('O que é um ataque de força bruta?', 5);
+
+-- Questão 6
+INSERT INTO question (question_text, difficult) VALUES ('O que é um algoritmo de criptografia assimétrica?', 5);
+
+-- Questão 7
+INSERT INTO question (question_text, difficult) VALUES ('O que é um sistema operacional de código aberto?', 5);
+
+-- Questão 8
+INSERT INTO question (question_text, difficult) VALUES ('O que é um ataque de negação de serviço (DDoS)?', 5);
+
+-- Questão 9
+INSERT INTO question (question_text, difficult) VALUES ('O que é a computação em nuvem?', 5);
+
+-- Questão 10
+INSERT INTO question (question_text, difficult) VALUES ('O que é a Internet das Coisas (IoT)?', 5);
+
+-- Resposta 1 da Questão 1
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (21, true, 'TLS');
+
+-- Resposta 2 da Questão 1
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (21, false, 'FTP');
+
+-- Resposta 3 da Questão 1
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (21, false, 'HTTP');
+
+-- Resposta 4 da Questão 1
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (21, false, 'POP3');
+
+-- Resposta 5 da Questão 1
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (21, false, 'SMTP');
+
+-- Resposta 1 da Questão 2
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (22, false, 'Um tipo de linguagem de programação');
+
+-- Resposta 2 da Questão 2
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (22, true, 'Uma técnica que permite a inserção de comandos SQL maliciosos em uma aplicação');
+
+-- Resposta 3 da Questão 2
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (22, false, 'Um tipo de ataque de negação de serviço');
+
+-- Resposta 4 da Questão 2
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (22, false, 'Um protocolo de comunicação seguro');
+
+-- Resposta 5 da Questão 2
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (22, false, 'Uma técnica de criptografia de dados');
+
+-- Resposta 1 da Questão 3
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (23, false, 'Uma técnica para acessar uma rede privada por meio de uma conexão segura');
+
+-- Resposta 2 da Questão 3
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (23, true, 'Virtual Private Network');
+
+-- Resposta 3 da Questão 3
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (23, false, 'Um tipo de firewall');
+
+-- Resposta 4 da Questão 3
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (23, false, 'Um protocolo de roteamento');
+
+-- Resposta 5 da Questão 3
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (23, false, 'Um software antivírus');
+
+-- Resposta 1 da Questão 4
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (24, false, 'A versão 4 do protocolo IP');
+
+-- Resposta 2 da Questão 4
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (24, true, 'A versão 6 do protocolo IP');
+
+-- Resposta 3 da Questão 4
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (24, false, 'O endereço IP padrão de um roteador');
+
+-- Resposta 4 da Questão 4
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (24, false, 'Um protocolo de criptografia de dados');
+
+-- Resposta 5 da Questão 4
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (24, false, 'Uma técnica de balanceamento de carga');
+
+-- Resposta 1 da Questão 5
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (25, false, 'Um tipo de ataque de phishing');
+
+-- Resposta 2 da Questão 5
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (25, true, 'Um tipo de ataque que tenta adivinhar uma senha testando várias combinações');
+
+-- Resposta 3 da Questão 5
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (25, false, 'Um tipo de ataque de negação de serviço');
+
+-- Resposta 4 da Questão 5
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (25, false, 'Um tipo de ataque que se aproveita de vulnerabilidades de software');
+
+-- Resposta 5 da Questão 5
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (25, false, 'Um tipo de ataque que usa redes zumbis');
+
+-- Resposta 1 da Questão 6
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (26, false, 'Um algoritmo de criptografia simétrica');
+
+-- Resposta 2 da Questão 6
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (26, true, 'Um algoritmo de criptografia que utiliza chaves públicas e privadas');
+
+-- Resposta 3 da Questão 6
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (26, false, 'Um tipo de ataque de negação de serviço');
+
+-- Resposta 4 da Questão 6
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (26, false, 'Um tipo de ataque de phishing');
+
+-- Resposta 5 da Questão 6
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (26, false, 'Um protocolo de comunicação seguro');
+
+-- Resposta 1 da Questão 7
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (27, true, 'Um sistema operacional cujo código-fonte é aberto e pode ser modificado');
+
+-- Resposta 2 da Questão 7
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (27, false, 'Um sistema operacional desenvolvido pela Microsoft');
+
+-- Resposta 3 da Questão 7
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (27, false, 'Um sistema operacional voltado para servidores');
+
+-- Resposta 4 da Questão 7
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (27, false, 'Um sistema operacional baseado em nuvem');
+
+-- Resposta 5 da Questão 7
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (27, false, 'Um sistema operacional que não requer licença para uso');
+
+-- Resposta 1 da Questão 8
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (28, false, 'Um tipo de ataque de phishing');
+
+-- Resposta 2 da Questão 8
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (28, true, 'Um tipo de ataque que visa sobrecarregar um servidor ou rede para torná-los inacessíveis');
+
+-- Resposta 3 da Questão 8
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (28, false, 'Um tipo de ataque que se aproveita de vulnerabilidades de software');
+
+-- Resposta 4 da Questão 8
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (28, false, 'Um tipo de ataque que tenta adivinhar senhas por meio de força bruta');
+
+-- Resposta 5 da Questão 8
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (28, false, 'Um tipo de ataque que usa redes zumbis');
+
+-- Resposta 1 da Questão 9
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (29, true, 'Um modelo de fornecimento de serviços de computação por meio da Internet');
+
+-- Resposta 2 da Questão 9
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (29, false, 'Um tipo de ataque que visa obter acesso a informações confidenciais');
+
+-- Resposta 3 da Questão 9
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (29, false, 'Um protocolo de comunicação seguro');
+
+-- Resposta 4 da Questão 9
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (29, false, 'Um tipo de ataque que visa interromper ou degradar um serviço de rede');
+
+-- Resposta 5 da Questão 9
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (29, false, 'Um tipo de ataque que se aproveita de vulnerabilidades de software');
+
+-- Resposta 1 da Questão 10
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (30, false, 'Um tipo de ataque que visa obter acesso a informações confidenciais');
+
+-- Resposta 2 da Questão 10
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (30, true, 'Um conceito que se refere à conexão de objetos físicos à internet');
+
+-- Resposta 3 da Questão 10
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (30, false, 'Um protocolo de criptografia de dados');
+
+-- Resposta 4 da Questão 10
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (30, false, 'Um tipo de ataque que se aproveita de vulnerabilidades de software');
+
+-- Resposta 5 da Questão 10
+INSERT INTO answer (id_question, is_correct, answer_text) VALUES (30, false, 'Um tipo de ataque de negação de serviço');
+
+-- Continue criando comandos INSERT para as respostas restantes
+
+
+

@@ -1,0 +1,42 @@
+create table USERS (
+	name varchar primary key,
+	score int not null
+)
+
+drop table USERS
+
+select * from users
+
+CREATE TABLE question (
+    id serial PRIMARY KEY,
+    question_text VARCHAR(255) not null,
+	difficult int not null
+);
+
+select * from question 
+
+delete from question
+
+drop table question
+
+create table answer (
+	id serial PRIMARY KEY,
+	id_question serial not null,
+	is_correct BOOLEAN not null,
+    answer_text VARCHAR(255) not null,
+	foreign key (id_question) references question(id)
+)
+
+select * from answer
+
+drop table answer
+
+delete from answer
+
+select q.question_text, a.answer_text from answer a, question q
+where a.id_question = q.id and a.is_correct = true
+
+update answer
+set answer_text = 'Um conceito que se refere à conexão de objetos físicos à internet'
+where answer.id_question = 30 and answer.is_correct = true 
+

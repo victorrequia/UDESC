@@ -1,0 +1,7 @@
+Implemente um aplicativo de conversas instantâneas utilizando sockets. Este aplicativo deve ter um programa que implementa um servidor e outro programa que implementa o cliente. Os seguintes requisitos precisam ser atendidos:
+
+Tanto o cliente quando o servidor devem ser capazes de enviar e receber dados;
+Os dados recebidos devem ser exibidos na saída padrão (System.out);
+Os dados enviados devem ser capturados da entrada padrão (System.in);
+A qualquer momento o cliente pode finalizar a comunicação ao informar o comando !sair;
+O servidor deve manter um log em arquivo dos clientes que se conectaram, contendo os endereços IP e a data e hora de conexão.

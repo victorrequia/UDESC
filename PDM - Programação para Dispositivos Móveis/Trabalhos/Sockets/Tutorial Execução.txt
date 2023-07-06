@@ -1,0 +1,4 @@
+Para rodar o programa, basta executar as classe em sequência
+
+1° ChatServer.java
+2° ChatClient.java

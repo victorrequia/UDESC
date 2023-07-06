@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FinishFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rect_rou"
+
+    tools:context=".view.fragment.FinishFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/txtParabens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:textAlignment="center"
+        android:layout_marginTop="150dp"
+        android:text="PARABENS!"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/name_congra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:textAlignment="center"
+        android:layout_marginTop="220dp"
+        android:text="PARABENS!"
+        android:textSize="30dp"
+        android:textColor="@color/terciary"
+        />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:textAlignment="center"
+        android:layout_marginTop="290dp"
+        android:text="Sua Pontuação foi"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="350dp"
+        android:textAlignment="center"
+        android:text="213123"
+        android:textSize="40dp"
+        android:textColor="@color/terciary"
+        />
+
+</FrameLayout>

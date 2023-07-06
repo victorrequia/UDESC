@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="top_1" type="id" />
+    <item name="top_2" type="id" />
+    <item name="top_3" type="id" />
+    <item name="top_4" type="id" />
+    <item name="top_5" type="id" />
+    <item name="top_6" type="id" />
+    <item name="top_7" type="id" />
+    <item name="top_8" type="id" />
+    <item name="top_9" type="id" />
+    <item name="top_10" type="id" />
+</resources>

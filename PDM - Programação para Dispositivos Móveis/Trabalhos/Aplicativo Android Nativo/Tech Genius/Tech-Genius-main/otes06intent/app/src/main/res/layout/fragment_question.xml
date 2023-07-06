@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/QuestionFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rect_rou"
+    tools:context=".view.fragment.QuestionFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Selecione uma resposta"
+        android:textColor="#9D9D9D" />
+
+    <TextView
+        android:id="@+id/txtPergunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        android:text="Pergunta"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_op1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/bg_btn_selected"
+        android:paddingVertical="26dp"
+        android:text="opção 1"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_op2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="195dp"
+        android:background="@drawable/bg_btn_default"
+        android:paddingVertical="26dp"
+        android:text="opção 2"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_op3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/bg_btn_default"
+        android:paddingVertical="26dp"
+        android:text="opção 3"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_op4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="370dp"
+        android:background="@drawable/bg_btn_default"
+        android:paddingVertical="26dp"
+        android:text="opção 4"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_op5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="458dp"
+        android:background="@drawable/bg_btn_default"
+        android:paddingVertical="26dp"
+        android:text="opção 5"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+
+
+
+
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#374636" /> <!-- Cor verde -->
+    <corners android:radius="10dp" /> <!-- Raio de arredondamento em dp -->
+</shape>
