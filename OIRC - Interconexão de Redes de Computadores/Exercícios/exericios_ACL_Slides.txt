@@ -1,0 +1,21 @@
+Exercicios_Slides_ACL
+
+ACL 1:
+access-list 1 permit 172.16.0.0	0.0.255.255
+access-list 1 permit 172.17.0.0	0.0.255.255
+access-list 1 deny any
+
+ACL 2:
+access-list 2 deny 10.0.0.0		0.0.31.255
+access-list 2 permit any
+
+Slide17
+access-list 3 deny host 192.168.0.100
+access-list 3 permit any
+interface Ethernet 2
+ip access-group 3 out
+
+Slide
+access-list 4 permit host 172.17.3.10
+access-list 4 deny 172.17.3.0		0.0.0.255
+acess-list 4 permiy any

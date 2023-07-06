@@ -1,0 +1,18 @@
+Exercicio_Slide_ACL_2
+
+Slide20:
+
+ip access-list standard teste_acl
+permit 20.0.0.10	0.255.255.255
+deny any
+
+int serial 0/0/0
+ip access-group teste_acl out 
+
+Slide30:
+access-list 111 deny tcp host 204.204.7.89 host 196.6.13.254 eq 21
+access-list 111 deny tcp host 204.204.7.89 host 196.6.13.254 eq 20
+access-list 111 permit tcp any any
+
+interface fa0/0
+ip access-group 111 in 
