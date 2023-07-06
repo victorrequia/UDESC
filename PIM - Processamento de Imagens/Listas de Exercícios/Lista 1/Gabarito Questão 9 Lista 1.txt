@@ -1,0 +1,24 @@
+area = lado_WR * lado_RT
+
+projeções dos pontos em mm
+a = [2.17 6.67]
+b = [2.18 6.67]
+c = [2.17 6.63]
+d = [2.18 6.63]
+e = [2.15 1.67]
+f = [2.15 1.67]
+g = [2.15 1.67]
+h = [2.15 1.67]
+
+
+ dist entre 'a' e 'b' em pixels [dist_horizontal, dist_vertical]=[1.00 0.00]
+
+ dist entre 'a' e 'c' em pixels [dist_horizontal, dist_vertical]=[0.00 4.00]
+
+ dist entre 'c' e 'd' em pixels [dist_horizontal, dist_vertical]=[1.00 0.00]
+
+ dist entre 'e' e 'f' em pixels [dist_horizontal, dist_vertical]=[0.00 0.00]
+
+ dist entre 'e' e 'g' em pixels [dist_horizontal, dist_vertical]=[0.00 0.00]
+
+ dist entre 'g' e 'h' em pixels [dist_horizontal, dist_vertical]=[0.00 0.00]

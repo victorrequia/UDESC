@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------------
+Pillow
+
+https://auth0.com/blog/image-processing-in-python-with-pillow/ 
+-------------------------------------------------------------------------------------
+
+OpenCV + Python
+
+https://stackoverflow.com/questions/60274805/splitting-of-an-rgb-image-to-r-g-b-using-opencv-python
+-------------------------------------------------------------------------------------

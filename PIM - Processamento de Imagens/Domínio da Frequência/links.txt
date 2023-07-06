@@ -1,0 +1,5 @@
+Tutoriais sobre DFT em Python: 
+
+https://thepythoncodingbook.com/2021/08/30/2d-fourier-transform-in-python-and-fourier-synthesis-of-images/
+
+https://towardsdatascience.com/image-processing-with-python-application-of-fourier-transformation-5a8584dc175b

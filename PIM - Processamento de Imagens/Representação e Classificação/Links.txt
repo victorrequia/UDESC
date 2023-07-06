@@ -1,0 +1,5 @@
+A traditional algorithm takes some input and some logic in the form of code and drums up the output. 
+As opposed to this, a Machine Learning Algorithm takes an input and an output and gives the some logic which can then be used to work with new input to give one an output.
+The logic generated is what makes it ML.
+
+https://analyticsindiamag.com/how-do-machine-learning-algorithms-differ-from-traditional-algorithms/
