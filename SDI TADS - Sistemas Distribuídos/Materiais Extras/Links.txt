@@ -1,0 +1,31 @@
+-----------------------------------------------------------------------------------
+Sobre RPC (Material de notas de aula do Prof. Paulo Coelho a respeito de RPC)
+
+https://paulo-coelho.github.io/ds_notes/comm/rpc/ 
+-----------------------------------------------------------------------------------
+
+Webinar Cloud da Google
+
+Webinar Cloud da Google (vídeo)
+
+Antiga localização
+
+https://www.dropbox.com/s/05cr9ol236pyudl/Webinar%20Google%20Cloud%20sobre%20o%20presente%20e%20o%20futuro%20da%20Nuvem.mp4?dl=0
+
+https://udesc-my.sharepoint.com/:v:/g/personal/74347233949_udesc_br/ERno4V8NCjRMnayJSvH5BSgBG2MMtYL8JZQVYGw-YuGopA?e=YmryrV
+
+Clique o link https://udesc-my.sharepoint.com/:v:/g/personal/74347233949_udesc_br/ERno4V8NCjRMnayJSvH5BSgB1N3RqXy8XqO6bqEViM4CiA?e=KqvE0O 
+
+-----------------------------------------------------------------------------------
+
+Equivalências entre edições do Livro Coulouris
+
+4a edição - 5a edição
+1 Characterization - 1
+2 System Models - 2 (adição de um chamado modelo físico além do arquitetural e fundamental)
+3 Networking and Internetworking - 3
+4 Interprocess Communication 	- 4
+5 Distributed Objects and Remote Invocation - 5 Remote Invocation (algumas pequenas alterações em relação à edição 4)
+11 Time and Global States - 14 Time and Global States
+
+-----------------------------------------------------------------------------------
