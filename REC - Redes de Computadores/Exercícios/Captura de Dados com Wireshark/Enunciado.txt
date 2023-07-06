@@ -1,0 +1,23 @@
+(1) Abra o wireshark
+
+(2) Selecione a interface de rede apropriada
+
+(3) Em seu navegador, acesse um endereço usando o protocolo HTTP (ou HTTPS).
+
+(4) Procure os dados no Wireshark. Use a porta (qual porta você usará?) como base de busca. 
+
+(4.1) Você pode acrescentar o IP para melhorar a busca. ping endereco.com e você encontrará o IP alvo.
+
+(5) Encerre o wireshark.
+
+(6) Com os dados coletados, identifique:
+
+- protocolo da camada de transporte;
+
+- qual o volume de dados trafegados?
+
+- qual o MSS definido para a conexão? O que é MSS?
+
+(7) Como entregar o trabalho?
+
+- Elabore um documento com as respostas, explicações e figuras (oriundas do Wireshark).

@@ -1,0 +1,14 @@
+O bloco de endereços 192.168.54.0/23 deve ser dividido em sub-redes iguais, com 62 hospedeiros cada uma.
+a) Quantas sub-redes são necessárias?
+b) Qual máscara de rede deve ser utilizada para atingir o objetivo? Informe em notação quartenária.
+
+c) Para cada sub-rede resultante, determine: 
+
+- Endereço da rede
+
+- Endereço de broadcast
+- Endereço do primeiro hospedeiro 
+
+- Endereço do último hospedeiro
+
+d) Escolha uma rede (não pode ser a primeira) e decomponha em 3 subredes.

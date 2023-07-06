@@ -1,0 +1,8 @@
+Objetivo: O objetivo do presente trabalho é investigar o funcionamento do DNS. A atividade deverá ser executada individualmente.
+
+Descrição
+	Utilize as ferramentas nativas nos sistemas operacionais (por exemplo: dig e nslookup) para coletar informações sobre 3 domínios distintos (udesc.br, cct.udesc.br e outro que você escolherá).
+	Identifique os registros, os servidores, e demais informações fornecidas.
+	Forneça uma breve explicação sobre A, MX, NS e outras informações encontradas.
+
+Modo de entrega: um arquivo único contendo a saída fornecida pela ferramenta e as explicações adicionais pelo aluno.

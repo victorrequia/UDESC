@@ -1,0 +1,65 @@
+Microsoft Windows [versão 10.0.19044.2604]
+(c) Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\Computador>ping -t 8.8.8.8
+
+Disparando 8.8.8.8 com 32 bytes de dados:
+Resposta de 8.8.8.8: bytes=32 tempo=33ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=32ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=29ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=35ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=31ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=28ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=28ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=30ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=28ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=32ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=40ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=29ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=41ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=29ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=29ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=29ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=30ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=74ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=133ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=82ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=62ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=77ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=61ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=68ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=39ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=82ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=90ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=69ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=73ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=48ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=60ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=56ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=40ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=49ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=33ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=34ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=56ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=37ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=28ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=37ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=29ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=30ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=29ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=33ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=29ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=28ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=29ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=29ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=28ms TTL=114
+Resposta de 8.8.8.8: bytes=32 tempo=31ms TTL=114
+
+Estatísticas do Ping para 8.8.8.8:
+    Pacotes: Enviados = 50, Recebidos = 50, Perdidos = 0 (0% de
+             perda),
+Aproximar um número redondo de vezes em milissegundos:
+    Mínimo = 28ms, Máximo = 133ms, Média = 44ms
+Control-C
+^C
+C:\Users\Computador>

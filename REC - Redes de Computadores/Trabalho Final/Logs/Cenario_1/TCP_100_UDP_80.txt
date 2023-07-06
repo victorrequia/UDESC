@@ -1,0 +1,31 @@
+-----------------------------------------------------------
+Server listening on 5201
+-----------------------------------------------------------
+Accepted connection from 192.168.0.162, port 54014
+[  6] local 192.168.0.129 port 5201 connected to 192.168.0.162 port 54015
+[ ID] Interval           Transfer     Bandwidth
+[  6]   0.00-1.00   sec  28.5 MBytes   239 Mbits/sec                  
+[  6]   1.00-2.00   sec  30.6 MBytes   257 Mbits/sec                  
+[  6]   2.00-3.00   sec  16.5 MBytes   139 Mbits/sec                  
+[  6]   3.00-4.00   sec  13.4 MBytes   112 Mbits/sec                  
+[  6]   4.00-5.00   sec  12.9 MBytes   108 Mbits/sec                  
+[  6]   5.00-6.00   sec  14.1 MBytes   118 Mbits/sec                  
+[  6]   6.00-7.00   sec  13.4 MBytes   112 Mbits/sec                  
+[  6]   7.00-8.00   sec  12.9 MBytes   108 Mbits/sec                  
+[  6]   8.00-9.00   sec  13.6 MBytes   114 Mbits/sec                  
+[  6]   9.00-10.00  sec  12.6 MBytes   106 Mbits/sec                  
+[  6]  10.00-11.00  sec  13.4 MBytes   112 Mbits/sec                  
+[  6]  11.00-12.00  sec  13.2 MBytes   111 Mbits/sec                  
+[  6]  12.00-13.00  sec  26.9 MBytes   226 Mbits/sec                  
+[  6]  13.00-14.00  sec  29.2 MBytes   245 Mbits/sec                  
+[  6]  14.00-15.00  sec  28.6 MBytes   240 Mbits/sec                  
+[  6]  15.00-16.00  sec  28.0 MBytes   235 Mbits/sec                  
+[  6]  16.00-17.00  sec  30.9 MBytes   259 Mbits/sec                  
+[  6]  17.00-18.00  sec  29.1 MBytes   244 Mbits/sec                  
+[  6]  18.00-19.00  sec  27.6 MBytes   232 Mbits/sec                  
+[  6]  19.00-20.00  sec  28.8 MBytes   241 Mbits/sec                  
+[  6]  20.00-20.05  sec  1.62 MBytes   282 Mbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth
+[  6]   0.00-20.05  sec   426 MBytes   178 Mbits/sec                  sender
+[  6]   0.00-20.05  sec  0.00 Bytes  0.00 bits/sec                  receiver

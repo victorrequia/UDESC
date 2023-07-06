@@ -1,0 +1,6 @@
+Para rodar o server, basta executar o arquivo em python socket_server.py
+__________________________________________________________________________
+
+Para rodar o cliente, basta extrair o arquivo socket_client.zip e
+executar a classe Main, dentro da pasta /socket_client/apresentacao
+__________________________________________________________________________

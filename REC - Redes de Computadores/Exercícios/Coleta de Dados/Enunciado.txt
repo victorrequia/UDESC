@@ -1,0 +1,15 @@
+Execute:
+
+(1) ping 8.8.8.8
+
+No windows deve ser: ping -t 8.8.8.8
+
+(2) acessar google speed test
+
+rodar download e upload
+
+(3) terminar o ping
+
+(4) coletar os dados
+
+(5) montar gráfico de linha

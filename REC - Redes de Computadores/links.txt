@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------------------
+Exercícios Resolvidos - Computer Networking: A Top-Down Approach (Jim Kurose, Keith Ross)
+
+https://gaia.cs.umass.edu/kurose_ross/interactive/index.php
+-------------------------------------------------------------------------------------------
+
+Lista número de portas
+
+https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml
+
+-------------------------------------------------------------------------------------------
+Tema trabalho final
+
+VICTOR EDUARDO REQUIA 	(a)	04/07/23 14:00
+-------------------------------------------------------------------------------------------
