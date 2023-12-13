@@ -1,0 +1,64 @@
+-------------------------------------------------------------------------------------------
+Códigos Exemplos: 
+https://github.com/mauriciopillon/sdi0001
+-------------------------------------------------------------------------------------------
+Videoaulas de revisão: Sockets & Unicast/MulticastLição
+https://www.youtube.com/watch?v=uRvjPlbJ_98&t=1s&ab_channel=PauloKretcheu
+-------------------------------------------------------------------------------------------
+Google RPC 
+https://grpc.io/docs/guides/.
+-------------------------------------------------------------------------------------------
+Outros exemplos de código RPC
+https://docs.oracle.com/cd/E19253-01/816-1435/rpcgenpguide-24243/index.html
+-------------------------------------------------------------------------------------------
+Vídeo aula com material complementar: 
+https://www.youtube.com/watch?v=gr7oaiUsxSU&t=1s&ab_channel=Udacity
+-------------------------------------------------------------------------------------------
+Vídeo aula com material complementar: 
+https://www.youtube.com/watch?v=ILeAeFZOkMI&ab_channel=JonathanEngelsma
+-------------------------------------------------------------------------------------------
+Vídeo aula com material complementar: 
+Ação Criativa: SolarIoTech
+https://www.instagram.com/solariotech/
+-------------------------------------------------------------------------------------------
+https://www.youtube.com/watch?v=AMLH32EWdf4&ab_channel=PrasunDewan
+-------------------------------------------------------------------------------------------
+O que é o tempo?URL
+https://www.youtube.com/watch?v=R3tbVHlsKhs&ab_channel=TED-Ed
+-------------------------------------------------------------------------------------------
+Google DCURL
+https://www.youtube.com/watch?v=zDAYZU4A3w0&ab_channel=GoogleCloudTech
+-------------------------------------------------------------------------------------------
+Google Earth vs Terra Vision: The Billion Dolar CodeURL
+https://www.youtube.com/watch?v=iDvPvqImb-4&ab_channel=Netflix
+-------------------------------------------------------------------------------------------
+Segurança dos dados levada a sério
+https://www.youtube.com/watch?v=kd33UVZhnAA&ab_channel=GoogleCloudTech
+-------------------------------------------------------------------------------------------
+Google Labs
+https://labs.google/
+-------------------------------------------------------------------------------------------
+Alternativas p/ CloudHarmony (deixou de operar em 15/03/2023)
+
+https://www.cloudorado.com/
+https://statusgator.com/
+https://comparecloud.in/
+https://spot.io/product/cloudcheckr/
+https://www.flexera.com/products/cloud-management-platform
+https://www.cloudping.cloud/aws
+-------------------------------------------------------------------------------------------
+Google PubSubHubbudURL
+https://www.youtube.com/watch?v=B5kHx0rGkec&ab_channel=GoogleforDevelopers
+-------------------------------------------------------------------------------------------
+Google GFS & ColossusURL
+https://www.youtube.com/watch?v=eEedip4lkkQ&ab_channel=ManueldelaTorre
+
+https://www.youtube.com/watch?v=oTk4NFiEf8M&ab_channel=CrushingTechEducation
+-------------------------------------------------------------------------------------------
+Google SpannerURL
+https://www.youtube.com/watch?v=bUSU1e9j8wc&ab_channel=GoogleCloudTech
+-------------------------------------------------------------------------------------------
+Google BigtableURL
+https://www.youtube.com/watch?v=xEO4_iiBTJo&ab_channel=edureka%21
+-------------------------------------------------------------------------------------------
+
