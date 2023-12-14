@@ -1,0 +1,6 @@
+função de resfriamento
+T = (1 - it/itMax)^t
+
+it = número da iteração atual
+itMax = número máximo de iterações 
+t = fator de resfriamento. Admissível, por exemplo entre 1 e 5.

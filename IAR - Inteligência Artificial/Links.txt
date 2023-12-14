@@ -1,0 +1,79 @@
+-------------------------------------------------------------------------------------------------------------
+Leitura: What is AI? Everything to know about artificial intelligence
+https://www.zdnet.com/article/what-is-ai-heres-everything-you-need-to-know-about-artificial-intelligence/
+-------------------------------------------------------------------------------------------------------------
+Leitura: AI, NLP and ML: are they the same thing?
+https://monkeylearn.com/blog/nlp-ai/
+-------------------------------------------------------------------------------------------------------------
+Performance of ML Algorithms
+https://machinelearningmastery.com/evaluate-performance-machine-learning-algorithms-python-using-resampling/
+-------------------------------------------------------------------------------------------------------------
+Metrics to Evaluate ML Algorithms
+https://towardsdatascience.com/metrics-to-evaluate-your-machine-learning-algorithm-f10ba6e38234
+-------------------------------------------------------------------------------------------------------------
+BOX PLOT
+https://chartio.com/learn/charts/box-plot-complete-guide/
+-------------------------------------------------------------------------------------------------------------
+The shutdown of two chatbots from China (2017)
+https://www.telegraph.co.uk/technology/2017/08/03/rogue-chatbots-deleted-china-questioning-communist-party/
+-------------------------------------------------------------------------------------------------------------
+Why Go is so much harder for AI to beat than chess (2016)
+https://www.businessinsider.com/why-google-ai-game-go-is-harder-than-chess-2016-3
+-------------------------------------------------------------------------------------------------------------
+AlphaGo "How the Computer Beat the Go Master" (2017)
+https://www.telegraph.co.uk/news/2017/05/24/computer-beats-chinese-master-ancient-board-game-go/
+-------------------------------------------------------------------------------------------------------------
+AlphaGo Movie
+https://www.youtube.com/watch?v=WXuK6gekU1Y&ab_channel=GoogleDeepMind
+-------------------------------------------------------------------------------------------------------------
+The Three Breakthroughs That Have Finally Unleashed AI on the World
+https://www.wired.com/2014/10/future-of-artificial-intelligence/
+-------------------------------------------------------------------------------------------------------------
+Computador convence sendo garoto de 13 anos (2014)
+https://g1.globo.com/tecnologia/noticia/2014/06/computador-convence-juizes-que-e-garoto-de-13-anos-em-teste-de-turing.html
+-------------------------------------------------------------------------------------------------------------
+Nova inteligência artificial da Google pode ter superado Teste de Turing (2018)
+https://www.tecmundo.com.br/software/130136-nova-inteligencia-artificial-google-ter-superado-teste-turing.htm
+-------------------------------------------------------------------------------------------------------------
+Coding Deep Learning For Beginners Types of Machine Learning (2018)
+https://towardsdatascience.com/coding-deep-learning-for-beginners-types-of-machine-learning-b9e651e1ed9d
+-------------------------------------------------------------------------------------------------------------
+10 Companies Using Machine Learning in Cool Ways (2017)
+https://medium.com/marketing-and-entrepreneurship/10-companies-using-machine-learning-in-cool-ways-887c25f913c3
+-------------------------------------------------------------------------------------------------------------
+The Difference Between Artificial Intelligence and Machine Learning
+https://www.youtube.com/watch?v=ihd9zrW6DOk&ab_channel=SASSoftware
+-------------------------------------------------------------------------------------------------------------
+A Diferença Entre Inteligência Artificial, Machine Learning e Deep Learning (2016)
+https://medium.com/data-science-brigade/a-diferen%C3%A7a-entre-intelig%C3%AAncia-artificial-machine-learning-e-deep-learning-930b5cc2aa42
+-------------------------------------------------------------------------------------------------------------
+Differences Between AI and Machine Learning, and Why it Matters (2018)
+https://pub.towardsai.net/differences-between-ai-and-machine-learning-and-why-it-matters-1255b182fc6
+-------------------------------------------------------------------------------------------------------------
+Whats is ChatGPT?
+https://www.youtube.com/watch?v=o5MutYFWsM8&t=1s&ab_channel=HowItHappened
+-------------------------------------------------------------------------------------------------------------
+Human Brain. Suzana Herculado: Brasileira, Bióloga e neurocientista da Universidade Vanderbilt (EUA). TED Talk.
+https://www.ted.com/talks/suzana_herculano_houzel_what_is_so_special_about_the_human_brain
+-------------------------------------------------------------------------------------------------------------
+Insights Cérebro Humano x Processamento Silício
+https://www.tecmundo.com.br/ciencia/16846-cerebro-humano-x-pc-como-eles-se-comparam-.htm
+-------------------------------------------------------------------------------------------------------------
+Tema:
+Lógica Fuzzy
+
+Links úteis:
+https://www.cos.ufrj.br/~mario/logica/logicaFuzzy.pdf
+
+https://www.devmedia.com.br/introducao-a-logica-fuzzy-com-java/32444
+-------------------------------------------------------------------------------------------------------------
+Tema:
+Ensembles em Apŕendizado de Máquina
+
+Links Úteis:
+https://machinelearningmastery.com/tour-of-ensemble-learning-algorithms/
+https://towardsdatascience.com/ensemble-methods-in-machine-learning-what-are-they-and-why-use-them-68ec3f9fef5f
+
+Artigo de referência acessível dentro da rede da UDESC:
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9893798
+-------------------------------------------------------------------------------------------------------------
