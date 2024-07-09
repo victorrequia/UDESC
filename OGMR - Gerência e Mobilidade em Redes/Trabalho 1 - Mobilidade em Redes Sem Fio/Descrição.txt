@@ -1,0 +1,32 @@
+---------------------------------------------------------------------------------------------------------------------------------
+1 Caracterização do Trabalho
+Um trabalho por equipe deverá ser desenvolvido. Cada trabalho consiste na escrita e apresentação de uma
+resenha no formato de artigo, sobre um tema envolvendo mobilidade em redes de comunicação (computadores,
+telecomunicação e aplicações em particular.)
+Tal resenha deverá conter no mínimo 6 e no máximo 8 páginas no formato da SBC1 Para tanto será necessário
+buscar apoio em livros e artigos cientícos especícos a respeito desse tema. A resenha é uma produção literária
+cujo propósito é apresentar um conteúdo relacionando-o com suas propriedades, capacidades, etc.. ao leitor que
+não o conhece. Portanto, para tal, será necessário estudar o tema designado, apresentado as características,
+funcionamento, e suas relações com redes sem o de maneira geral.
+Para a realização deste trabalho de resenha, journals e publicações especializadas nos temas solicitados
+deverão ser utilizadas e referenciadas. Uma maneira de se alcançar este objetivo é utilizar o portal de periódicos
+da CAPES (Coordenação de Aperfeiçoamento de Pessoal do Ensino Superior do Ministério da Educação) -
+http://periodicos.capes.gov.br. Uma vez dentro do domínio de rede UDESC e utilizando o site de periodicos,
+será possível ter acesso ao conteúdo dos arquivos (artigos) disponíveis em diversas publicações (journals e
+revistas) cientícas internacionais. Ainda, é possível, mesmo fora do domínio de rede da UDESC, utilizar
+a opção de busca no portal de periódicos, via acesso federado (CAFe) logando-se via ID UDESC. Aproveitem
+estes recursos para fazer a pesquisa bibliográca para o trabalho solicitado! É claro, que as outras fontes formais,
+como biblioteca (livros) e sítio web Minha Biblioteca já logada via ID UDESC são altamente encorajadas para
+atingir o objetivo almejado por este trabalho.
+A apresentação deverá ter em torno de 30 minutos, contando com slides que deverão ser apresentados à
+turma em data especíca.
+Ambos, slides e artigo deverão ser entregues no moodle da disciplina.
+Os temas envolvendo mobilidade são:
+1. Mobile IP (IP móvel)
+2. Redes de telecomunicação celular, em particular 5G
+3. Redes VANETs
+4. Redes para Internet das Coisas (IoT) (que envolvam LoRaWan, e outras tecnologias)
+5. Redes LiFi2
+6. Redes de comunicação quânticas 3
+---------------------------------------------------------------------------------------------------------------------------------
+Equipe tema: Redes IoT

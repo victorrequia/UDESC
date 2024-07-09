@@ -1,0 +1,33 @@
+----------------------------------------------------------------------------------------------------------------------------------------
+1 Caracteriza¸c˜ao do Trabalho
+O trabalho consiste em executar a instala¸c˜ao, configura¸c˜ao e utiliza¸c˜ao de ao menos uma plataforma
+de gerenciamento de redes de computadores, que utilizem o protocolo SNMP em seu funcionamento. Esse
+processo dever´a ser documentado na forma de um relat´orio, detalhando para cada uma das etapas, os processos,
+comandos, instala¸c˜ao de ferramentas adicionais auxiliares, etc... Tal relat´orio, deve ser descrito com no m´ınimo
+4 e no m´aximo 8 p´aginas no formato IEEE (incluindo figuras), bem como pela produ¸c˜ao de um v´ıdeo de no
+m´ınimo 5 e no m´aximo 30 minutos onde tais etapas s˜ao apresentadas como em um tutorial. Para a apresenta¸c˜ao
+do trabalho para a turma/classe, recomenda-se a elabora¸c˜ao de slides, que tamb´em devem ser entregues (upload)
+pelo moodle.
+Para a etapa da utiliza¸c˜ao ser´a necess´aria a montagem de um cen´ario onde a utiliza¸c˜ao do protocolo SNMP
+se faz necess´aria. Ou seja, dever´a ser apresentada, na etapa de utiliza¸c˜ao, o monitoramento de algum objeto
+gerenci´avel pertencente `a MIB II, conforme o cen´ario pensado/desenvolvido pela equipe. Por exemplo, supondo
+que o cen´ario em tela trata-se do monitoramento do fluxo http, pode ser ´util verificar a existˆencia de um objeto
+gerenci´avel que exiba os valores de quantos pacotes HTTP entraram e quantos sa´ıram na m´aquina onde executa
+o servidor http. Caso essa informa¸c˜ao n˜ao esteja dispon´ıvel em uma vari´avel/objeto gerenciado, poder´a ser
+necess´ario correlacionar vari´aveis/objetos gerenci´aveis que indiretamente apontem esses valores. Por exemplo,
+nesse caso, quantos pacotes TCP para a porta 80 entraram e quantos com o tipo de protocolo, no payload do
+pacote TCP, sendo HTTP sa´ıram. A busca em MIBs n˜ao est´a limitada `a MIB II, mas geralmente a MIB II
+oferece v´arias informa¸c˜oes para diversos cen´arios.
+Tenham em mente a possibilidade/necessidade de utilizar m´aquina virtual para a experimenta¸c˜ao. Isso
+evitar´a a instala¸c˜ao no sistema operacional de trabalho di´ario, de servi¸cos que depois da experimenta¸c˜ao apenas
+consumir˜ao recursos. Ainda, eventualmente ser´a necess´aria a instala¸c˜ao do agente SNMP antes mesmo da
+plataforma de gerˆencia. O material para como instalar o agente SNMP est´a no moodle, por meio de v´ıdeo
+aulas de instala¸c˜ao para windows e para Ubuntu, dispon´ıveis no T´opico Slides do moodle da disciplina. Ainda,
+na se¸c˜ao SNMP no Linux, do T´opico Material Extra, h´a v´ıdeo aula de como criar m´aquina virtual usando o
+software Virtual Box, dado um disco (hd) de m´aquina virtual previamente criado. Os discos hd (arquivos .vdi),
+sem e com o agente SNMP v3 instalado tamb´em est˜ao dispon´ıveis para download nessa se¸c˜ao. Al´em disso,
+tutoriais em .pdf tamb´em est˜ao dispon´ıveis nessa se¸c˜ao para instala¸c˜ao e teste (instalando e usando um Mib
+Browser) do agente SNMP, no sistema operacional Ubuntu.
+Cada equipe se debru¸car´a sobre uma das seguintes plataformas, conforme Tabela 1.
+----------------------------------------------------------------------------------------------------------------------------------------
+Tema da equipe: Nagios
